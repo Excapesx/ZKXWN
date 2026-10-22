@@ -1,0 +1,7 @@
+/build*/
+/install/
+/log/
+*.log
+.env
+/config/decision_config.json
+
