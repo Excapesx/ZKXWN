@@ -14,6 +14,13 @@ private:
     int tick_ = 0, max_ticks_ = 100;
     std::vector<AvoidRegion> regions_;
     std::vector<Vec2> occupied_;
+    // Single-threaded, per-tick static BFS tree shared by all goal queries.
+    mutable bool cache_valid_ = false;
+    mutable Vec2 cache_from_;
+    mutable int cache_width_ = 0;
+    mutable std::vector<unsigned char> cache_blocked_;
+    mutable std::vector<int> distances_;
+    mutable std::vector<std::optional<rmtc::decision::Direction>> first_steps_;
 };
 } // namespace rmtc_bot
 

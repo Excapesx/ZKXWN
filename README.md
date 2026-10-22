@@ -125,6 +125,8 @@ export RMTC_DECISION_CONFIG="$HOME/ZKXWN/rmtc_ws/src/rmtc_bot/config/decision_co
 
 ## 5. 测试
 
+最新第一阶段采集改进及前后对比见 [docs/COLLECTION_OPTIMIZATION.md](docs/COLLECTION_OPTIMIZATION.md)。
+
 多地图测试结果和复现命令见 [docs/MULTIMAP.md](docs/MULTIMAP.md)：55 张闭环测试图和九张真实练习端测试图。
 
 ```bash

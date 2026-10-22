@@ -9,7 +9,7 @@
 namespace rmtc_bot {
 void WorldMemory::reset(int w, int h) {
     if (w < 1 || h < 1 || static_cast<std::int64_t>(w) * h > 1000000) throw std::runtime_error("Invalid memory dimensions");
-    width_ = w; height_ = h; last_tick_ = -1; last_resource_value_ = 0;
+    width_ = w; height_ = h; last_tick_ = -1; last_resource_value_ = 0; vision_radius_ = 4;
     grid_.assign(h, std::vector<Cell>(w)); resources_.clear();
     initial_spawn_.reset(); normal_progress_.reset(); high_progress_.reset(); session_.clear();
 }
@@ -29,6 +29,7 @@ void WorldMemory::update(const Perception& p) {
         if (p.score.resource_value == 0) { normal_progress_ = 0; high_progress_ = 0; }
     }
     if (p.tick <= last_tick_) return;
+    vision_radius_ = p.vision_radius;
     if (p.position_reason == "initial" && !initial_spawn_) initial_spawn_ = p.self_pos;
     if (last_tick_ >= 0 && p.tick != last_tick_ + 1) { normal_progress_.reset(); high_progress_.reset(); }
     const double delta = p.score.resource_value - last_resource_value_;
@@ -99,9 +100,16 @@ std::vector<Vec2> WorldMemory::frontiers() const {
         for (const auto d : {rmtc::decision::Direction::Up,rmtc::decision::Direction::Right,
                              rmtc::decision::Direction::Down,rmtc::decision::Direction::Left}) {
             const auto n=rmtc::decision::step({x,y},d);
-            if(in_bounds(n.x,n.y)&&at(n.x,n.y)==CellState::Unknown) { result.push_back({x,y}); break; }
+            if(in_bounds(n.x,n.y)&&at(n.x,n.y)==CellState::Unknown) {
+                // With radius zero the sole known frontier can be our current
+                // cell, which is not a movement goal. Probe its unknown neighbors.
+                if(vision_radius_==0) result.push_back(n);
+                else { result.push_back({x,y}); break; }
+            }
         }
     }
+    std::sort(result.begin(),result.end(),[](Vec2 a,Vec2 b){return a.y<b.y||(a.y==b.y&&a.x<b.x);});
+    result.erase(std::unique(result.begin(),result.end()),result.end());
     return result;
 }
 std::optional<Vec2> WorldMemory::nearest_unvisited(int x,int y) const {

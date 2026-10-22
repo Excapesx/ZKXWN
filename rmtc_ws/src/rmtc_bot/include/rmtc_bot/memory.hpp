@@ -36,6 +36,7 @@ private:
     std::vector<std::vector<Cell>> grid_;
     std::map<std::string, Entity> resources_;
     int width_ = 0, height_ = 0, last_tick_ = -1;
+    int vision_radius_ = 4;
     double last_resource_value_ = 0;
     std::string session_;
     std::optional<Vec2> initial_spawn_;

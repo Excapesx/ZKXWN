@@ -30,6 +30,8 @@ struct Mission {
     std::optional<Vec2> position;
 };
 struct Score {
+    // v1.1: effective_damage is the referee's adjusted value, not a monotonic
+    // counter. Preserve fractions, decreases and values above 500 verbatim.
     double resource_value = 0, effective_damage = 0;
     int mission_completed = 0, invalid_actions = 0;
     std::vector<std::string> mission_completed_ids;

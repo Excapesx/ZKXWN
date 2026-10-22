@@ -11,6 +11,8 @@
 #include <iostream>
 #include <iterator>
 #include <mutex>
+#include <queue>
+#include <random>
 #include <stdexcept>
 #include <thread>
 
@@ -75,6 +77,10 @@ int main() {
     test("reject_oversized_map",[&]{auto j=source;j["map"]["width"]=2000000;rejects([&]{parse_perception(j.dump());});});
     test("reject_entities_object",[&]{auto j=source;j["visible_entities"]=J::object();rejects([&]{parse_perception(j.dump());});});
     test("reject_outside_entity",[&]{auto j=source;j["visible_entities"][0]["position"]=relative(-4,0);rejects([&]{parse_perception(j.dump());});});
+    test("reject_unknown_entity_preserves_memory",[&]{BotRuntime bot{Config{}};bot.handle(source.dump());auto j=source;j["tick"]=1;j["visible_entities"][1]["type"]="unknown_wall";require(!bot.handle(j.dump())&&bot.memory().at(2,1)==CellState::Obstacle);});
+    test("reject_fractional_score_counter",[&]{auto j=source;j["score"]["invalid_actions"]=0.5;rejects([&]{parse_perception(j.dump());});});
+    test("reject_negative_respawn",[&]{auto j=source;j["self"]["respawn_in"]=-1;rejects([&]{parse_perception(j.dump());});});
+    test("reject_unsigned_overflow",[&]{auto j=source;j["map"]["width"]=18446744073709551615ull;rejects([&]{parse_perception(j.dump());});});
     test("action_exact_context",[]{auto a=J::parse(action_to_json({ActionKind::Move,"right"},7,"sid"));require(a["tick"]==7&&a["session_id"]=="sid"&&a["action"]=="move");});
     test("wait_omits_direction",[]{require(!J::parse(action_to_json({},1,"sid")).contains("direction"));});
     test("invalid_direction_rejected",[]{rejects([]{action_to_json({ActionKind::Move,"north"},1,"sid");});});
@@ -91,8 +97,94 @@ int main() {
     test("preexisting_wall_not_erased_by_event",[&]{WorldMemory m;auto p=parse_perception(source.dump());m.update(p);LLMPlan plan;plan.session_id=p.session_id;AvoidRegion r;r.rect={2,1,2,1};r.wall=true;r.start_tick=10;r.end_tick=20;plan.regions={r};m.apply_plan(plan,20);require(m.at(2,1)==CellState::Obstacle);});
     test("bfs_detours_static_wall",[&]{WorldMemory m;auto p=parse_perception(source.dump());m.update(p);Planner planner(m);planner.begin_tick(p,{},100);auto r=planner.plan({{2,2},{2,0},12,12,m.walls()});require(r&&r->distance==4);});
     test("timed_bfs_can_wait_for_corridor",[]{WorldMemory m;m.reset(3,1);Perception p;p.session_id="t";p.map_width=3;p.map_height=1;p.self_pos={0,0};p.alive=true;p.hp=100;p.vision_radius=0;m.update(p);Planner planner(m);LLMPlan plan;plan.session_id="t";AvoidRegion r;r.rect={1,0,1,0};r.start_tick=0;r.end_tick=2;r.wall=true;plan.regions={r};planner.begin_tick(p,plan,10);auto route=planner.plan({{0,0},{2,0},3,1,{}});require(route&&route->wait_first&&!route->first_step&&route->distance==4);});
+    test("static_tree_matches_independent_bfs",[]{
+        std::mt19937 rng(20261022);
+        for(int trial=0;trial<50;++trial) {
+            const int w=3+rng()%18,h=3+rng()%18;
+            WorldMemory m;m.reset(w,h);Planner planner(m);Perception p;
+            p.self_pos={0,0};planner.begin_tick(p,{},w*h);
+            std::vector<Vec2> walls;std::vector<int> dist(w*h,-1);
+            for(int y=0;y<h;++y)for(int x=0;x<w;++x)
+                if((x||y)&&rng()%4==0){walls.push_back({x,y});dist[y*w+x]=-2;}
+            std::queue<Vec2> queue;queue.push({0,0});dist[0]=0;
+            while(!queue.empty()) {
+                auto c=queue.front();queue.pop();
+                for(auto delta:std::vector<Vec2>{{-1,0},{1,0},{0,-1},{0,1}}) {
+                    Vec2 n{c.x+delta.x,c.y+delta.y};
+                    if(n.x<0||n.y<0||n.x>=w||n.y>=h||dist[n.y*w+n.x]!=-1)continue;
+                    dist[n.y*w+n.x]=dist[c.y*w+c.x]+1;queue.push(n);
+                }
+            }
+            for(int y=0;y<h;++y)for(int x=0;x<w;++x) {
+                auto route=planner.plan({{0,0},{x,y},w,h,walls});
+                const int expected=dist[y*w+x];require(bool(route)==(expected>=0));
+                if(route) {
+                    require(route->distance==expected);
+                    if(expected>0) {require(route->first_step.has_value());auto n=d::step({0,0},*route->first_step);require(n.x>=0&&n.y>=0&&n.x<w&&n.y<h&&dist[n.y*w+n.x]==1);}
+                }
+            }
+        }
+    });
+    test("static_tree_rebuilds_for_changed_query",[]{
+        WorldMemory m;m.reset(4,2);Planner planner(m);Perception p;planner.begin_tick(p,{},10);
+        auto a=planner.plan({{0,0},{3,0},4,2,{}});require(a&&a->distance==3);
+        auto b=planner.plan({{0,0},{3,0},4,2,{{1,0}}});require(b&&b->distance==5&&b->first_step==d::Direction::Down);
+        auto c=planner.plan({{3,1},{3,0},4,2,{}});require(c&&c->distance==1&&c->first_step==d::Direction::Up);
+    });
+    test("static_tree_respects_tick_budget_and_new_occupancy",[]{
+        WorldMemory m;m.reset(4,1);Planner planner(m);Perception p;planner.begin_tick(p,{},3);
+        require(planner.plan({{0,0},{3,0},4,1,{}}).has_value());
+        p.tick=1;planner.begin_tick(p,{},3);require(!planner.plan({{0,0},{3,0},4,1,{}}));
+        Entity enemy;enemy.type=EntityType::Robot;enemy.hp=100;enemy.pos={1,0};p.entities={enemy};
+        planner.begin_tick(p,{},10);require(!planner.plan({{0,0},{2,0},4,1,{}}));
+        p.entities.clear();planner.begin_tick(p,{},10);require(planner.plan({{0,0},{2,0},4,1,{}}).has_value());
+    });
+    test("large_static_map_has_no_arbitrary_expansion_cutoff",[]{
+        WorldMemory m;m.reset(600,600);Planner planner(m);Perception p;planner.begin_tick(p,{},1200);
+        auto r=planner.plan({{0,0},{599,599},600,600,{}});require(r&&r->distance==1198);
+    });
     test("official_mission_type_bridge",[]{auto p=parse_perception(read("perception_stage2.json"));WorldMemory m;m.update(p);auto s=make_game_state(battle(),p,m,{});require(s.missions.size()==3&&s.missions[0].kind==d::MissionKind::NormalResources&&s.missions[1].kind==d::MissionKind::HighResources);});
     test("stage_is_config_not_missions",[]{auto p=parse_perception(read("perception_stage2.json"));WorldMemory m;m.update(p);Config c;require(make_game_state(c,p,m,{}).stage==d::Stage::Collection);});
+    test("v11_adjusted_damage_is_latest_referee_value",[]{
+        auto j=J::parse(read("perception_stage2.json"));WorldMemory m;
+        j["missions"]=J::array({{{"id","damage-task"},{"type","effective_damage"},{"target",150}}});
+        j["score"]["mission_completed_ids"]={"damage-task"};j["score"]["mission_completed"]=1;
+        for(double value:{160.0,100.0,0.0,520.5,460.5}) {
+            auto tick=j["tick"].get<int>();j["tick"]=tick+1;j["score"]["effective_damage"]=value;
+            auto p=parse_perception(j.dump());m.update(p);auto state=make_game_state(battle(),p,m,{});
+            require(state.score.effective_damage==value);
+            require(state.score.completed_mission_ids==std::vector<std::string>{"damage-task"});
+            require(state.missions.size()==1&&state.missions[0].kind==d::MissionKind::EffectiveDamage);
+        }
+    });
+    test("v11_death_and_respawn_do_not_reapply_score_penalty",[]{
+        auto j=J::parse(read("perception_stage2.json"));BotRuntime bot(battle());
+        j["score"]["effective_damage"]=160.0;require(bot.handle(j.dump()).has_value());
+        j["tick"]=j["tick"].get<int>()+1;j["self"]["alive"]=false;j["self"]["hp"]=0;
+        j["visible_entities"]=J::array();j["score"]["effective_damage"]=100.0;
+        auto out=bot.handle(j.dump());require(out&&J::parse(*out)["action"]=="wait");
+        auto p=parse_perception(j.dump());require(make_game_state(battle(),p,bot.memory(),{}).score.effective_damage==100.0);
+        j["tick"]=j["tick"].get<int>()+1;j["self"]["alive"]=true;j["self"]["hp"]=100;
+        j["self"]["position_reason"]="respawn";require(bot.handle(j.dump()).has_value());
+        p=parse_perception(j.dump());require(make_game_state(battle(),p,bot.memory(),{}).score.effective_damage==100.0);
+    });
+    test("collection_tour_reuses_complete_decision_on_same_tick",[&]{
+        auto j=source;j["visible_entities"]=J::array({
+            {{"type","resource_normal"},{"id","near"},{"value",10},{"position",relative(1,0)}},
+            {{"type","resource_high"},{"id","next"},{"value",20},{"position",relative(2,0)}}});
+        auto p=parse_perception(j.dump());WorldMemory m;m.update(p);Planner planner(m);Stage1Policy policy(Config{},planner);
+        auto first=policy.decide(p,m,{});auto decision=policy.last_decision();
+        require(decision.reason=="collection_tour");auto repeated=policy.decide(p,m,{});
+        require(first.kind==repeated.kind&&first.direction==repeated.direction);
+        require(policy.last_decision().reason==decision.reason&&policy.last_decision().utility==decision.utility&&policy.last_decision().reused_tick);
+    });
+    test("collection_tour_obeys_last_tick_budget",[&]{
+        auto j=source;j["tick"]=99;j["visible_entities"]=J::array({
+            {{"type","resource_normal"},{"id","near"},{"value",10},{"position",relative(1,0)}},
+            {{"type","resource_high"},{"id","too_late"},{"value",20},{"position",relative(2,0)}}});
+        BotRuntime bot(Config{});auto out=bot.handle(j.dump());require(out&&J::parse(*out)["direction"]=="right");
+        j["tick"]=100;require(!bot.handle(j.dump()));
+    });
     test("runtime_collects_visible_resource",[&]{BotRuntime bot{Config{}};auto out=bot.handle(source.dump());require(out&&J::parse(*out)["direction"]=="right");});
     test("runtime_duplicate_cached",[&]{BotRuntime bot{Config{}};auto out=bot.handle(source.dump());auto altered=source;altered["self"]["alive"]=false;require(bot.handle(altered.dump())==out&&bot.reason()=="cached_tick");});
     test("runtime_old_tick_discarded",[&]{BotRuntime bot{Config{}};auto j=source;j["tick"]=2;bot.handle(j.dump());require(!bot.handle(source.dump()));});

@@ -1,4 +1,4 @@
-// OWNER: A (strategy delegates to shared decision engine)
+// OWNER: A (bounded collection-tour planning, shared engine fallback)
 #pragma once
 #include "rmtc_bot/policy.hpp"
 namespace rmtc_bot {

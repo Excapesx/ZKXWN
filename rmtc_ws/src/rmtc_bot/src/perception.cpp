@@ -10,6 +10,8 @@ namespace {
 using Json = nlohmann::json;
 int integer(const Json& j) {
     if (!j.is_number_integer()) throw std::runtime_error("Expected integer");
+    if (j.is_number_unsigned() && j.get<std::uint64_t>() > static_cast<std::uint64_t>(std::numeric_limits<int>::max()))
+        throw std::runtime_error("Unsigned integer out of supported range");
     const auto value = j.get<std::int64_t>();
     if (value < std::numeric_limits<int>::min() || value > std::numeric_limits<int>::max())
         throw std::runtime_error("Integer out of supported range");
@@ -72,6 +74,7 @@ Perception parse_perception(const std::string& text) {
         // Wire field is protected. is_protected is ONLY the C++ member name.
         p.is_protected = self.value("protected", false);
         p.respawn_in = self.contains("respawn_in") ? integer(self["respawn_in"]) : 0;
+        if (p.respawn_in < 0) throw std::runtime_error("Negative respawn interval");
         p.self_team = self.value("team", std::string{});
         p.position_reason = self.value("position_reason", std::string{});
         if (self.contains("last_action") && !self["last_action"].is_null()) {
@@ -91,7 +94,7 @@ Perception parse_perception(const std::string& text) {
             else if (type == "resource_normal") entity.type = EntityType::ResourceNormal;
             else if (type == "resource_high") entity.type = EntityType::ResourceHigh;
             else if (type == "obstacle") entity.type = EntityType::Obstacle;
-            else continue;
+            else throw std::runtime_error("Unsupported entity type; incomplete observation");
             entity.rel = parse_relative_position(e.at("position").get<std::string>());
             entity.pos = {p.self_pos.x + entity.rel.x, p.self_pos.y + entity.rel.y};
             if (!inside(entity.pos, p.map_width, p.map_height)) throw std::runtime_error("Entity coordinate outside map");
@@ -111,8 +114,9 @@ Perception parse_perception(const std::string& text) {
             const auto& score = j["score"];
             p.score.resource_value = nonnegative(score.at("resource_value"));
             p.score.effective_damage = nonnegative(score.at("effective_damage"));
-            p.score.mission_completed = score.value("mission_completed", 0);
-            p.score.invalid_actions = score.value("invalid_actions", 0);
+            p.score.mission_completed = score.contains("mission_completed") ? integer(score["mission_completed"]) : 0;
+            p.score.invalid_actions = score.contains("invalid_actions") ? integer(score["invalid_actions"]) : 0;
+            if (p.score.mission_completed < 0 || p.score.invalid_actions < 0) throw std::runtime_error("Negative score counter");
             if (score.contains("mission_completed_ids")) p.score.mission_completed_ids = score["mission_completed_ids"].get<std::vector<std::string>>();
         }
         p.mission_text = j.value("mission_text", std::string{});

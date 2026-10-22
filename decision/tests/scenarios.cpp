@@ -143,10 +143,27 @@ int main() {
         require(d.goal == Point{7, 3}, "high-resource task ignored");
     });
     test("damage mission can reward an attack after damage score cap", [] {
-        auto s = state(); s.score.effective_damage = 300;
+        auto s = state(); s.score.effective_damage = 500;
         s.enemies = {enemy(s, {5, 3})}; s.resources = {{"near", {3, 2}, 10}};
-        s.missions = {{"damage-needed", MissionKind::EffectiveDamage, 310, {}, {}}};
+        s.missions = {{"damage-needed", MissionKind::EffectiveDamage, 510, {}, {}}};
         expect_action(choose(s), ActionKind::Attack, Direction::Right);
+    });
+    test("v11 damage between 300 and 500 still earns combat points", [] {
+        auto s = state(); s.enemies = {enemy(s, {5, 3})}; s.score.effective_damage = 300;
+        auto before = choose(s, Mode::Aggressive);
+        expect_action(before, ActionKind::Attack, Direction::Right);
+        s.score.effective_damage = 500;
+        require(before.utility > choose(s, Mode::Aggressive).utility, "old 300-point cap still applied");
+    });
+    test("v11 completed damage mission survives score decrease", [] {
+        auto s = state(); s.score.effective_damage = 100;
+        s.enemies = {enemy(s, {5, 3})};
+        auto baseline = choose(s);
+        s.missions = {{"damage-done", MissionKind::EffectiveDamage, 150, {}, {}}};
+        s.score.completed_mission_ids = {"damage-done"};
+        auto completed = choose(s);
+        require(completed.action.kind == baseline.action.kind &&
+                std::abs(completed.utility - baseline.utility) < 1e-9, "completed mission rewarded again");
     });
     test("protection prevents own attack", [] {
         auto s = state(); s.self.protected_spawn = true; s.enemies = {enemy(s, {5, 3})};
@@ -184,9 +201,16 @@ int main() {
     });
     test("modes share legality but choose different tradeoffs", [] {
         auto s = state(); s.enemies = {enemy(s, {5, 3})}; s.resources = {{"near", {3, 2}, 10}};
+        // v1.1 lowers ordinary attack points; near the resource cap, aggressive
+        // mode still prefers combat while the other modes prefer collecting.
+        s.score.resource_value = 118;
         expect_action(choose(s, Mode::TaskFocus), ActionKind::Move, Direction::Up);
         expect_action(choose(s, Mode::Aggressive), ActionKind::Attack, Direction::Right);
         expect_action(choose(s, Mode::Survival), ActionKind::Move, Direction::Up);
+    });
+    test("v11 nearby full-value resource beats ordinary damage in aggressive mode", [] {
+        auto s = state(); s.enemies = {enemy(s, {5, 3})}; s.resources = {{"near", {3, 2}, 10}};
+        expect_action(choose(s, Mode::Aggressive), ActionKind::Move, Direction::Up);
     });
     test("aggressive mode approaches a visible short-range target", [] {
         auto s = state(); s.enemies = {enemy(s, {7, 3})};

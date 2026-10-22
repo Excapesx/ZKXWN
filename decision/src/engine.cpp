@@ -150,7 +150,9 @@ double resource_reward(const Resource& r, const GameState& s) {
     return reward;
 }
 double damage_reward(double damage, const GameState& s) {
-    double reward = 0.05 * std::min(damage, std::max(0.0, 300 - s.score.effective_damage));
+    // v1.1 section 10.2: 15 points at adjusted damage 500. The input already
+    // includes referee kill rewards and death deductions; never adjust it here.
+    double reward = (15.0 / 500.0) * std::min(damage, std::max(0.0, 500 - s.score.effective_damage));
     reward += 0.0005 * damage;
     for (const auto& m : s.missions) {
         if (useful_mission(m, s) && m.kind == MissionKind::EffectiveDamage)

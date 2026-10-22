@@ -36,7 +36,14 @@ BotNode::BotNode() : Node("rmtc_bot") {
             const auto started=std::chrono::steady_clock::now();
             try {
                 const auto result=runtime_->handle(msg->data);
-                if(result) { std_msgs::msg::String action; action.data=*result; actions_->publish(action); }
+                // A resumed referee may reopen the same tick. Resubmit the cached
+                // action without advancing memory or policy (protocol section 4).
+                if(result) {
+                    std_msgs::msg::String action; action.data=*result; actions_->publish(action);
+                    RCLCPP_DEBUG(get_logger(),"published_action=%s",result->c_str());
+                }
+                if(runtime_->reason()=="invalid_perception")
+                    RCLCPP_WARN(get_logger(),"Invalid perception schema; no action published");
                 const auto elapsed=std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::steady_clock::now()-started).count();
                 RCLCPP_DEBUG(get_logger(),"decision=%s callback_us=%lld llm=%s",runtime_->reason().c_str(),static_cast<long long>(elapsed),runtime_->llm_status().c_str());
                 if(runtime_->last_receipt() && runtime_->reason()!="cached_tick") {

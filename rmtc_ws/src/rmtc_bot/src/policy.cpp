@@ -14,6 +14,7 @@ d::GameState make_game_state(const Config& c, const Perception& p, const WorldMe
     s.stage=c.stage==1 ? d::Stage::Collection : d::Stage::Battle;
     s.width=p.map_width; s.height=p.map_height;
     s.self={p.self_pos,static_cast<double>(p.hp),p.alive,p.is_protected,m.initial_spawn()};
+    // v1.1: do not reapply kill/death adjustments or infer task revocation.
     s.score={p.score.resource_value,p.score.effective_damage,p.score.mission_completed_ids};
     s.resources=m.resources(); s.known_walls=m.walls(); s.exploration_targets=m.frontiers();
     for (const auto& e:p.entities) if(e.type==EntityType::Robot && e.team!=c.team && e.hp>0)
