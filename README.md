@@ -169,7 +169,7 @@ cd ~/ZKXWN
 
 ## 7. 两个人怎么分工
 
-详细见 `docs/TEAM.md`。
+逻辑链路和底层入口见 `docs/ARCHITECTURE.md`；两个人怎么分工见 `docs/TEAM.md`。
 
 - **A（底层）**：`ros_io`、`perception`、`memory`、`planner`、`stage1`、CMake、测试、打包。
 - **B（策略）**：`decision/src/engine.cpp`、`stage2`、`combat`、`llm_client`、`curl_transport`、第二阶段调优。
