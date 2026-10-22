@@ -125,6 +125,8 @@ export RMTC_DECISION_CONFIG="$HOME/ZKXWN/rmtc_ws/src/rmtc_bot/config/decision_co
 
 ## 5. 测试
 
+多地图测试结果和复现命令见 [docs/MULTIMAP.md](docs/MULTIMAP.md)：55 张闭环测试图和九张真实练习端测试图。
+
 ```bash
 cd ~/ZKXWN
 ./scripts/test.sh
@@ -151,6 +153,10 @@ cd ~/ZKXWN
 
 ## 6. 当前状态
 
+v1.1 规则适配及底层优化见 [docs/RULES_V1_1.md](docs/RULES_V1_1.md)，底层构建和测试入口见 [docs/FOUNDATION.md](docs/FOUNDATION.md)。新版练习端第一阶段默认节奏实测 40/40、0 非法动作，并验证暂停恢复；结构化记录见 [测试记录](docs/stage1_v1_1_result.json)。
+
+下列为此前 v0.2/v0.3 记录，第二阶段成绩不代表 v1.1 验证结果：
+
 已验证：
 
 - Ubuntu 22.04 + ROS 2 Humble 编译通过。
@@ -170,6 +176,8 @@ cd ~/ZKXWN
 ## 7. 两个人怎么分工
 
 逻辑链路和底层入口见 `docs/ARCHITECTURE.md`；两个人怎么分工见 `docs/TEAM.md`。
+
+技术报告模板见 `docs/TECH_REPORT_TEMPLATE.md`；v1.1 规则变化见 `docs/RULES_V1.1_DELTA.md`。
 
 - **A（底层）**：`ros_io`、`perception`、`memory`、`planner`、`stage1`、CMake、测试、打包。
 - **B（策略）**：`decision/src/engine.cpp`、`stage2`、`combat`、`llm_client`、`curl_transport`、第二阶段调优。
