@@ -1,0 +1,25 @@
+[
+  {
+    "label": "rules",
+    "file": "RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114",
+    "pages": 24
+  },
+  {
+    "label": "protocol",
+    "file": "RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a",
+    "pages": 19
+  },
+  {
+    "label": "tutorial",
+    "file": "裁判测试端使用教程v1.1.pdf",
+    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae",
+    "pages": 10
+  },
+  {
+    "label": "dist",
+    "file": "dist.zip",
+    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
+  }
+]

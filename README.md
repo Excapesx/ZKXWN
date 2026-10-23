@@ -1,5 +1,7 @@
 # ZKXWN · RMTC C++ 主程序
 
+策略负责人入口：[决策/第二阶段/战斗/LLM交接](docs/STRATEGY_HANDOVER.md) · [v1.1优化方案](docs/STRATEGY_OPTIMIZATION_PLAN.md)。本次战斗收益更新尚未完成Ubuntu回归与整场验收，历史成绩对应原提交。
+
 这是 RMTC 机甲大师图灵对决赛的 C++ 主程序仓库，基于 `rmtc_cpp_v0.2.0_source` 整理。
 
 **先看这里，不要直接照抄旧交接文档里的 `/home/xu/...` 路径。**

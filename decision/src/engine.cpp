@@ -1,4 +1,5 @@
 #include "rmtc_decision/engine.hpp"
+#include "rmtc_decision/battle_evaluator.hpp"
 
 #include <algorithm>
 #include <array>
@@ -149,16 +150,47 @@ double resource_reward(const Resource& r, const GameState& s) {
     }
     return reward;
 }
+double damage_mission_reward(double projected, const GameState& s) {
+    double reward = 0;
+    for (const auto& m : s.missions) {
+        if (useful_mission(m, s) && m.kind == MissionKind::EffectiveDamage)
+            reward += progress_bonus(s.score.effective_damage, m.target,
+                                     std::max(0.0, projected-s.score.effective_damage));
+    }
+    return reward;
+}
 double damage_reward(double damage, const GameState& s) {
     // v1.1 section 10.2: 15 points at adjusted damage 500. The input already
     // includes referee kill rewards and death deductions; never adjust it here.
     double reward = (15.0 / 500.0) * std::min(damage, std::max(0.0, 500 - s.score.effective_damage));
     reward += 0.0005 * damage;
-    for (const auto& m : s.missions) {
-        if (useful_mission(m, s) && m.kind == MissionKind::EffectiveDamage)
-            reward += progress_bonus(s.score.effective_damage, m.target, damage);
-    }
+    reward += damage_mission_reward(s.score.effective_damage+damage, s);
     return reward;
+}
+BattleAward estimate_attack_award(const GameState& s, const Enemy& victim, double nominal) {
+    const std::string own = "__self";
+    std::vector<DamageClaim> claims{{own,nominal,true}};
+    const auto solo = resolve_damage_batch(victim.hp,claims).awards.at(own);
+    for (const auto& attacker : s.enemies) {
+        if (&attacker == &victim || !fresh(attacker,s) || attacker.protected_spawn) continue;
+        const auto dir = ray(attacker.position,victim.position);
+        const auto range = distance(attacker.position,victim.position);
+        if (!dir || range > 2) continue;
+        bool screened = false;
+        const auto blocks = [&](Point p) {
+            const auto d = ray(attacker.position,p);
+            return d && *d == *dir && distance(attacker.position,p) < range;
+        };
+        if (blocks(s.self.position)) screened = true;
+        for (const auto& other : s.enemies)
+            if (&other != &attacker && &other != &victim && fresh(other,s) && blocks(other.position)) screened = true;
+        if (!screened) claims.push_back({"enemy:"+attacker.id,nominal,true});
+    }
+    const auto contested = resolve_damage_batch(victim.hp,claims).awards.at(own);
+    // Compare solo and all-visible-competitor scenarios conservatively. Incoming
+    // risk remains a separate upper bound, not a joint opponent-action prediction.
+    return contested.attack_credit+contested.kill_credit < solo.attack_credit+solo.kill_credit
+        ? contested : solo;
 }
 struct Weights {
     double attack = 1;
@@ -179,6 +211,7 @@ struct Candidate {
     std::string reason;
     double reward = 0;
     double self_reflection = 0;
+    BattleAward attack_award;
 };
 } // namespace
 
@@ -333,8 +366,10 @@ Decision DecisionEngine::decide(const GameState& s) {
                         ? s.effects->reflection_damage : s.self.hp;
                 }
                 if (damage <= 0) continue;
-                candidates.push_back({{ActionKind::Attack, dir}, s.self.position, {}, "", "attack_score",
-                                      w.attack * damage_reward(damage, s), reflection});
+                const auto award = estimate_attack_award(s,*enemy,enemy->defending ? 10.0 : 20.0);
+                candidates.push_back({{ActionKind::Attack, dir}, s.self.position, {}, "",
+                                      award.kill_credit > 0 ? "attack_finish_estimate" : "attack_score",
+                                      0, reflection, award});
             }
         }
         if (mode_ == Mode::Aggressive && !s.self.protected_spawn) {
@@ -387,6 +422,20 @@ Decision DecisionEngine::decide(const GameState& s) {
         const double later = fatal_now ? 0 : incoming(s, c.expected, false, protected_later) +
             (s.stage == Stage::Battle ? future_environment_risk(s,c.expected,protected_later) : 0);
         double utility = reward - w.current_damage * std::min(s.self.hp, now+after_event) - w.future_damage * later;
+        if (s.stage == Stage::Battle) {
+            const double current = s.score.effective_damage;
+            const double attack = can_score_attack ? c.attack_award.attack_credit : 0;
+            const double kills = can_score_attack ? c.attack_award.kill_credit : 0;
+            const double before_penalty = forecast_adjusted_damage(current,attack,kills,0);
+            const double projected = forecast_adjusted_damage(current,attack,kills,fatal_now ? 1 : 0);
+            // Additions are mode-weighted; the official death score loss is not.
+            if (can_score_attack) {
+                utility += w.attack*(combat_points(before_penalty)-combat_points(current));
+                utility += 0.0005*(attack+kills);
+                if (!fatal_now) utility += damage_mission_reward(projected,s);
+            }
+            if (fatal_now) utility += combat_points(projected)-combat_points(before_penalty);
+        }
         if (fatal_now) utility -= w.death;
         if (c.action.kind == ActionKind::Move) utility -= 0.002;
         if (utility > best_utility + 1e-9) { best = &c; best_utility = utility; }
