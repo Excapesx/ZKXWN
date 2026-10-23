@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rmtc_bot2</name>
+  <version>3.0.0</version>
+  <description>RMTC v1.1 参赛程序：资源规划 + 定向越野 + 主动对抗 + 事件理解</description>
+  <maintainer email="team@example.invalid">HERO team</maintainer>
+  <license>Proprietary</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>libcurl</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,3 +1,29 @@
+# ZKXWN · RMTC 校内3.0
+
+当前3.0源码和资料位于 **[versions/v3](versions/v3)**。
+
+- [3.0运行说明](versions/v3/README.md)
+- [更新日志](versions/v3/更新日志.md)
+- [实际回归输出](versions/v3/evidence/3.0_回归输出.txt)
+- [官方v1.1规则与协议](versions/v3/02_官方规则_v1.1_当前)
+
+```bash
+cd ~/ZKXWN/versions/v3
+./scripts/test.sh
+./scripts/build.sh
+export ROS_DOMAIN_ID=27
+./scripts/run.sh A 2
+```
+
+第一行进入3.0目录；`test.sh`运行核心和模拟LLM线程检查；`build.sh`编译ROS2节点；27是练习公开域；最后一行启动A席位第二阶段程序，裁判需另外启动。
+
+3.0基于用户提供的校内2.0，修复场次切换、LLM线程与计划重试、危险区时间窗，改进击杀分摊及死亡收益判断。Windows核心141项、模拟LLM线程7项断言通过；Ubuntu完整ROS构建、真实HTTP/模型及官方整场尚待验收。历史2.0的75%模拟胜率不是3.0成绩。
+
+仓库根的`decision/`、`rmtc_ws/`和`scripts/`保留先前1.0实现用于对照。运行3.0请先进入`versions/v3`，不要混用两套脚本与工作空间。
+
+<details>
+<summary>历史校内1.0目录与使用说明</summary>
+
 # ZKXWN · RMTC C++ 主程序
 
 策略负责人入口：[决策/第二阶段/战斗/LLM交接](docs/STRATEGY_HANDOVER.md) · [v1.1优化方案](docs/STRATEGY_OPTIMIZATION_PLAN.md)。本次战斗收益更新尚未完成Ubuntu回归与整场验收，历史成绩对应原提交。
@@ -197,3 +223,6 @@ v1.1 规则适配及底层优化见 [docs/RULES_V1_1.md](docs/RULES_V1_1.md)，�
 - 阵亡只能 `wait`；出生保护不能 `attack`；第一阶段只能 `move`/`wait`。
 - 随机事件公告只能交给 LLM 理解，不能用关键词/正则直接解析。
 - 代码封存后不要改源码、Prompt、决策参数；只能按登记的 `decision_type` 切换。
+
+
+</details>

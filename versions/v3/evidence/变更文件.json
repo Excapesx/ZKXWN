@@ -1,0 +1,126 @@
+[
+  {
+    "path": ".gitignore",
+    "change": "added"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "change": "added"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "change": "added"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+    "change": "added"
+  },
+  {
+    "path": "03_官方练习包_v1.1/dist.zip",
+    "change": "added"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "change": "added"
+  },
+  {
+    "path": "evidence/3.0_回归输出.txt",
+    "change": "added"
+  },
+  {
+    "path": "evidence/阅读说明.md",
+    "change": "added"
+  },
+  {
+    "path": "README.md",
+    "change": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
+    "change": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/include/rmtc_bot2/llm.hpp",
+    "change": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/package.xml",
+    "change": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/curl_transport.cpp",
+    "change": "added"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/llm.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/node.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "scripts/test.sh",
+    "change": "added"
+  },
+  {
+    "path": "src/rmtc2/bot.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "src/rmtc2/bot.hpp",
+    "change": "modified"
+  },
+  {
+    "path": "src/rmtc2/combat.hpp",
+    "change": "added"
+  },
+  {
+    "path": "src/rmtc2/frame_gate.hpp",
+    "change": "added"
+  },
+  {
+    "path": "src/rmtc2/grid.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "src/rmtc2/grid.hpp",
+    "change": "modified"
+  },
+  {
+    "path": "src/rmtc2/parse.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/core_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/llm_worker_tests.cpp",
+    "change": "added"
+  },
+  {
+    "path": "历史说明_2.0原文/01_1.0弱点分析.md",
+    "change": "added"
+  },
+  {
+    "path": "历史说明_2.0原文/02_2.0战术设计.md",
+    "change": "added"
+  },
+  {
+    "path": "历史说明_2.0原文/03_对抗验证报告.md",
+    "change": "added"
+  },
+  {
+    "path": "历史说明_2.0原文/04_提交与检录清单.md",
+    "change": "added"
+  },
+  {
+    "path": "历史说明_2.0原文/README.md",
+    "change": "added"
+  },
+  {
+    "path": "更新日志.md",
+    "change": "added"
+  }
+]
