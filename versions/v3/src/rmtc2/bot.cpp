@@ -422,7 +422,7 @@ Decision Bot::stage2(const Perception& p) {
 }
 
 Decision Bot::explore(const Perception& p, const char* why) {
-    const auto frontiers = mem_.frontiers();
+    const auto frontiers = mem_.frontiers(p.vision == 0);
     Point best{0, 0};
     int bestDist = std::numeric_limits<int>::max();
     bool found = false;

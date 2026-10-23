@@ -2,6 +2,7 @@
 
 当前3.0源码和资料位于 **[versions/v3](versions/v3)**。
 
+- [项目目录与运行流程（详细中文导览）](docs/PROJECT_STRUCTURE.md)
 - [3.0运行说明](versions/v3/README.md)
 - [更新日志](versions/v3/更新日志.md)
 - [实际回归输出](versions/v3/evidence/3.0_回归输出.txt)

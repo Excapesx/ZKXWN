@@ -100,8 +100,10 @@ static bool parse_perception_impl(const std::string& text, Perception* out, std:
     if (static_cast<long long>(p.mapW) * p.mapH > 1000000LL) return fail("E_SCHEMA");
 
     int vision = 4;
-    int_field(j, "vision_radius", &vision);
-    p.vision = std::max(0, std::min(4, vision));
+    if (j.contains("vision_radius") &&
+        (!int_field(j, "vision_radius", &vision) || vision < 0 || vision > 4))
+        return fail("E_VISION");
+    p.vision = vision;
 
     if (!j.contains("self") || !j["self"].is_object()) return fail("E_SCHEMA");
     const auto& self = j["self"];

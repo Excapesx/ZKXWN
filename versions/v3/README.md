@@ -3,6 +3,8 @@
 基于用户提供的校内2.0制作，适用官方规则v1.1。更新日期：2026-10-23。
 这是完整源码交接目录，可复制到Ubuntu编译。程序沿用`rmtc2`命名空间和`rmtc_bot2`包名，避免启动脚本及接入路径改变；版本号为3.0.0。
 
+目录与模块用途详解见 [项目目录与运行流程](../../docs/PROJECT_STRUCTURE.md)。
+
 ## 本次改进
 
 - 新场次先重置Tick、动作缓存、LLM计数与待处理计划；延迟到达的旧场次帧丢弃。
@@ -45,6 +47,10 @@ export ROS_DOMAIN_ID=27
 启用AI前，在启动终端配置主办方提供的`RMTC_AI_GATEWAY`和本场`RMTC_TEAM_TOKEN`；真实令牌不要写进源码或截图。本包不含真实令牌。没有这些变量时保留本地决策，不能因此获得正式AI资格。
 
 可调整档位仍为`balanced/collect/fight`，配置路径`ros2_ws/src/rmtc_bot2/config/decision_config.json`。只允许一个`decision_type`字段，格式或枚举错误会拒绝启动；临场修改与重启需遵守官方规则。
+
+## 本地底层修复回归（2026-10-23）
+
+零视野探索、终局停止发送和视野范围校验的修复说明与 Ubuntu 测试记录见 [底层修复回归](evidence/ubuntu-foundation-fixes.md)。
 
 ## 验证边界
 

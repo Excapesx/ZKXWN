@@ -23,6 +23,8 @@ def final_settlement(run_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--practice-dir', type=Path, required=True)
+    parser.add_argument('--bot-executable', type=Path,
+                        default=ROOT / 'rmtc_ws/install/rmtc_bot/lib/rmtc_bot/rmtc_bot')
     parser.add_argument('--suite', type=Path, default=ROOT / 'rmtc_ws/src/rmtc_bot/test/maps/stage1_suite.json')
     parser.add_argument('--cases', default=DEFAULT_CASES)
     parser.add_argument('--port', type=int, default=18089)
@@ -74,7 +76,7 @@ def main():
                                     '--port', str(args.port), '--data-dir', str(args.report_dir / 'runs')],
                                    env=env, stdout=reflog, stderr=reflog)
         until(ready, 25)
-        bot = subprocess.Popen([str(ROOT / 'rmtc_ws/install/rmtc_bot/lib/rmtc_bot/rmtc_bot'),
+        bot = subprocess.Popen([str(args.bot_executable.resolve()),
                                 '--ros-args', '-p', 'team:=A', '-p', 'stage:=1', '-p', 'max_ticks:=100',
                                 '-p', 'llm_enabled:=false', '--log-level', 'rmtc_bot:=debug'],
                                env=env, stdout=botlog, stderr=botlog)

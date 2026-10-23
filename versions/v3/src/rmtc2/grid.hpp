@@ -34,7 +34,7 @@ public:
 
     const std::map<std::string, Resource>& resources() const { return resources_; }
     const std::vector<Point>& walls() const { return walls_; }
-    std::vector<Point> frontiers() const;
+    std::vector<Point> frontiers(bool probe_unknown = false) const;
     int normalCollected() const { return normalCollected_; }
     int highCollected() const { return highCollected_; }
     unsigned generation() const { return generation_; }

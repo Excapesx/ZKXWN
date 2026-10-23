@@ -119,15 +119,17 @@ bool WorldMap::update(const Perception& p) {
     return structural;
 }
 
-std::vector<Point> WorldMap::frontiers() const {
+std::vector<Point> WorldMap::frontiers(bool probe_unknown) const {
     std::vector<Point> out;
     for (int y = 0; y < h_; ++y) {
         for (int x = 0; x < w_; ++x) {
-            if (cell_[static_cast<std::size_t>(y) * w_ + x] != kFree) continue;
+            // With zero vision, target an unknown neighbour of observed free space.
+            // This is a probe, not a claim that the unknown cell is traversable.
+            if (at({x, y}) != (probe_unknown ? kUnknown : kFree)) continue;
             bool edge = false;
             for (int d = 0; d < 4 && !edge; ++d) {
                 const Point n{x + kDirX[d], y + kDirY[d]};
-                if (inside(n) && at(n) == kUnknown) edge = true;
+                if (inside(n) && at(n) == (probe_unknown ? kFree : kUnknown)) edge = true;
             }
             if (edge) out.push_back({x, y});
         }

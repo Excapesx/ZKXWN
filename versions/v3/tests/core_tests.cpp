@@ -1,5 +1,7 @@
 // tests/core_tests.cpp —— 核心库回归测试（不依赖 ROS / 裁判）
 #include <algorithm>
+#include <set>
+#include <nlohmann/json.hpp>
 #include <cmath>
 #include <cstdio>
 #include <numeric>
@@ -84,6 +86,17 @@ void test_parse() {
     }
     check_near(p.effectiveDamage, 12.5, 1e-9, "fractional damage kept");
     check(p.completedIds.size() == 1 && p.completedIds[0] == "m1", "completed ids");
+
+    auto frame = nlohmann::json::parse(json);
+    for (int radius = 0; radius <= 4; ++radius) {
+        frame["vision_radius"] = radius;
+        check(rmtc2::parse_perception(frame.dump(), &p, &err) && p.vision == radius,
+              "legal vision radius preserved");
+    }
+    for (const auto& value : nlohmann::json::array({-1, 5, 9, 1.5, "4", nullptr, true, 18446744073709551615ULL})) {
+        frame["vision_radius"] = value;
+        check(!rmtc2::parse_perception(frame.dump(), &p, &err), "invalid vision rejected");
+    }
 
     rmtc2::Perception bad;
     check(!rmtc2::parse_perception("{\"tick\":1}", &bad, &err), "missing fields rejected");
@@ -269,9 +282,35 @@ void test_v3_regressions() {
     check(bot.decide(obs).action.kind==Act::Move,"escape from hazardous BFS origin");
 }
 
+void test_zero_vision_exploration() {
+    using namespace rmtc2;
+    for (int stage : {1, 2}) {
+        Bot bot; bot.configure(Config{stage, 100});
+        Perception p; p.session="zero"; p.team="A"; p.mapW=8; p.mapH=8;
+        p.vision=0; p.self={0,0}; p.hp=100; p.alive=true;
+        std::set<std::pair<int,int>> visited;
+        bool legal=true;
+        for (p.tick=0; p.tick<100; ++p.tick) {
+            visited.insert({p.self.x,p.self.y});
+            const auto a=bot.decide(p).action;
+            if (a.kind==Act::Move) {
+                p.self.x+=a.dx; p.self.y+=a.dy;
+                legal=legal && p.self.x>=0 && p.self.x<8 && p.self.y>=0 && p.self.y<8;
+                if (!legal) break;
+            }
+        }
+        check(legal, "zero vision probes stay inside map");
+        check(visited.size()==64, "zero vision explores entire open map without getting stuck");
+        check(bot.decide(p).action.kind==Act::Wait, "finished exploration waits");
+        p.session="single"; p.tick=0; p.mapW=1; p.mapH=1; p.self={0,0};
+        check(bot.decide(p).action.kind==Act::Wait, "single-cell map cannot probe out of bounds");
+    }
+}
+
 }  // namespace
 
 int main() {
+    test_zero_vision_exploration();
     test_v3_regressions();
     test_parse();
     test_action_json();

@@ -141,7 +141,8 @@ private:
             }
             return;
         }
-        if(p.team != seat_) return;
+        // The terminal perception only reports the last settlement; no action window remains.
+        if(p.team != seat_ || p.tick >= maxTicks_) return;
         const auto frame=frames_.accept(p.session,p.tick);
         if(frame==rmtc2::FrameGate::Result::Reject) return;
         if(frame==rmtc2::FrameGate::Result::NewSession) {
