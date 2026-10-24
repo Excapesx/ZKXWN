@@ -1,0 +1,31 @@
+### STAGE1 (300 maps)
+
+===== STAGE 1 (independent collection, identical maps) =====
+  A(bot2)    score mean= 38.50  p10= 36.00  p90= 40.00 | res= 192.5 dmg=   0.0 mis=0.00 kill=0.00 death=0.00
+  B(legacy)  score mean= 37.93  p10= 34.00  p90= 40.00 | res= 189.7 dmg=   0.0 mis=0.00 kill=0.00 death=0.00
+  components     bot2: res=0.00 dmg=0.00 mis=0.00  | legacy: res=0.00 dmg=0.00 mis=0.00  (sum=0.00 / 0.00)
+  head-to-head: win=72 draw=188 loss=40  (win rate 24.0%)
+  bot2   decision time: p50=0.0us p95=0.0us p99=0.0us max=0.0us
+  legacy decision time: p50=0.0us p95=0.0us p99=0.0us max=0.0us
+
+### 4P (300 maps x 2 seat rotations = 600 matches)
+  mission completion: bot2 [normal 84% high 69% reach 96%]  legacy [normal 85% high 72% reach 97%]
+
+===== STAGE 2 (4-team match: A/B = bot2 & legacy, C/D = greedy baseline) =====
+  A(bot2)    score mean= 34.78  p10= 21.20  p90= 47.50 | res=  47.1 dmg= 604.1 mis=2.50 kill=4.25 death=1.27
+  B(legacy)  score mean= 25.21  p10= 15.00  p90= 35.00 | res=  49.1 dmg=   8.7 mis=2.53 kill=0.16 death=1.05
+  components     bot2: res=11.77 dmg=10.54 mis=12.47  | legacy: res=12.28 dmg=0.26 mis=12.67  (sum=34.78 / 25.21)
+  head-to-head: win=450 draw=7 loss=143  (win rate 75.0%)
+  bot2   decision time: p50=11.7us p95=18.0us p99=23.7us max=360.6us
+  legacy decision time: p50=29.8us p95=72.6us p99=93.3us max=407.8us
+
+### DUEL (300 maps x 2 = 600 matches)
+  mission completion: bot2 [normal 100% high 95% reach 99%]  legacy [normal 100% high 94% reach 97%]
+
+===== STAGE 2 (1v1 duel: A = bot2, B = legacy) =====
+  A(bot2)    score mean= 44.16  p10= 35.00  p90= 54.60 | res=  96.9 dmg= 195.4 mis=2.94 kill=1.16 death=0.04
+  B(legacy)  score mean= 39.03  p10= 30.00  p90= 45.00 | res=  98.6 dmg=   3.0 mis=2.91 kill=0.04 death=1.16
+  components     bot2: res=23.62 dmg=5.86 mis=14.69  | legacy: res=24.38 dmg=0.09 mis=14.57  (sum=44.16 / 39.03)
+  head-to-head: win=345 draw=17 loss=238  (win rate 57.5%)
+  bot2   decision time: p50=11.0us p95=17.3us p99=23.8us max=251.3us
+  legacy decision time: p50=28.4us p95=67.9us p99=89.6us max=960.6us

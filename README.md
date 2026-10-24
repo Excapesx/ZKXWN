@@ -1,26 +1,28 @@
-# ZKXWN · RMTC 校内3.0
+# ZKXWN · RMTC 校内4.0
 
-当前3.0源码和资料位于 **[versions/v3](versions/v3)**。
+当前版本入口：**[versions/v4](versions/v4)**。运行4.0请先进入该目录。
 
-- [项目目录与运行流程（详细中文导览）](docs/PROJECT_STRUCTURE.md)
-- [3.0运行说明](versions/v3/README.md)
-- [更新日志](versions/v3/更新日志.md)
-- [实际回归输出](versions/v3/evidence/3.0_回归输出.txt)
-- [官方v1.1规则与协议](versions/v3/02_官方规则_v1.1_当前)
+- [4.0运行说明](versions/v4/README.md)
+- [4.0更新日志](versions/v4/更新日志.md)
+- [程序逻辑与学习指南](versions/v4/程序逻辑与学习指南.md)
+- [提交前Release回归](versions/v4/evidence/4.0_提交前_Release回归.txt)
+- [官方v1.1规则与协议](versions/v4/02_官方规则_v1.1_当前)
+- [3.0历史版本（含队友修复）](versions/v3)
+- [旧版项目目录与运行流程](docs/PROJECT_STRUCTURE.md)（该导览描述v3和仓库根程序，4.0以自身README为准）
 
 ```bash
-cd ~/ZKXWN/versions/v3
+cd ~/ZKXWN/versions/v4
 ./scripts/test.sh
 ./scripts/build.sh
 export ROS_DOMAIN_ID=27
 ./scripts/run.sh A 2
 ```
 
-第一行进入3.0目录；`test.sh`运行核心和模拟LLM线程检查；`build.sh`编译ROS2节点；27是练习公开域；最后一行启动A席位第二阶段程序，裁判需另外启动。
+以上依次进入4.0目录、运行核心与模拟LLM检查、编译ROS节点、选择练习公开域、启动A席位第二阶段程序；裁判需要另行启动，正式域与模型网关以现场要求为准。
 
-3.0基于用户提供的校内2.0，修复场次切换、LLM线程与计划重试、危险区时间窗，改进击杀分摊及死亡收益判断。Windows核心141项、模拟LLM线程7项断言通过；Ubuntu完整ROS构建、真实HTTP/模型及官方整场尚待验收。历史2.0的75%模拟胜率不是3.0成绩。
+4.0改进决策、事件状态、战斗收益、地图记忆、解析与LLM线程，保留并移植队友`c6e3535`的零视野探索、视野字段和终局守卫修复。Windows Release与Debug各765项断言通过。Ubuntu完整ROS/curl构建、真实模型和官方第二阶段整场仍待验收；v3的官方九图记录属于v3，不能作为v4成绩。
 
-仓库根的`decision/`、`rmtc_ws/`和`scripts/`保留先前1.0实现用于对照。运行3.0请先进入`versions/v3`，不要混用两套脚本与工作空间。
+仓库根的`decision/`、`rmtc_ws/`、`scripts/`保留1.0实现；`versions/v3`保留3.0。不要混用不同版本的脚本与工作空间。
 
 <details>
 <summary>历史校内1.0目录与使用说明</summary>

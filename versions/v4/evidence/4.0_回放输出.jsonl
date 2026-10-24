@@ -1,0 +1,5 @@
+{"action":{"action":"attack","direction":"right","session_id":"demo","tick":0},"decision_ms":0.1479,"reason":"attack","utility":2.6}
+{"action":{"action":"attack","direction":"right","session_id":"demo","tick":0},"decision_ms":0.1479,"reason":"attack","utility":2.6}
+{"action":{"action":"move","direction":"down","session_id":"demo","tick":1},"decision_ms":0.0251,"reason":"stage2_explore","utility":0.0}
+{"action":{"action":"move","direction":"right","session_id":"new-match","tick":0},"decision_ms":0.0318,"reason":"resource","utility":1.25}
+{"rejected":"stale_frame"}

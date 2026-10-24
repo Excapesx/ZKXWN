@@ -1,0 +1,10 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\llm_worker_tests.exe
+  bot.cpp
+  rmtc4_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\rmtc4_core.lib
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\rmtc_smoke.exe
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\core_tests.exe
+  v4_tests.cpp
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\rmtc_replay.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v4_build\Release\v4_tests.exe
