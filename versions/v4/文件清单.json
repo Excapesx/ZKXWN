@@ -131,8 +131,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4811,
-    "sha256": "cdf7f7c41c4b49a8c8c45c8b96ffa05905026d36625af1342ca46c2603878fbe"
+    "bytes": 6765,
+    "sha256": "892ba871431ef8b38f5fb9da79f6bb9b592e948177cf4886a26c09b9159d23e2"
   },
   {
     "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
@@ -323,6 +323,11 @@
     "path": "tools/smoke_main.cpp",
     "bytes": 1541,
     "sha256": "918ffd4b35cb360a206c7799dded565f29fd1cb0de40e793c2def7eadea76919"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 964,
+    "sha256": "a051d457c774c5de02eb6238cff90394ec6c36d4ccb9a3c9dc19b2a26c9f37c2"
   },
   {
     "path": "历史说明_2.0原文/01_1.0弱点分析.md",

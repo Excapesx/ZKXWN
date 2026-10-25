@@ -45,6 +45,11 @@
     "sha256": "ff9bac65376cbbd0a8870953d596a000142485412c57b79cd1ec280b7fbdfc62"
   },
   {
+    "path": "evidence/ubuntu-foundation-fixes.md",
+    "bytes": 2742,
+    "sha256": "235d67cd5b116fad07f71adda1e0dd30dbe00a2f11b5b228b5bd3f110311a4f2"
+  },
+  {
     "path": "evidence/变更文件.json",
     "bytes": 2614,
     "sha256": "c930253229fbb0ee5192a872ca967217646c0785e1fa4e9dada69b3e3688ad9c"
@@ -56,8 +61,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4258,
-    "sha256": "dfd59b9b2ec345419a896fdead9dc9b573b6d18fa653f99b43108d57b744e846"
+    "bytes": 6493,
+    "sha256": "1a18bcb0271f8a08c90f2d72ec77ade862401f27ae0e21fd8455c89ee5dc9ef0"
   },
   {
     "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
@@ -101,8 +106,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot2/src/node.cpp",
-    "bytes": 13551,
-    "sha256": "e5b3fb5068741ce49a56092805539e1e10059f7bd49bb4c965b6892d8f29122d"
+    "bytes": 13670,
+    "sha256": "f3069dcd0898ecd785c341a4b8d8f672cb86c8941f6994acc3b0b5857427f26c"
   },
   {
     "path": "scripts/bench.sh",
@@ -125,9 +130,14 @@
     "sha256": "9db12abf9f0af7c74a30428df0262b72610af02d09df55c6775b06df2184f734"
   },
   {
+    "path": "scripts/test_ros_io.py",
+    "bytes": 3855,
+    "sha256": "df430fbefee13981e740c55b682e26dc878ed888f72515c32bc3585fa83454a9"
+  },
+  {
     "path": "src/rmtc2/bot.cpp",
-    "bytes": 18592,
-    "sha256": "b97a9f81864230ea8eb8bcc6d4cf5a8e846ef6bfd5176385d94a6e937a608122"
+    "bytes": 18605,
+    "sha256": "54e3339b0951775078d92510841acf7aafcd13b1ef3a093874b626334c33c4c8"
   },
   {
     "path": "src/rmtc2/bot.hpp",
@@ -146,18 +156,18 @@
   },
   {
     "path": "src/rmtc2/grid.cpp",
-    "bytes": 12699,
-    "sha256": "15451390d9bb125873363f5cda8574cfc5c4914b121b932d4f4195b1294e6c34"
+    "bytes": 12908,
+    "sha256": "97d01f27105d6a8ed954cb1c886a01188af98b1039e50bc69dde3a1a4f9013ae"
   },
   {
     "path": "src/rmtc2/grid.hpp",
-    "bytes": 4578,
-    "sha256": "20ef0033df05eace5a88a0021e8f56eae4e8b43ba67c1e3f7b2615e091f9f619"
+    "bytes": 4604,
+    "sha256": "b3896458412451970e562d78f79ecc5ace67efbfa84b07730482030b1c505781"
   },
   {
     "path": "src/rmtc2/parse.cpp",
-    "bytes": 13717,
-    "sha256": "9d4c8f3d019d54997afde6f934e9e894fe1b25e1e8cb7834d374d49122d8913a"
+    "bytes": 13798,
+    "sha256": "41c503d3c4be548bc512b07dac18d9480e246c5a5e5d276e3b1d9e24fea25417"
   },
   {
     "path": "src/rmtc2/parse.hpp",
@@ -176,8 +186,8 @@
   },
   {
     "path": "tests/core_tests.cpp",
-    "bytes": 13326,
-    "sha256": "d0bdec7a545de888f4fdfca16250f81621336002820d40c3ba4105fa5d8b4275"
+    "bytes": 15120,
+    "sha256": "6f736e126f71ea62b8e135322ac227dfe858a619f045cd0e11a7e773a4b03376"
   },
   {
     "path": "tests/llm_worker_tests.cpp",
@@ -218,6 +228,11 @@
     "path": "tools/bench/referee.hpp",
     "bytes": 2375,
     "sha256": "e5beaff34f3b625aeced07050a52699818b65fecc75a2d4ff3a51821e0c86f97"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 940,
+    "sha256": "2d0132bdd62c427f21fdd8192875c5da4e8462788250992af741c6b260b01e14"
   },
   {
     "path": "历史说明_2.0原文/01_1.0弱点分析.md",

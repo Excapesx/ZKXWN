@@ -1,0 +1,177 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 25,
+    "sha256": "22a41ccfbc9c7968353d17f4164519fd6915918d2be3891c5f95d4e70d07ae57"
+  },
+  {
+    "path": "01_1.0弱点分析.md",
+    "bytes": 13100,
+    "sha256": "8585393897af32983e7bf93249d4a28fb328de73a28b9df0b8f78864ae44274f"
+  },
+  {
+    "path": "02_2.0战术设计.md",
+    "bytes": 12079,
+    "sha256": "2cb49153620d3e83dcf1e91c9e6899429f20876603e5ff0217bc0b14bfd999af"
+  },
+  {
+    "path": "03_对抗验证报告.md",
+    "bytes": 8638,
+    "sha256": "7f6b8efbb997efb8d15140b8ce069def090289118e4d749e02b9e4ae6a9561b9"
+  },
+  {
+    "path": "04_提交与检录清单.md",
+    "bytes": 6270,
+    "sha256": "7b39199100fd7dbe65e5480dbc805df3a161705d7530a5b224021efb12f1e771"
+  },
+  {
+    "path": "evidence/bench_raw.txt",
+    "bytes": 2102,
+    "sha256": "ff9bac65376cbbd0a8870953d596a000142485412c57b79cd1ec280b7fbdfc62"
+  },
+  {
+    "path": "README.md",
+    "bytes": 10351,
+    "sha256": "5305ea3fdf5a42f63cdd3d2c0bedaec164a5058102a66858bb4904f96833b95c"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
+    "bytes": 1458,
+    "sha256": "db6cd98e60e1f29964cb4789393971501d87a3ac396ff54974e707d387861f57"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/config/decision_config.json",
+    "bytes": 34,
+    "sha256": "b598517ea5d856f00f98846037753d77645873ecfab2283a73b98cdf32e37257"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/include/rmtc_bot2/llm.hpp",
+    "bytes": 2033,
+    "sha256": "dea645428c04797401e9e0578f8cebe335e0da2cdf7fe71f0603bc8f2957eec4"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/include/rmtc_bot2/node.hpp",
+    "bytes": 129,
+    "sha256": "3f24de2b6ea5ca81b1ce4d9162537d9817039a2f8f0d1274eab7e6b83a9110c6"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/package.xml",
+    "bytes": 515,
+    "sha256": "be58099d20b5dbe42f67f185ac908fcce9d4dc772b444d90d3b951b14f4a1fea"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/llm.cpp",
+    "bytes": 6499,
+    "sha256": "6d8fea007ab093f8f8c4be76ebadae4051f0dd0de28e15148a6b0c3d654ec327"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/main.cpp",
+    "bytes": 472,
+    "sha256": "f89ec397bec05cb59b45fcc25190e9c98d5159fa4cfbe29957cbc01b2bfc5b42"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot2/src/node.cpp",
+    "bytes": 12167,
+    "sha256": "8a3cb53f8491774c2195f6a5108cd14dad6ab1509a04660bede25cf1a81dda3a"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "bytes": 1445,
+    "sha256": "8b3f6f47f654d171c253492ab47dddf51e610562dedc6805d675eeadfeeb60c5"
+  },
+  {
+    "path": "scripts/build.sh",
+    "bytes": 401,
+    "sha256": "794947e364a32d692c75dc63325f5bbdcf7e62e98c30278f2981ffcc5c6e8cc5"
+  },
+  {
+    "path": "scripts/run.sh",
+    "bytes": 590,
+    "sha256": "a16252320c63a41654d1b7ca6e618793575811feeeec3fa173af27e6d9810842"
+  },
+  {
+    "path": "src/rmtc2/bot.cpp",
+    "bytes": 16532,
+    "sha256": "7f445346640ba26830271a8c33aa8503fd034914d8fe6237753b421bfcd543e1"
+  },
+  {
+    "path": "src/rmtc2/bot.hpp",
+    "bytes": 2351,
+    "sha256": "6edbbf281e5a3f87c8b6fb6bf4a404c55a3d3321bc0ec3f7f5099e19c75c41b5"
+  },
+  {
+    "path": "src/rmtc2/grid.cpp",
+    "bytes": 12330,
+    "sha256": "c985579bf95a873849179a216cbc12673db6b87d57c25e70074415c6dffe5a6d"
+  },
+  {
+    "path": "src/rmtc2/grid.hpp",
+    "bytes": 4551,
+    "sha256": "21d24156b9f024b5359cb04aa34d6f4296e311c37e3cde90f2bd8b7fcba1f618"
+  },
+  {
+    "path": "src/rmtc2/parse.cpp",
+    "bytes": 12961,
+    "sha256": "661ab2d970ca642816a827a17e80daa90cc2381e9bb814a010f1eb78fdb67411"
+  },
+  {
+    "path": "src/rmtc2/parse.hpp",
+    "bytes": 979,
+    "sha256": "a39ed36c216979eb3cd9c5847f645b2f397cca6cb8c0bfc62ad3ffe2bf1400a0"
+  },
+  {
+    "path": "src/rmtc2/types.cpp",
+    "bytes": 480,
+    "sha256": "2f97c4292591bc0994d3ea745a459d93d8b4205cb8f9a87f17d7aa41f1aa8e94"
+  },
+  {
+    "path": "src/rmtc2/types.hpp",
+    "bytes": 5034,
+    "sha256": "7ad660fd48775652a03f4cbb974f59fd169e2cc595f392e2f5cdc84645373d82"
+  },
+  {
+    "path": "tests/core_tests.cpp",
+    "bytes": 8587,
+    "sha256": "5d230d55c14770c910dcf72137ab459d563bf361a57708befaff357dfd571c06"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 944740,
+    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
+  },
+  {
+    "path": "third_party/nlohmann/LICENSE.MIT",
+    "bytes": 1097,
+    "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "bytes": 13908,
+    "sha256": "6eddce7baa0e383c6df2953484309354058a23852280898ed03b30a3e7cc8200"
+  },
+  {
+    "path": "tools/bench/legacy_adapter.cpp",
+    "bytes": 5206,
+    "sha256": "3c825c6a3b51cc859ecf3b15e9bc3889c55498f901465efc5541ef29cba132b2"
+  },
+  {
+    "path": "tools/bench/legacy_adapter.hpp",
+    "bytes": 312,
+    "sha256": "14de15d68fdbf7084b08b01b23c318865b0e5b075564c9c13dfd4b42aca6feae"
+  },
+  {
+    "path": "tools/bench/referee.cpp",
+    "bytes": 17404,
+    "sha256": "17bb31ed4492ab355f1cd5a6372e8cf9a31fcb529591f8a0873932c7353936bb"
+  },
+  {
+    "path": "tools/bench/referee.hpp",
+    "bytes": 2375,
+    "sha256": "e5beaff34f3b625aeced07050a52699818b65fecc75a2d4ff3a51821e0c86f97"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 943,
+    "sha256": "87fdf7a6ad5efe684c1c72d8529fd15d3f62b9c54885b6586ab73f7cc48ddf9f"
+  }
+]

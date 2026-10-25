@@ -1,0 +1,4 @@
+HP10, D100, adjacent enemy HP100, no hazards. Incoming attack precedes movement.
+v4 action=1 reason=hunt value=-1.8
+v6 action=2 reason=attack value=-0.75
+Act enum: wait=0 move=1 attack=2 defend=3. Enemy action remains a scenario, not observed truth.

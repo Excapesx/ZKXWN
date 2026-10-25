@@ -1,0 +1,39 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  llm_worker_tests.cpp
+  types.cpp
+  grid.cpp
+  llm.cpp
+  parse.cpp
+  正在生成代码...
+  bot.cpp
+  events.cpp
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\llm_worker_tests.exe
+  battle.cpp
+  正在生成代码...
+  rmtc6_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\rmtc6_core.lib
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  v6_tests.cpp
+  replay_main.cpp
+  smoke_main.cpp
+  core_tests.cpp
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  v4_tests.cpp
+  referee.cpp
+  正在生成代码...
+  referee.cpp
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\core_tests.exe
+  正在生成代码...
+  referee.cpp
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\rmtc_smoke.exe
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\rmtc_replay.exe
+  正在生成代码...
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\v6_tests.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_standalone_build\Release\v4_tests.exe
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt

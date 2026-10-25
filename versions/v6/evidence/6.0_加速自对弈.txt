@@ -1,0 +1,4 @@
+stage=1 maps=12 self_play_robots=1 mean_score=38.8333
+stage=2 maps=12 self_play_robots=4 mean_score=39.7292
+decisions=25200 invalid=0 p99_ms=0.0714 max_ms=0.4084
+PRIVATE NO-EVENT SIMULATOR. NOT official referee, win-rate proof, real-time ROS, or AI qualification.

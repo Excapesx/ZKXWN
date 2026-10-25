@@ -1,0 +1,267 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 25,
+    "sha256": "22a41ccfbc9c7968353d17f4164519fd6915918d2be3891c5f95d4e70d07ae57"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "bytes": 2901418,
+    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "bytes": 1731099,
+    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+    "bytes": 1067940,
+    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
+  },
+  {
+    "path": "03_官方练习包_v1.1/dist.zip",
+    "bytes": 2123028,
+    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "bytes": 2062,
+    "sha256": "6e71dc91cd5a9ae2c84377259ea926dbd41b90ab8ce9616ee2643896e0316273"
+  },
+  {
+    "path": "evidence/bench_raw.txt",
+    "bytes": 2999,
+    "sha256": "1cf01e3fa9e63c3978518de2e8804c776c32c9c39dd8b410456bc9d05c52725d"
+  },
+  {
+    "path": "evidence/test_results.txt",
+    "bytes": 228,
+    "sha256": "a801b260e581ca81af4a58a965b6b8918fe0cc8c47182cfa2803159836cfeab2"
+  },
+  {
+    "path": "examples/本地回放示例.jsonl",
+    "bytes": 2447,
+    "sha256": "4194d7b22bfa0e413c2c32fdde542e74e39b8be3c0dbb6b12010d92104184ec0"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6745,
+    "sha256": "02cc3d85437416ca6549d52b7956b44ff487bd621f8e9dd8df8a2bbd11118e50"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/CMakeLists.txt",
+    "bytes": 1570,
+    "sha256": "0ee632e8e30a88e5b0b3de5b4c635dcad1d8b80c3f5e2db812e258713a036670"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/config/decision_config.json",
+    "bytes": 34,
+    "sha256": "b598517ea5d856f00f98846037753d77645873ecfab2283a73b98cdf32e37257"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/include/rmtc_bot3/llm.hpp",
+    "bytes": 2711,
+    "sha256": "d5ebb1e5eb3bcf3c46f9d188662caaf693a78f31e528726f439b48ee4e1d7e35"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/include/rmtc_bot3/node.hpp",
+    "bytes": 129,
+    "sha256": "10fda42243ff25e7a013663219c10078e11267be56187d3cd40dd4368a84ebf6"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/package.xml",
+    "bytes": 515,
+    "sha256": "79586f7ecc8274be7dbf94b5fb99923cc46f912fc738f836b48f8521453de4bc"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/src/curl_transport.cpp",
+    "bytes": 2262,
+    "sha256": "6bfcc424041dbdb9eece42973bad8da62eb8bf2eb9da8b8d6b393522bfa3ee30"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/src/llm.cpp",
+    "bytes": 6771,
+    "sha256": "f5d23a818ec7ffd598eb0b0d3578e04f473cacd3b96116e182ab788bc7902764"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/src/main.cpp",
+    "bytes": 472,
+    "sha256": "7464f9ff9778d071cb85334d8b960d519fe5f7bb5a84ff1aca4a34a475fafa9f"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot3/src/node.cpp",
+    "bytes": 14000,
+    "sha256": "5523e15a8207f956b50f22bf229f8e4fd7cb9427d6e8cecd2024ce5aa892ab4a"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "bytes": 1107,
+    "sha256": "6cd58fa4480bd38bf1ac18e24b1f70dc46b1c93bbd837533ea82ac40188e773f"
+  },
+  {
+    "path": "scripts/build.sh",
+    "bytes": 401,
+    "sha256": "7e12730a3f8beebd024f0e3cdbb77c5dbed4a2718195427534b514e93f8d63b4"
+  },
+  {
+    "path": "scripts/doctor.sh",
+    "bytes": 428,
+    "sha256": "0b1edc9c5485b0e0d74bad9fd0c252650c4d2871af77f5e427062be27f5d95c4"
+  },
+  {
+    "path": "scripts/run.sh",
+    "bytes": 590,
+    "sha256": "0dea4b102722abb97ecc02bb74481876d925cdb6b91e3614e2ec36c6602e313d"
+  },
+  {
+    "path": "scripts/test.sh",
+    "bytes": 258,
+    "sha256": "9db12abf9f0af7c74a30428df0262b72610af02d09df55c6775b06df2184f734"
+  },
+  {
+    "path": "src/rmtc3/bot.cpp",
+    "bytes": 33971,
+    "sha256": "3985fd4843c69289185bab69c8197858158539f077650f677de4a5b33e4bc7fb"
+  },
+  {
+    "path": "src/rmtc3/bot.hpp",
+    "bytes": 3036,
+    "sha256": "d1780d32591c8e33c85573134bd80dda03eb681b04b440f5f221793655b3f581"
+  },
+  {
+    "path": "src/rmtc3/combat.hpp",
+    "bytes": 2022,
+    "sha256": "0c57d513c3cbde488f7c44e57be399d20f4b10638ec66c16d7ffd889ccf9d4a3"
+  },
+  {
+    "path": "src/rmtc3/events.cpp",
+    "bytes": 4048,
+    "sha256": "dedd25954961023b838df7cebd8c203d0816fb76dde0f755d851aebe8c2d94ca"
+  },
+  {
+    "path": "src/rmtc3/events.hpp",
+    "bytes": 345,
+    "sha256": "13a8c11be671a3b632b9e6b9927d05b35f0a402047b2291389d15e0695f9327d"
+  },
+  {
+    "path": "src/rmtc3/frame_gate.hpp",
+    "bytes": 1015,
+    "sha256": "de6be160026eea40dab3f8b59500f8fc566abe0248e7ccc92836ad7c8168ab98"
+  },
+  {
+    "path": "src/rmtc3/grid.cpp",
+    "bytes": 14941,
+    "sha256": "905c0734bbbcaeca50f88c1e6df9495df0c4c8261178f94078063f419f84e83b"
+  },
+  {
+    "path": "src/rmtc3/grid.hpp",
+    "bytes": 4824,
+    "sha256": "efde7f5f0b73aeebc5a59913700fdf1e5cfc3269e26094164436d041e055676d"
+  },
+  {
+    "path": "src/rmtc3/parse.cpp",
+    "bytes": 18107,
+    "sha256": "a989eaa6a1b1fd5cda62188fbecd17c6c1ad741eb4b79795d27e7bbb9f99fadb"
+  },
+  {
+    "path": "src/rmtc3/parse.hpp",
+    "bytes": 979,
+    "sha256": "c8f34e242d7a5a116ec45eef97d63865fba43ebea687c8018e703f013af1f99c"
+  },
+  {
+    "path": "src/rmtc3/types.cpp",
+    "bytes": 480,
+    "sha256": "60df02af69de9a737a6e9199a54c98737bcd3b6f7d6da76dc77485cd37b40043"
+  },
+  {
+    "path": "src/rmtc3/types.hpp",
+    "bytes": 5814,
+    "sha256": "7bfb4cad4cab201d7574ec12fce4f0dffa6b859e72551c82f9d3f26b5945eaaf"
+  },
+  {
+    "path": "tests/core_tests.cpp",
+    "bytes": 13070,
+    "sha256": "4562d88e2a075d7e8ab360d795c5d42bff22aef705a7d766135ad5e7ddcac669"
+  },
+  {
+    "path": "tests/llm_worker_tests.cpp",
+    "bytes": 4229,
+    "sha256": "278455b2f2e5ce999d7e95f863fd248b5b94fa6bc77ee70f7d121cb2255112bb"
+  },
+  {
+    "path": "tests/v4_tests.cpp",
+    "bytes": 12923,
+    "sha256": "9ba4fed44db02227fb9b4fce5e862946cc1c05c68ed07267682d3588909744aa"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 919975,
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
+  },
+  {
+    "path": "third_party/nlohmann/LICENSE.MIT",
+    "bytes": 1097,
+    "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "bytes": 12056,
+    "sha256": "42fc4bc84ec633514d6a5d65984c8ac12ee52249d2a2338fe98ea805faab2a7b"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.cpp",
+    "bytes": 3366,
+    "sha256": "31548bd35bf8b350186760b281cfae858e0cbc7e5fb2ef7c28d8d18253fc1952"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.hpp",
+    "bytes": 364,
+    "sha256": "4a36e6833591400fb843d5ccba14b4d1927533ea723dcd5877ad49bc18503f39"
+  },
+  {
+    "path": "tools/bench/referee.cpp",
+    "bytes": 18478,
+    "sha256": "39463f97a8a490b50c4ae68eb0050b9cdccf4f90e16acba334aa226ac2e7d9d3"
+  },
+  {
+    "path": "tools/bench/referee.hpp",
+    "bytes": 2566,
+    "sha256": "608d2a8780aae7f7496923aaab643ec8b3e55159f67008b6ed88e2b9346011e9"
+  },
+  {
+    "path": "tools/replay_main.cpp",
+    "bytes": 1972,
+    "sha256": "dd2ff7213a09fa48793eb85a7545b0fcd8e972e0e435d25f8fa2af685526c10b"
+  },
+  {
+    "path": "tools/smoke_main.cpp",
+    "bytes": 1541,
+    "sha256": "20cddeb17b49e89ad718e5f1b3d8c09ed47fff438797231da401aca3327eb54d"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 932,
+    "sha256": "2cac5403e4fca662096f3c5e4428c4e2e26b684c1853d222a3c329e288b8bb07"
+  },
+  {
+    "path": "报告1_4.0弱点分析.md",
+    "bytes": 5074,
+    "sha256": "143b1585fb4f53a13e890ac7d68e4307177f8fa1bae94fc0f587754951f949d2"
+  },
+  {
+    "path": "报告2_5.0设计与实测.md",
+    "bytes": 4000,
+    "sha256": "a29fd0221393f913f1cf1eb5e7f0ff13c39b5cc101251cad879fde34c3e1b4cc"
+  },
+  {
+    "path": "报告3_对抗验证报告.md",
+    "bytes": 4230,
+    "sha256": "664bab00207d7e1db3fb61ae112f7a6309e05556984a681e0abc124ef1b4735a"
+  },
+  {
+    "path": "报告4_结论与后续.md",
+    "bytes": 3910,
+    "sha256": "1a0fe0c562b0c5415e70bccda9b3200fbef537e8dfae0809661ebecac83cb55e"
+  }
+]

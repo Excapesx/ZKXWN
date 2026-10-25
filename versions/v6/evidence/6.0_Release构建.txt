@@ -1,0 +1,13 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  baseline5.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\baseline5.lib
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\llm_worker_tests.exe
+  baseline4.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\baseline4.lib
+  rmtc6_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\rmtc6_core.lib
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\core_tests.exe
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\rmtc_smoke.exe
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\rmtc_replay.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\v4_tests.exe
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\rmtc_arena.exe
+  v6_tests.cpp
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Release\v6_tests.exe

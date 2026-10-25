@@ -1,0 +1,507 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 25,
+    "sha256": "22a41ccfbc9c7968353d17f4164519fd6915918d2be3891c5f95d4e70d07ae57"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/.env.example",
+    "bytes": 212,
+    "sha256": "7220a270388b40cf89be5621e4cc53a73ce4767e262d063527368343406e8445"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/.gitignore",
+    "bytes": 80,
+    "sha256": "29a0e5df722a0cb392885f9c7726733720075b965e17c7fb903eac6cec12ab16"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/.gitignore",
+    "bytes": 20,
+    "sha256": "3a2522769fb28357149cf590972ac2064fa381c191ef47e4130cc9168dc83dcc"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/CMakeLists.txt",
+    "bytes": 939,
+    "sha256": "61e1ea92406b2b1a994cf52e464c137871fd48fa688d43d2e0fa766e859662b6"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/examples/demo.cpp",
+    "bytes": 1579,
+    "sha256": "8a2d08eae8a0c5933840aa031a9e35c39731e871fb8b9479e87163f0343cfbfe"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/examples/grid_planner.hpp",
+    "bytes": 1902,
+    "sha256": "d2ded77c4db7e61c2aa6e5d85314db99e9c2bdfc6233cae065a148908d103a26"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/include/rmtc_decision/battle_evaluator.hpp",
+    "bytes": 2091,
+    "sha256": "329e06b71896034aa0d9ab941a9683c0f8845eac1107bcb9359b903e13e6b683"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/include/rmtc_decision/engine.hpp",
+    "bytes": 670,
+    "sha256": "c451ab39aee4ba06d9b9ff35f786b803fb42eb85d480b68c1c6f4ff4b2633cca"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/include/rmtc_decision/types.hpp",
+    "bytes": 4845,
+    "sha256": "25f3a38d701bec6a6ec9d1ba815a4ad775496aecf3fbb15276825b62820d6c22"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/INTEGRATION.md",
+    "bytes": 5750,
+    "sha256": "93a8a1994a04c67ff5f8cd36176f9b671ebc7f4009ccfcf3d88664b3f0b25a5d"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/LEARNING.md",
+    "bytes": 4675,
+    "sha256": "6c36741f00d6bbd260cd4783546564aaa436a3ed3b9de0b766c768c862785f06"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/README.md",
+    "bytes": 5807,
+    "sha256": "5080b3259af467de6ee3e658e786d22336bc9311263e6bb58ec78a71d4de9432"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/src/engine.cpp",
+    "bytes": 21598,
+    "sha256": "fefc14cef56620482642195f8f2aff57081b1ff6b6e553fb5c5ef33eeef2e5e1"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/TEST_REPORT.md",
+    "bytes": 2731,
+    "sha256": "e9ca1e96f2df1f59efe93c32eb02973de7885e0d5d05872d7e18086b9acba0e0"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/decision/tests/scenarios.cpp",
+    "bytes": 17924,
+    "sha256": "e16e7746b06687c5310fd6df4abe10611d0c4f62d9789232d4dd60f3950a773b"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/ARCHITECTURE.md",
+    "bytes": 12519,
+    "sha256": "ab9e4b35eb1f4bc5e97ee980bf7ca6621f2bfdf0c13b60685018b644d51f8115"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/collection-comparison.json",
+    "bytes": 64658,
+    "sha256": "e0aa1e9058c6bc457eed8657a91d5e3a7044b7c8a08b89b780770c49c66f3daf"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/COLLECTION_OPTIMIZATION.md",
+    "bytes": 4257,
+    "sha256": "6a9f069c95da72506d73837f2c62e000d101f167ca367f4ee7e6acec7e9f9fe8"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/FOUNDATION.md",
+    "bytes": 2835,
+    "sha256": "5bb5ec5ba0a61c3a01001ed095fe656c5d1f2d5f4ed6822acb6828112ab1a306"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/HANDOVER.md",
+    "bytes": 2189,
+    "sha256": "771897a8651e3922e586be9f7949427ded01b8703f39f7c37f9cddaf3f6c79f0"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/multimap-results.json",
+    "bytes": 59382,
+    "sha256": "3ff6295457396dd7234ff64f4fc2cb7d967b6fe159e28e1997ca06022af250be"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/MULTIMAP.md",
+    "bytes": 5638,
+    "sha256": "4bc25be8411f419bee4ec75d878936aa2f951dfed9ffa42460396e9cc1570e60"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/RULES_V1.1_DELTA.md",
+    "bytes": 4341,
+    "sha256": "9363795b2d31dbf697353ecb03cacd8d6c158e34749841d5445defb861cad3bc"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/RULES_V1_1.md",
+    "bytes": 3527,
+    "sha256": "0472bc1d2de2567ddb5bfeb46c026309e7fcda2a45330e673798f7cd0dfe7609"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/SOURCE.md",
+    "bytes": 466,
+    "sha256": "992c38833d7776310fefe0fac9a772a450cbeb5d484d8c956bb6f483bfa6fb4d"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/stage1_v1_1_result.json",
+    "bytes": 1032,
+    "sha256": "8032b9c90e21731f7d50aeef6f2dd3374a48603028fa2046662c204d09125f5c"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/STRATEGY_HANDOVER.md",
+    "bytes": 4041,
+    "sha256": "f80b7a855ff6b5057deece5332337a5086297ee86680f5467ceae564b9af2e1a"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/STRATEGY_OPTIMIZATION_PLAN.md",
+    "bytes": 10022,
+    "sha256": "cff3edf15f65e6bfab6c30c9cc9b558313fb397f088ebc5f82d5e3b27674677e"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/STRATEGY_RULE_SOURCES.json",
+    "bytes": 743,
+    "sha256": "54bb12fbd9ee504b3eb9cb072c0317d43e5dd8297e899c980280b39e65fe8585"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/TEAM.md",
+    "bytes": 2782,
+    "sha256": "f6f42616f55fa759eefdfe883a908ef38c290a60b8c448c45dd8065f66eb897c"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/docs/TECH_REPORT_TEMPLATE.md",
+    "bytes": 28440,
+    "sha256": "a29f7226009913d5b9c30c354bcf13ba3c2c1a283d6d81c0150aa14a35404d0f"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/README.md",
+    "bytes": 5882,
+    "sha256": "a538b3e1a21300723481ff0b71b4b13c08d2a033cc416ba48d406edcacc9400b"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/README_RMTC_CPP.md",
+    "bytes": 963,
+    "sha256": "f77caa378b2ddec618720407d7864b5cc74943e6a2882ebb76596143bb8b33ad"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/RMTC_CPP_集成说明.md",
+    "bytes": 6422,
+    "sha256": "9fa9a8fa2675f65a63726af63e5cc44a49779cc22a80bc2a38a147d0e709f320"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/.gitignore",
+    "bytes": 28,
+    "sha256": "151ac767b849ad4c75c02f8322023fb151eed034cd55b18e675a381ed11ae7e3"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/.gitignore",
+    "bytes": 73,
+    "sha256": "c2f2288c0c06088470be8cebf58a51c59d7b2873933515d5dfbe7324b0e6a507"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/CMakeLists.txt",
+    "bytes": 2841,
+    "sha256": "dbf2ae4b49cd0ea9e696c23b6f5b43714b3dd881e75ea0cd3d3db29f5b6223a2"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/config/decision_config.example.json",
+    "bytes": 30,
+    "sha256": "2f6375881f444b3ef3d2eb6b6757828faf98fb9b21bd09d1aee4cc05887051f4"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/combat.hpp",
+    "bytes": 210,
+    "sha256": "f0af08150db4e383169f316480e521619d5eecd4f6b83cfa4c521a02d9d86176"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/config.hpp",
+    "bytes": 689,
+    "sha256": "da4e84e20f2e9358427ea4c3cdcfb0d4ee1a301e2b6245798f4525b3cdda59f3"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/llm_client.hpp",
+    "bytes": 1691,
+    "sha256": "4d833f3c95d63aa712299c97487200dc8246032336273564e76832e659d3f4c5"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/memory.hpp",
+    "bytes": 1720,
+    "sha256": "c1d3053ae10664c17d3a30c85a8363e3f8ce29eb2c71f3b03ea2aecac0a69488"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/perception.hpp",
+    "bytes": 406,
+    "sha256": "6d976d61469944c5f6fbfe9c6686375e31795af36d89aa0f3986c69c09218086"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/planner.hpp",
+    "bytes": 1034,
+    "sha256": "5f1c108d9d3d1c382ec425dd4d0220daef157cefc76f186c6effd44c6c28f245"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/policies/stage1_policy.hpp",
+    "bytes": 561,
+    "sha256": "69c8ff415e25620084941a95be3c067d29bdddfb7e86fbdec0c95866d20184d3"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/policies/stage2_policy.hpp",
+    "bytes": 502,
+    "sha256": "448fca273831f11a90e9b2f335ac193104cadf6d298a64d092a6aaa3efd4e893"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/policy.hpp",
+    "bytes": 685,
+    "sha256": "a9362cdada99a1920506534de2145e90f59bc42bdba9ca4b9779e7f8b4bf921f"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/ros_io.hpp",
+    "bytes": 433,
+    "sha256": "0285226cbb508661feb5f9343392f3a6d7a5e2db73f4288697d1a15e6eb95a73"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/runtime.hpp",
+    "bytes": 1239,
+    "sha256": "0d15f0e9a06fc8e59259b66e448340e8cd7dc2559bbc8a7de2bc69decd979392"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/include/rmtc_bot/types.hpp",
+    "bytes": 2641,
+    "sha256": "1e93c93d212f502f42d49d43a21d4641e99aa888148731c47e2a49428a188773"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/INTERFACES.md",
+    "bytes": 2476,
+    "sha256": "9ddcf485103877c6127c2f1e6b3302232e5be736fbf5d70e1390d3efc589a1a4"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/package.xml",
+    "bytes": 582,
+    "sha256": "0f2e62b4db776454ba700e296a712165e19a766a0c849697535a94471160b167"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/README.md",
+    "bytes": 8235,
+    "sha256": "6078603abb1ec6d70724655ec67dc218eb1427e12b546164fc00d0be044beed6"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/combat.cpp",
+    "bytes": 249,
+    "sha256": "c55382333a44efa24ffee20a56be894f8866e9851286e539f88b35d35eb8ad2e"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/config.cpp",
+    "bytes": 3521,
+    "sha256": "4b9ce6a3735821806dea89cc7a01434dbb6d96553268207f6ad2b5944353dae4"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/curl_transport.cpp",
+    "bytes": 2660,
+    "sha256": "9a9f5407584f1e70c91cece31ad4b1c3c02301bd56080caec021687fec3f3d4a"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/llm_client.cpp",
+    "bytes": 10669,
+    "sha256": "a78ca01aa5f429064a36b29121c82b5f1f14cf0bf4a93f44f52154eaad089b42"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/main.cpp",
+    "bytes": 405,
+    "sha256": "4290e04aa13e78cbba3b5f5131765208380b6904c3ae2130bf0fd76a7efa44f6"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/memory.cpp",
+    "bytes": 6932,
+    "sha256": "e0285791edbf7711d1ea1fa2f4aa7679bb88aae7404562812ef9f7fd44769671"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/perception.cpp",
+    "bytes": 9767,
+    "sha256": "eec51365201542dfba963c63a5759ac7711119a3edbd0d250c440c33fd48537a"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/planner.cpp",
+    "bytes": 5712,
+    "sha256": "b09766b655d098883b31fe587ab9a989f670aa12dbeb06f8ce5f56d2c6cd9780"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/policies/stage1_policy.cpp",
+    "bytes": 3876,
+    "sha256": "368a1772e6601aaee54dd547c264042177bbc6676173ae9801123beb411a07b5"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/policies/stage2_policy.cpp",
+    "bytes": 374,
+    "sha256": "7d037a318d2221d352f10d36c9770b5859a9ebe13fe36480b2031a5ee5d9bd8a"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/policy.cpp",
+    "bytes": 2900,
+    "sha256": "7f1d43caee195f682189059fbb7c342e55ad8ee6360db7d0ba95a190e555af76"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/replay.cpp",
+    "bytes": 943,
+    "sha256": "83f81a1eb572cbd10e9fef6c41d37f013f05824423b234a84c65fe3b7838b729"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/ros_io.cpp",
+    "bytes": 3843,
+    "sha256": "7c58eb1c36d889f2062624cc45fdfcbba78d83e45ed07b982558c2836a235105"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/runtime.cpp",
+    "bytes": 5069,
+    "sha256": "302dc28a8b3cf02ada91f709aebdf39ed91e1201e3093765c808b32a1c4e7795"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/fixtures/llm_response.json",
+    "bytes": 299,
+    "sha256": "f340e00aa945af379dc4b27c108146c46888d9f481e0e25e4f1f800974f9b737"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/fixtures/perception_stage1.json",
+    "bytes": 961,
+    "sha256": "b6d76216bf1dc5d387a2c3aed38fb52c937d1d0239667fe47d5663b85ce68ef7"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/fixtures/perception_stage2.json",
+    "bytes": 1342,
+    "sha256": "35b0e63452e81659d852a545c7abf3d0c15a9ed74c3ef5cd86434928a07e4f67"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/maps/stage1_suite.json",
+    "bytes": 384032,
+    "sha256": "bb7279f252a17903fe846f6da1fb243a790037f399038b04f1d9655822b9cae3"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/stage1_multimap.cpp",
+    "bytes": 7938,
+    "sha256": "0378ece1ce924c075c9ac1c5c77dd1d9072eb00189986816241f75d8aa219700"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/test_core.cpp",
+    "bytes": 22848,
+    "sha256": "1e36527953f1a88fdd5e2ce376d7b50abad872ce2143eaf1e3bbbd7d6779a2e9"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/build.sh",
+    "bytes": 357,
+    "sha256": "8d8b7e87ad05506efa13a5cbad8bc3f3a3c70a71069b02574495b02acf5cae1e"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/generate_multimap.py",
+    "bytes": 4591,
+    "sha256": "b809cc957073147c996a83d672fe07f2f94dbb0425efe1eee880839b7f40c294"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/report_collection_comparison.py",
+    "bytes": 2701,
+    "sha256": "e2186ec99d3c7c426fb644252c6afa24fa7ccadd82fc8b8563f5850c4f62680a"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/report_multimap.py",
+    "bytes": 1967,
+    "sha256": "805b655473acdbc90c6beb186639b7714899d565744ff0756ee82f91e1b493a1"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/run.sh",
+    "bytes": 584,
+    "sha256": "c04b1c6d89565534773f3132fca9dd3719e8c87827bcd58356fbe4dd11a62b89"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/test.sh",
+    "bytes": 255,
+    "sha256": "71dff9625a3e712a1246c7be4fa34b6458ded9c924fd95edf38e92a5413513fd"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/test_multimap_referee.py",
+    "bytes": 8188,
+    "sha256": "e4fab9ee87c4108280edd2eef59e08e769555b3330fe8c33da1dd1f532d02af3"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/test_offline.sh",
+    "bytes": 388,
+    "sha256": "7cea691fbce58da2e5b7461e643526bb4f873d4f93fe9ab83b9b621c551a2696"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/scripts/test_ros_io.py",
+    "bytes": 3938,
+    "sha256": "35d67a9ad33b19099480a6e03084e312475f306b7b2c2cdd0916caff380624e1"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 944740,
+    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/third_party/nlohmann/LICENSE.MIT",
+    "bytes": 1097,
+    "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "01_程序源码/ZKXWN/third_party/nlohmann/README.md",
+    "bytes": 405,
+    "sha256": "0739fe7337e22062bbdf7dc948ae84924bb8752b6af970fd30cb62ed4feccbb8"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "bytes": 2901418,
+    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "bytes": 1731099,
+    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+    "bytes": 1067940,
+    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
+  },
+  {
+    "path": "03_官方练习包_v1.1/dist.zip",
+    "bytes": 2123028,
+    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
+  },
+  {
+    "path": "04_分工与交接说明/GROUP_QA.md",
+    "bytes": 3393,
+    "sha256": "46e626a191e8d12f6d11ae6ba721632398689ec2656f3da601dae1934b1ee801"
+  },
+  {
+    "path": "04_分工与交接说明/RMTC两人分工方案-通俗版.pdf",
+    "bytes": 253068,
+    "sha256": "b321e83d4b7474f0cc497528d0cc57158dedbbcdb1232e70350193c436fe605c"
+  },
+  {
+    "path": "04_分工与交接说明/RMTC图灵对决赛备赛指南.pdf",
+    "bytes": 599188,
+    "sha256": "213a7d270d82e9b471984cbe8958ee994586c26819c75bd779bfbcbba7518e77"
+  },
+  {
+    "path": "04_分工与交接说明/STRATEGY_PROGRESS_2026-10-23.md",
+    "bytes": 4032,
+    "sha256": "d6b833dcaade176741544e5b3abe28d97d610dc6e6ba5d68c969fca845e54811"
+  },
+  {
+    "path": "05_历史资料_v1.0_仅供对照/dist (1).zip",
+    "bytes": 2086914,
+    "sha256": "7c3de4eec8f0d0c6f3d171cc0d91e1521620b716a818db4e6ba92aed375a4b87"
+  },
+  {
+    "path": "05_历史资料_v1.0_仅供对照/RMTC 机甲⼤师图灵对决赛赛事规则v1.0.pdf",
+    "bytes": 2839040,
+    "sha256": "5390b3e30baa7a341aaff5d4893ac1c59b8edbb6f3c646674bd525d334d4775b"
+  },
+  {
+    "path": "05_历史资料_v1.0_仅供对照/RMTC 机甲⼤师图灵对决赛通信协议.pdf",
+    "bytes": 1664617,
+    "sha256": "b3282fc6274f07ad7024efef9b0322eee9b5d5a2a4b50d3ec5093579b898af5c"
+  },
+  {
+    "path": "05_历史资料_v1.0_仅供对照/裁判测试端使用教程 (2).pdf",
+    "bytes": 1022100,
+    "sha256": "a03a4bca20547f1fb95b11e4869388326c6cb126ae5f4bd942f0353b1694e1a3"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2041,
+    "sha256": "03deed4b2260aac76fd95eab85aa91f2aba10a016db7884781ac5f4a9758eb77"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 828,
+    "sha256": "481f014d7890ac5f5ae447b884d47de25adfff53c59e9c5898f1686a95432d21"
+  },
+  {
+    "path": "先读我.md",
+    "bytes": 2551,
+    "sha256": "400e1d40f16f32b23c87328a4b526bd768b1a75ef1f5ef11bfffbb2005b45492"
+  }
+]

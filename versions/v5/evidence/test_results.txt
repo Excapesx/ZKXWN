@@ -1,0 +1,12 @@
+### core_tests (MSVC 19.51 / Release)
+test_v3_regressions
+test_parse
+test_action_json
+test_plan_parse
+test_tour_optimal
+test_bot_smoke
+
+141 checks, 0 failures
+
+### v4_tests (MSVC 19.51 / Release)
+613 checks, 0 failures

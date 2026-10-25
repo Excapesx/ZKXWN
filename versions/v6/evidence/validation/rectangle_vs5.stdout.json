@@ -1,0 +1,64 @@
+{
+  "a": {
+    "damage": 539.4618055555555,
+    "deaths": 3.13125,
+    "decision_us": {
+      "max": 328.3,
+      "p50": 19.9,
+      "p99": 43.8
+    },
+    "invalid": 0.0,
+    "kills": 4.5875,
+    "missions": 2.55,
+    "resource": 56.166666666666664,
+    "score": 39.91645833333333
+  },
+  "a_version": "6",
+  "all_policy_invalid_total": 0,
+  "b": {
+    "damage": 418.90972222222223,
+    "deaths": 3.0125,
+    "decision_us": {
+      "max": 345.4,
+      "p50": 13.2,
+      "p99": 28.4
+    },
+    "invalid": 0.0,
+    "kills": 3.83125,
+    "missions": 2.6479166666666667,
+    "resource": 58.395833333333336,
+    "score": 38.70302083333335
+  },
+  "b_version": "5",
+  "draws": 5,
+  "games": 480,
+  "height": 16,
+  "legacy_receipts": false,
+  "losses": 229,
+  "map_bootstrap_95": [
+    0.28187499999999976,
+    2.0734374999999994
+  ],
+  "maps": 40,
+  "mean_difference": 1.2134375,
+  "other_policy": "g",
+  "robots": 4,
+  "seed": 123000,
+  "stage": 2,
+  "v6_reasons": {
+    "attack": 11474,
+    "dead_wait": 4498,
+    "defend_threat": 7898,
+    "hunt": 16499,
+    "information": 98780,
+    "intercept": 995,
+    "reach": 9828,
+    "resource": 7610,
+    "sighting_search": 21118,
+    "stage2_explore": 61300
+  },
+  "vision": 2,
+  "width": 32,
+  "win_rate": 0.5125,
+  "wins": 246
+}

@@ -1,0 +1,62 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  types.cpp
+  llm_worker_tests.cpp
+  types.cpp
+  types.cpp
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  llm.cpp
+  bot.cpp
+  bot.cpp
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  正在生成代码...
+  bot.cpp
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\llm_worker_tests.exe
+  events.cpp
+  events.cpp
+  events.cpp
+  正在生成代码...
+  正在生成代码...
+  battle.cpp
+  正在生成代码...
+  baseline4.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\baseline4.lib
+  baseline5.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\baseline5.lib
+  rmtc6_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\rmtc6_core.lib
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
+  bench_main.cpp
+  v4_tests.cpp
+  core_tests.cpp
+  smoke_main.cpp
+  replay_main.cpp
+  v6_tests.cpp
+  referee.cpp
+  正在生成代码...
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\core_tests.exe
+  referee.cpp
+  referee.cpp
+  referee.cpp
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\rmtc_smoke.exe
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\rmtc_replay.exe
+  正在生成代码...
+  正在生成代码...
+  opponent_adapter.cpp
+  v5_adapter.cpp
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\v6_tests.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\v4_tests.exe
+  正在生成代码...
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\v6_build\Debug\rmtc_arena.exe
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内6.0/CMakeLists.txt
