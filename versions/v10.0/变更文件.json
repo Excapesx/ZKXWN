@@ -1,0 +1,478 @@
+[
+  {
+    "path": "baseline_v93/source_manifest.json",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/announce.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/battle.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/battle.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/bot.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/combat.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/events.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/events.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/frame_gate.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/grid.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/grid.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/parse.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/parse.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/types.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v93/src/rmtc93/types.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/accepted_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_new_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_new_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/accepted_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/c2_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/rejected_candidate1/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/rejected_candidate1/resource_race.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/rejected_candidate2/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/rejected_candidate3/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/rejected_candidate4/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_old18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_old18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_peer18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_peer18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/historical_bag_audit.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_old18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_old18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/mixed24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/mixed24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/peer18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/peer18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/README.md",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/recorded_replay.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_new_mixed18.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_new_mixed18_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_new_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_new_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_peer24.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/release_peer24_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/tests_debug.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/tests_release.txt",
+    "kind": "added"
+  },
+  {
+    "path": "README.md",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/config/decision_default.json",
+    "kind": "added"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/package.xml",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/audit_bag.py",
+    "kind": "added"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/compare_recorded.py",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/run.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/run_identity.py",
+    "kind": "added"
+  },
+  {
+    "path": "scripts/test.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/parse.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/receipt_audit.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "src/rmtc9/resource_race.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "src/rmtc9/types.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tests/node_scope_tests.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tests/test_audit_bag.py",
+    "kind": "added"
+  },
+  {
+    "path": "tests/v10_tests.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/v93_adapter.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "v1.2规则适配说明.md",
+    "kind": "modified"
+  },
+  {
+    "path": "VERSION",
+    "kind": "modified"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "kind": "modified"
+  },
+  {
+    "path": "修复与验证报告.md",
+    "kind": "modified"
+  },
+  {
+    "path": "历史9.3说明/evidence/candidate_equivalence.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/evidence/release_none.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/evidence/release_none.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/evidence/release_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/evidence/ros_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/evidence/startup.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/README.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/v1.2规则适配说明.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/仓库发布说明.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/修复与验证报告.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/变更文件.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/更新日志.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/来源及验证.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/正式验收与技术报告模板.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史9.3说明/程序逻辑与学习指南.md",
+    "kind": "added"
+  },
+  {
+    "path": "更新日志.md",
+    "kind": "modified"
+  },
+  {
+    "path": "来源及验证.json",
+    "kind": "modified"
+  },
+  {
+    "path": "正式验收与技术报告模板.md",
+    "kind": "modified"
+  },
+  {
+    "path": "程序逻辑与学习指南.md",
+    "kind": "modified"
+  }
+]

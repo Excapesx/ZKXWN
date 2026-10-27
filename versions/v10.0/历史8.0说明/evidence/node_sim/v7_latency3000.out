@@ -1,0 +1,42 @@
+[
+  {
+    "bad_tick_or_session": 0,
+    "event_topic_qos_depth": 1,
+    "invalid_actions": 0,
+    "map": 0,
+    "missing_actions": 0,
+    "node_damage": 515.7142857142858,
+    "node_event_deaths": 0,
+    "node_missions": 3,
+    "node_resource": 50.0,
+    "published": 500,
+    "schema_errors": 0,
+    "scores": [
+      42.5,
+      45.0,
+      40.0,
+      37.5
+    ]
+  },
+  {
+    "bad_tick_or_session": 0,
+    "event_topic_qos_depth": 1,
+    "invalid_actions": 0,
+    "map": 1,
+    "missing_actions": 0,
+    "node_damage": 420.0,
+    "node_event_deaths": 0,
+    "node_missions": 2,
+    "node_resource": 50.0,
+    "published": 500,
+    "schema_errors": 0,
+    "scores": [
+      35.1,
+      57.5,
+      30.0,
+      30.0
+    ]
+  }
+]
+{"gateway_calls": 35, "gateway_2xx": 35, "first_2xx_tick": 0}
+plans_applied=0 parse_failures=0

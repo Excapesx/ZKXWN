@@ -1,0 +1,11 @@
+校内7.0 构建记录
+=================
+环境：Windows 11，MSVC 19.51.36260，CMake 4.3.1（Visual Studio 18 2026 generator）。
+命令：
+  cmake -S 校内7.0 -B _work/cmake7final -G "Visual Studio 18 2026" -A x64 -DRMTC_BUILD_BENCH=ON
+  cmake --build _work/cmake7final --config Release --target rmtc_arena core_tests llm_worker_tests v4_tests v6_tests v7_tests
+结果：rmtc7_core.lib、baseline6.lib、core_tests.exe、llm_worker_tests.exe、v4_tests.exe、
+      v6_tests.exe、v7_tests.exe、rmtc_replay.exe、rmtc_smoke.exe、rmtc_arena.exe 全部生成；
+      CTest 5/5 通过（详见 7.0_测试.txt）。
+说明：本机 Ninja 生成器在 find_package(Threads) 的 try_compile 处长时间无输出，故改用
+      Visual Studio 生成器；这不是源码问题。Ubuntu 上仍按 scripts/test.sh 使用默认生成器。
