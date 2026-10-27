@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/home/excapesx/ZKXWN/versions/v9.2/build_core/rmtc_arena",
+    "--stage",
+    "2",
+    "--maps",
+    "32",
+    "--seed",
+    "20261110",
+    "--a",
+    "9",
+    "--b",
+    "9.1",
+    "--field",
+    "111",
+    "--events",
+    "standard",
+    "--width",
+    "24",
+    "--height",
+    "24",
+    "--threads",
+    "2",
+    "--output",
+    "/home/excapesx/ZKXWN/build/collection-audit/current_peers.jsonl"
+  ],
+  "seconds": 267.6897482872009,
+  "exit": 0
+}

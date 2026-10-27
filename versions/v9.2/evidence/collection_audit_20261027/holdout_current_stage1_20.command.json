@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/home/excapesx/ZKXWN/versions/v9.2/build_core/rmtc_arena",
+    "--stage",
+    "1",
+    "--maps",
+    "16",
+    "--seed",
+    "20261210",
+    "--a",
+    "9",
+    "--b",
+    "9.1",
+    "--field",
+    "111",
+    "--events",
+    "none",
+    "--width",
+    "20",
+    "--height",
+    "20",
+    "--threads",
+    "2",
+    "--output",
+    "/home/excapesx/ZKXWN/build/collection-audit/holdout_current_stage1_20.jsonl"
+  ],
+  "seconds": 0.24094438552856445,
+  "exit": 0
+}

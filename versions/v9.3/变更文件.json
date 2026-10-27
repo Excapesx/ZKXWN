@@ -1,0 +1,402 @@
+[
+  {
+    "path": "CMakeLists.txt",
+    "bytes": 6118,
+    "sha256": "633082f26e39123523f9b574a3153e8005b9f07e98f16c4e873471564caa37f0"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3676,
+    "sha256": "4a8a497e9678fbc07d506d6d36dfe6a24bcc61f425e76c7dbc8add3bce5a9de9"
+  },
+  {
+    "path": "VERSION",
+    "bytes": 6,
+    "sha256": "14ebdd5f5d8dfccb0fc574ea9aabecc07d7cdd99d53e4fc01e58f9c3d23d18ef"
+  },
+  {
+    "path": "evidence/candidate_equivalence.json",
+    "bytes": 443,
+    "sha256": "26067399bc58abcac59663436315f57ca0f54c21db8bc025989c14c97c643170"
+  },
+  {
+    "path": "evidence/release_none.json",
+    "bytes": 2112,
+    "sha256": "601ed59ae9caf038eb195076f07837c4e62da6387fc2725008ad04f0df5829e2"
+  },
+  {
+    "path": "evidence/release_none.jsonl",
+    "bytes": 97282,
+    "sha256": "9dc3e615deded3b191712cbb7d98c385de7f0590828d5aeae5fdf0354144de7b"
+  },
+  {
+    "path": "evidence/release_tests.txt",
+    "bytes": 3360,
+    "sha256": "5e64bde148d92bff79352c28024fc41f0cc362868d28e52487dc06300286e5c4"
+  },
+  {
+    "path": "evidence/ros_build.txt",
+    "bytes": 194,
+    "sha256": "2b18e84d9992319c7f6de9af9ad9a5780076c27a0ec34eae877efdb94cbe8d83"
+  },
+  {
+    "path": "evidence/startup.txt",
+    "bytes": 262,
+    "sha256": "b65a68ac3a4870c151e1d81654d569fcaad46955a7d5fbf5328257bf36152b8e"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
+    "bytes": 1609,
+    "sha256": "d06d28fe19aedb8b67559dc22d448678ea94bbb6216bdcd4945d9cb601da6c6b"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/package.xml",
+    "bytes": 511,
+    "sha256": "46162c2d0763be3123640982ab8d827d66f291720cefa6dbb0391c5a84331fe3"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
+    "bytes": 18494,
+    "sha256": "eb6fba708fc169a0e7d2b057519518391a87089e6ca62626d55d4499417f5cc8"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "bytes": 1376,
+    "sha256": "38fc5a686079959a8b3039b0a9cd6866eff5b1cfa464379908edbdd9893f18be"
+  },
+  {
+    "path": "scripts/compare_recorded.py",
+    "bytes": 2408,
+    "sha256": "cfbe8a60c7148e4c4ea85e8b78245ff0fca1ad3f1fbee86997f22ee2f3650340"
+  },
+  {
+    "path": "scripts/test.sh",
+    "bytes": 1572,
+    "sha256": "fc96411dc9143ce50e845cd3fb6d0f3319863655cd6c288613b04d7f29662092"
+  },
+  {
+    "path": "src/rmtc9/bot.cpp",
+    "bytes": 57857,
+    "sha256": "7dc42ec297a2168dddf73c452816f46674697d1fc5096e8a1ced7b07318fcc5d"
+  },
+  {
+    "path": "tests/v93_tests.cpp",
+    "bytes": 2592,
+    "sha256": "d96cb0ef0a18104a0628bd453b17bbf206c04bdac7ad4957e5ebf2de35841ea5"
+  },
+  {
+    "path": "v1.2规则适配说明.md",
+    "bytes": 1834,
+    "sha256": "9ed9cc36cb7fa1f476cd5a24eeae32a3efcf37fd360d8a9ba052d4d905c9753d"
+  },
+  {
+    "path": "仓库发布说明.md",
+    "bytes": 660,
+    "sha256": "ff3c0ae4e9d2b2ee48a7be2a985d4a9a13ed49ab4156c2e30c48cf6b58b1e6f0"
+  },
+  {
+    "path": "修复与验证报告.md",
+    "bytes": 2066,
+    "sha256": "f2095c81077bbd85b274a8864cffc46255d562146ade1ff36bef800f37d4e8a3"
+  },
+  {
+    "path": "历史9.2说明/README.md",
+    "bytes": 6176,
+    "sha256": "276569c21fc625486aeee6add4cce97f8d48376c48e8675f5e0f3f77d72e17c2"
+  },
+  {
+    "path": "历史9.2说明/evidence/arena_build.txt",
+    "bytes": 675,
+    "sha256": "f591c468c54e8af2a743cf9522d4b383c9158f853821dd8ecd5fbfc3fee980a3"
+  },
+  {
+    "path": "历史9.2说明/evidence/arena_debug_build.txt",
+    "bytes": 665,
+    "sha256": "71caa9cadaf7d6432037f707aeabaa2dee0cca7dd52f8fe2e49e92b4a454261e"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/duel_91.command.json",
+    "bytes": 526,
+    "sha256": "3fbdeeb992e00ad76fe4a89df25856316702af6c7e1dd6c576e90d896460c4ad"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/duel_91.jsonl",
+    "bytes": 37229,
+    "sha256": "8bfa62795ef45d7f819c3f6363c64c7177b05bfc34d76406b3a79e463bf75cd8"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/duel_91.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/duel_91.stdout.json",
+    "bytes": 2207,
+    "sha256": "7485caebdf9fb60b7b3a15cefb20acc6471906dfa4163cf06efabb6691fcd555"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/mixed_events.command.json",
+    "bytes": 503,
+    "sha256": "ef92c70ddecfccb924e3e36a268bb0ee1e11b1beb346c699b54e5f35858b1e76"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/mixed_events.jsonl",
+    "bytes": 48562,
+    "sha256": "a6f1d40f0dc00bc42d65db58933082270805b47b545532df4b77516a2aa7eaf7"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/mixed_events.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/mixed_events.stdout.json",
+    "bytes": 2149,
+    "sha256": "7eb748e41ca403ee6692f2acb195ed01627c4df5a84002a6c47235f28367d57d"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_events.command.json",
+    "bytes": 504,
+    "sha256": "7b0f15c9726b7436060e9bdb24dd9e398eeb5e97171ec755f5e9725ac5ac103d"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_events.jsonl",
+    "bytes": 48737,
+    "sha256": "857fb5380aabd59da11f0850e449d65898f21dbd5214c9e41dfd1bef511c6e06"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_events.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_events.stdout.json",
+    "bytes": 2086,
+    "sha256": "fcf1d502f279601bb79f44e61c05bff84da540ddbf50f5157dfdd3f648fd67d9"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_none.command.json",
+    "bytes": 497,
+    "sha256": "c924fc26e2b095438b0d20aebb04c641baa66869ec8d638349a80b3ef3e717ac"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_none.jsonl",
+    "bytes": 48737,
+    "sha256": "cc38548b896de583d092fe939c2dcd406c9ca039604c8be8b2c10234e63bf29e"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_none.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/peers_none.stdout.json",
+    "bytes": 2126,
+    "sha256": "0b37abb134253c984319fc58609effb79d6ed25b453771c1ecb100bab05735db"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_no_model.command.json",
+    "bytes": 650,
+    "sha256": "69299d42f51f4a81a9c20857c6dee4e2b1cffc6f0eb20fe0be07dabbb3e72c34"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_no_model.jsonl",
+    "bytes": 3034,
+    "sha256": "4f589beed192f566f71e198a4b38b61434f5d7883e3a327ba390a2c332ab632b"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_no_model.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_no_model.stdout.json",
+    "bytes": 2085,
+    "sha256": "19395886893b8f5d1b794ddeba576634d2f14eddd896a8c3fffb33c3d38889af"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_oracle.command.json",
+    "bytes": 615,
+    "sha256": "411f81f123c478844df1f4ff0b4a0e2185b82d19adffcc6e5ed7c9dffcf3c8aa"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_oracle.jsonl",
+    "bytes": 3040,
+    "sha256": "6ea2724e1a893cef3f0293ee1fccf8d6843015e284c53705b25e702b6e1a2993"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_oracle.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/practice_oracle.stdout.json",
+    "bytes": 2082,
+    "sha256": "6da4d00ff09beb5ef9ffdbc122170615fa0390ff1b659814f37412942ecc42a2"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/rush_events.command.json",
+    "bytes": 502,
+    "sha256": "e35658a7d29642c9b301cd2fdbda32e1d8e8582280c3b9cf275b822508fab7b5"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/rush_events.jsonl",
+    "bytes": 48846,
+    "sha256": "44fefdc7817f2e7bda4311ba2e0bec7f8094a3aa0d3d75a49574fbdad6ebcc4e"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/rush_events.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/rush_events.stdout.json",
+    "bytes": 2202,
+    "sha256": "7d4bdd80b471f76f3aad9ded4a158c555266ac17844440a1ddeb6c4aade77c83"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/stage1.command.json",
+    "bytes": 493,
+    "sha256": "47c716d49aec2682cd69b2f2608f9471870370daeca58921e3e781fe6714ba56"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/stage1.jsonl",
+    "bytes": 11400,
+    "sha256": "22188be5569ef1dfc8f2cbe4bc968264a91bf760ce1a1960c5cb746d0756dd54"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/stage1.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "历史9.2说明/evidence/benchmark/stage1.stdout.json",
+    "bytes": 1928,
+    "sha256": "8caea6b66fe397dd9efc00cd5e858923cfdc52e96791b20cec781ccc32b0fa0d"
+  },
+  {
+    "path": "历史9.2说明/evidence/build_debug.txt",
+    "bytes": 2060,
+    "sha256": "f8726ba4eadcc2c501be6d6298dc65017b430beeea1a91dbccab77446e15c025"
+  },
+  {
+    "path": "历史9.2说明/evidence/build_release.txt",
+    "bytes": 2094,
+    "sha256": "7e0a0b28e2cf02087cada4c794c63e914196e18fc8594a0283ba833b3e2ebcc5"
+  },
+  {
+    "path": "历史9.2说明/evidence/debug_tests.txt",
+    "bytes": 4180,
+    "sha256": "cdbded7fc7be2f68c1aa2f9c96276368c9411da256d11d23efa8692c0ae636db"
+  },
+  {
+    "path": "历史9.2说明/evidence/final_build_identity.json",
+    "bytes": 4921,
+    "sha256": "ab8fe69d3fbb9461241368f03e6eade381abcc603c8111632a1a12d9a700785e"
+  },
+  {
+    "path": "历史9.2说明/evidence/node_debug_build.txt",
+    "bytes": 5672,
+    "sha256": "a5a9148e5a617df0ac461a0750081ff7a0a1a6e0086a829c2cd2b7dd4c039d05"
+  },
+  {
+    "path": "历史9.2说明/evidence/node_release_build.txt",
+    "bytes": 5676,
+    "sha256": "f17203dca9c8651dec9265bb73c86c6ae196d83df753bec7744cf8a927eee288"
+  },
+  {
+    "path": "历史9.2说明/evidence/recorded_comparison.json",
+    "bytes": 660,
+    "sha256": "a60d4920250923f7a215e83a9b809fbd0daa31991c541c268b5245f08bf91abb"
+  },
+  {
+    "path": "历史9.2说明/evidence/recorded_stage2/SOURCE.json",
+    "bytes": 493,
+    "sha256": "b381eac4acf6764f426b4ac6c52bacd859f96208d4c8b33c34dee493c7da7b5e"
+  },
+  {
+    "path": "历史9.2说明/evidence/recorded_stage2/public_perceptions.jsonl",
+    "bytes": 1974089,
+    "sha256": "2ec281d80918672bdd5077a6b6b3852f5157372a560811a81776d9e5f975983b"
+  },
+  {
+    "path": "历史9.2说明/evidence/recorded_stage2/recorded_actions.jsonl",
+    "bytes": 50460,
+    "sha256": "1893e234b1dfb6cfa9f20ed724f7cb400f47a7b449b4c4e23d73f359597d13f7"
+  },
+  {
+    "path": "历史9.2说明/evidence/release_tests.txt",
+    "bytes": 4198,
+    "sha256": "f05796eaf882ff5b6ad9155638f2b969e67696b942f6fdfc11bc9b0c17afb074"
+  },
+  {
+    "path": "历史9.2说明/evidence/stage_mismatch.txt",
+    "bytes": 49,
+    "sha256": "4c3ddaffc05f138def9ce103c3bba01a661fdfc4cff21b9ef604a78a04f311b4"
+  },
+  {
+    "path": "历史9.2说明/v1.2规则适配说明.md",
+    "bytes": 1615,
+    "sha256": "0d611a2bcddb51a65ac3cb24b3dda593b19219c83ffc42b9a5841b949f140423"
+  },
+  {
+    "path": "历史9.2说明/仓库发布说明.md",
+    "bytes": 419,
+    "sha256": "00073f0285b7b0b46356dbf44a433b8bf3e1248d2c8c3eb62948c51ee01434ca"
+  },
+  {
+    "path": "历史9.2说明/修复与验证报告.md",
+    "bytes": 3492,
+    "sha256": "2fe221a5ff53ad978c7233c959399166a056e1756b8f1ed5b63cf1861082fea8"
+  },
+  {
+    "path": "历史9.2说明/变更文件.json",
+    "bytes": 16130,
+    "sha256": "6ef69ae9697a33e5ec691dc8a750be06e888ea0c8c759c61194bdbf6563fa10d"
+  },
+  {
+    "path": "历史9.2说明/更新日志.md",
+    "bytes": 2292,
+    "sha256": "81e277f8530614510842eba293240bf934b0b61bd5ea17a5d595b92a300b7bca"
+  },
+  {
+    "path": "历史9.2说明/来源及验证.json",
+    "bytes": 20866,
+    "sha256": "cb3f8f910ef0074bbcc9fc9b791bc0e439274f163a916c8e011eb5c1c3d02794"
+  },
+  {
+    "path": "历史9.2说明/正式验收与技术报告模板.md",
+    "bytes": 2758,
+    "sha256": "4488b812d9f82dcfd5a98551cc37d771f0ee611390a7e9cd7b9a92a1b98b83fa"
+  },
+  {
+    "path": "历史9.2说明/程序逻辑与学习指南.md",
+    "bytes": 4465,
+    "sha256": "f52aff87db320d1989d4fccfa3d5080c331c509572789c86f0fe1d246ebb31d6"
+  },
+  {
+    "path": "历史9.2说明/答疑依据与逐项处理.md",
+    "bytes": 6777,
+    "sha256": "8e3ed0af4967a1e7a4abe083a795a949403fb116d78f973b1428825f3ed85587"
+  },
+  {
+    "path": "更新日志.md",
+    "bytes": 962,
+    "sha256": "6f17e5be038c09885e55dc6119b809c5883bce03e29e8d240b741903b19e2789"
+  },
+  {
+    "path": "来源及验证.json",
+    "bytes": 621,
+    "sha256": "dad0c4fd6443cd48b7d010be14e2aaca09671c8eb5088cd43d609c36e138b837"
+  },
+  {
+    "path": "正式验收与技术报告模板.md",
+    "bytes": 2977,
+    "sha256": "167bab336bdeeb1555f6465cf42432c51bda4047502d7540f043219104a6baa7"
+  },
+  {
+    "path": "程序逻辑与学习指南.md",
+    "bytes": 4684,
+    "sha256": "50b40f538d0c62fe111be67f1400c9db34510d2d32166f50efdad87b58b14587"
+  }
+]

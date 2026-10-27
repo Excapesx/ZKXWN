@@ -1,0 +1,29 @@
+{
+  "command": [
+    "build/collection-audit/path_view/rmtc_arena",
+    "--stage",
+    "2",
+    "--maps",
+    "16",
+    "--seed",
+    "20261210",
+    "--a",
+    "9",
+    "--b",
+    "9.1",
+    "--field",
+    "111",
+    "--events",
+    "none",
+    "--width",
+    "24",
+    "--height",
+    "24",
+    "--threads",
+    "2",
+    "--output",
+    "build/collection-audit/holdout_path_view_none.jsonl"
+  ],
+  "exit": 0,
+  "note": "Command recorded after successful execution; elapsed time not recorded."
+}

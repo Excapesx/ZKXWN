@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/home/excapesx/ZKXWN/build/collection-audit/path_view/rmtc_arena",
+    "--stage",
+    "2",
+    "--maps",
+    "32",
+    "--seed",
+    "20261110",
+    "--a",
+    "9",
+    "--b",
+    "9.1",
+    "--field",
+    "111",
+    "--events",
+    "standard",
+    "--width",
+    "24",
+    "--height",
+    "24",
+    "--threads",
+    "2",
+    "--output",
+    "/home/excapesx/ZKXWN/build/collection-audit/path_view_peers.jsonl"
+  ],
+  "seconds": 280.8248646259308,
+  "exit": 0
+}

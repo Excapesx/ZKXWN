@@ -1,0 +1,82 @@
+{
+  "source": "versions/v9.1/src/rmtc9",
+  "commit": "d9027c8471b28f781c6be72ca61582b1280f6bb8",
+  "only_transform": "UTF-8 LF and namespace/include rmtc9 -> rmtc91",
+  "files": [
+    {
+      "path": "announce.hpp",
+      "original_sha256": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd",
+      "transformed_sha256": "ab3aaaf1dee5db68fb5723f38b507708f37bf2a0c87da3a785135d94ead62635"
+    },
+    {
+      "path": "battle.cpp",
+      "original_sha256": "669445aaddb934aac29094ce4341d21701649609d7c13414f1586e2409fc76ee",
+      "transformed_sha256": "5080c4ec6b99c8018d935c258f415d34d17adab6d5403221d601d7789e202635"
+    },
+    {
+      "path": "battle.hpp",
+      "original_sha256": "a33e2c2851e0f61f9d673523f44ba16b18a468d68f83597fcceec308506d5bbf",
+      "transformed_sha256": "cd1766653f92447af6f7ad9c58b5beec210efdba78bf7f4bf672be1b06acd30b"
+    },
+    {
+      "path": "bot.cpp",
+      "original_sha256": "4ef9a9a9331fe17158ee28964c60af74fbd86d39e11d4c550cb93dd456b97276",
+      "transformed_sha256": "46ab2aff1e3c38cd392fe3d3a596e15842d57e319de37153165962f18e0d8d62"
+    },
+    {
+      "path": "bot.hpp",
+      "original_sha256": "4bce15364da85a4770d3dd10a97b6fdba1331a832e76f9068be916cc3b72ffb0",
+      "transformed_sha256": "49802040fe26fbfdaf21952e40a5d3f248b895d3c763b5d43ccb30f5bc777d36"
+    },
+    {
+      "path": "combat.hpp",
+      "original_sha256": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5",
+      "transformed_sha256": "d600085846c2e79a4b832cdcf1aa6123a0fe115738f1d7c79158bec55fa003ad"
+    },
+    {
+      "path": "events.cpp",
+      "original_sha256": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e",
+      "transformed_sha256": "eadaab1625b4eccc6e62bd58f8be0a87fcae58ec6613faf200480661f77fd696"
+    },
+    {
+      "path": "events.hpp",
+      "original_sha256": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083",
+      "transformed_sha256": "995f0572b94d203eefa88eb424abc42f6535188d81567ccb91c1d27f0f7b258d"
+    },
+    {
+      "path": "frame_gate.hpp",
+      "original_sha256": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f",
+      "transformed_sha256": "87298352e77874e7765ec20bd9f7cec11b63ec7a2f333f299da7b785ce70ff2b"
+    },
+    {
+      "path": "grid.cpp",
+      "original_sha256": "eeb89f98e7d82e76f95683d696ea106070f284ab49aa39065af08e2b0f00dc2d",
+      "transformed_sha256": "4fd325a39f18d4a56d1b82f2a24bfa4faec1f06ebeaefe747a7e6e95775d0482"
+    },
+    {
+      "path": "grid.hpp",
+      "original_sha256": "188d49de6db3104cba6dfe286f687ea3a341867a560f90be3f432b2778a44260",
+      "transformed_sha256": "251461fee215c5981ffff1c44c4dd203741d94f93befb20f96121d6d31c2aa5e"
+    },
+    {
+      "path": "parse.cpp",
+      "original_sha256": "1f4166862859a642ae20c19a8b25b600abca469bed9c326d7eaeae0eda5f3b9d",
+      "transformed_sha256": "583aa0c91d4007c06016e6e448444c8baf2046d859fcadf946be0bb86621dcff"
+    },
+    {
+      "path": "parse.hpp",
+      "original_sha256": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc",
+      "transformed_sha256": "0949b8231dc50e7d9f0347f63bbc78b49dfd060810d72166b4af79928de21bee"
+    },
+    {
+      "path": "types.cpp",
+      "original_sha256": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76",
+      "transformed_sha256": "806189aab4c4712773665d9f0961ec86f3f31b1b4ea950a49bc33412176caa97"
+    },
+    {
+      "path": "types.hpp",
+      "original_sha256": "739588d9ea34336794b88107a0509fb75d33e43d385068868f9f7155a53cdc64",
+      "transformed_sha256": "0ad0195a123e5e4295e52f24c52dedf342d4fa9692deb6be42a93e848b4931e7"
+    }
+  ]
+}
