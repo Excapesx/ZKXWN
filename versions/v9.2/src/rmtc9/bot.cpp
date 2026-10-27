@@ -541,7 +541,10 @@ double Bot::collection_gain(const Perception& p,const std::vector<Resource>& res
     double value=0;int normal=0,high=0;
     for(const auto& r:resources){value+=r.value;if(r.value>=20)++high;else ++normal;}
     const double capLeft=std::max(0.0,120.0-p.resourceValue);
-    double gain=.25*std::min(value,capLeft) + .10*value; // explicit resource-denial preference, not own-score delta
+    // Resource score is the main remaining headroom after damage reaches 500.
+    // 0.35 + 0.15 values both score and denial; this was measured against the
+    // frozen 9.1 baseline on two seeds and the no-event set before adoption.
+    double gain=.35*std::min(value,capLeft) + .15*value;
     const double urgency=mission_urgency(p);
     for(const auto& m:p.missions){
         if(mission_done(p,m.id))continue;
