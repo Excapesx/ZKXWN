@@ -152,3 +152,9 @@ add_executable(v101_tests tests/v101_tests.cpp)
 target_link_libraries(v101_tests PRIVATE rmtc9_core)
 add_test(NAME v101_phase_safety_and_deadlines COMMAND v101_tests)
 set_tests_properties(v101_phase_safety_and_deadlines PROPERTIES TIMEOUT 60)
+
+# Task-content variation: target counts/positions differ from the fixed arena set.
+add_executable(v101_task_variants tests/v101_task_variants.cpp)
+target_link_libraries(v101_task_variants PRIVATE rmtc9_core)
+add_test(NAME v101_task_variants COMMAND v101_task_variants)
+set_tests_properties(v101_task_variants PROPERTIES TIMEOUT 60)
