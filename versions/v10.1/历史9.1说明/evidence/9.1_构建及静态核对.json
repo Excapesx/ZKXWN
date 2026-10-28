@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-25",
+  "program_version": "9.1.0",
+  "base_commit": "c78f910b69d4e87a76a4403e18147d78351d9cfc",
+  "compile": {
+    "Release": "passed",
+    "Debug": "passed",
+    "targets": [
+      "rmtc9_core",
+      "node_scope_tests (compile only; NOT executed)"
+    ],
+    "compiler": "MSVC 19.51 x64, Visual Studio 18 2026"
+  },
+  "static_request_checks": "no model field; nonempty model rejected at two boundaries; 0/unset token default 1024",
+  "shell_syntax_files": [
+    "scripts/bench.sh",
+    "scripts/build.sh",
+    "scripts/defect_cases.sh",
+    "scripts/doctor.sh",
+    "scripts/node_sim.sh",
+    "scripts/run.sh",
+    "scripts/test.sh"
+  ],
+  "unchanged_files": [
+    {
+      "path": "src/rmtc9/announce.hpp",
+      "sha256": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd"
+    },
+    {
+      "path": "src/rmtc9/battle.cpp",
+      "sha256": "669445aaddb934aac29094ce4341d21701649609d7c13414f1586e2409fc76ee"
+    },
+    {
+      "path": "src/rmtc9/battle.hpp",
+      "sha256": "a33e2c2851e0f61f9d673523f44ba16b18a468d68f83597fcceec308506d5bbf"
+    },
+    {
+      "path": "src/rmtc9/bot.cpp",
+      "sha256": "4ef9a9a9331fe17158ee28964c60af74fbd86d39e11d4c550cb93dd456b97276"
+    },
+    {
+      "path": "src/rmtc9/bot.hpp",
+      "sha256": "4bce15364da85a4770d3dd10a97b6fdba1331a832e76f9068be916cc3b72ffb0"
+    },
+    {
+      "path": "src/rmtc9/combat.hpp",
+      "sha256": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5"
+    },
+    {
+      "path": "src/rmtc9/events.cpp",
+      "sha256": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e"
+    },
+    {
+      "path": "src/rmtc9/events.hpp",
+      "sha256": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083"
+    },
+    {
+      "path": "src/rmtc9/frame_gate.hpp",
+      "sha256": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f"
+    },
+    {
+      "path": "src/rmtc9/grid.cpp",
+      "sha256": "eeb89f98e7d82e76f95683d696ea106070f284ab49aa39065af08e2b0f00dc2d"
+    },
+    {
+      "path": "src/rmtc9/grid.hpp",
+      "sha256": "188d49de6db3104cba6dfe286f687ea3a341867a560f90be3f432b2778a44260"
+    },
+    {
+      "path": "src/rmtc9/parse.cpp",
+      "sha256": "1f4166862859a642ae20c19a8b25b600abca469bed9c326d7eaeae0eda5f3b9d"
+    },
+    {
+      "path": "src/rmtc9/parse.hpp",
+      "sha256": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc"
+    },
+    {
+      "path": "src/rmtc9/types.cpp",
+      "sha256": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76"
+    },
+    {
+      "path": "src/rmtc9/types.hpp",
+      "sha256": "739588d9ea34336794b88107a0509fb75d33e43d385068868f9f7155a53cdc64"
+    },
+    {
+      "path": "tools/bench/bench_main.cpp",
+      "sha256": "bc543a5e972855b6ee01040daf847736e839943be9e14bd168dc5e7f53a9570a"
+    },
+    {
+      "path": "tools/bench/opponent_adapter.hpp",
+      "sha256": "027c710cc8f27fd21e08d13b8185ece7a0d8ed20ff4b5bf9a82567360ec244ee"
+    },
+    {
+      "path": "tools/bench/referee.cpp",
+      "sha256": "de47b1ecbbf464b110417098514a083f03c80b0175eb69d68b726d8f6e519e8e"
+    },
+    {
+      "path": "tools/bench/referee.hpp",
+      "sha256": "3a194f790aec35335d63c5d713cf260b220840345d9a6d28e5f0700f59e328e1"
+    },
+    {
+      "path": "tools/bench/v7_adapter.cpp",
+      "sha256": "a45dba558bf66867810278dc77f2be3117b37a95b827f163b1462e556f26ea6c"
+    },
+    {
+      "path": "tools/bench/v8_adapter.cpp",
+      "sha256": "382b0ebba34b6a4b359a70b44c431ae913df561140a85e63fca2926df0a32479"
+    },
+    {
+      "path": "tools/defect_cases.cpp",
+      "sha256": "f12c368ce64590f7154d4ae8ae3ff6d6b4935ba0d62dfccba2bf92185f29c8d0"
+    },
+    {
+      "path": "tools/evaluate.py",
+      "sha256": "700e40b1c28b552a26f21416ad014cd9e9727967eba4c42337eb7a6b57d6aeef"
+    },
+    {
+      "path": "tools/node_sim/mock_gateway.py",
+      "sha256": "e2e7b5be187e2ec0e9b86f1e621755d4163b1fd1c8f86e2a06ac877a9d64e50e"
+    },
+    {
+      "path": "tools/node_sim/node_sim_main.cpp",
+      "sha256": "d2c961c30aeaa24d3b4ba7f00f8c0d2e1b336df2ca1bea21ed11a657a88b0c50"
+    },
+    {
+      "path": "tools/node_sim/stub/rclcpp/rclcpp.hpp",
+      "sha256": "b9c489d0e4256ff98f64250cf76a040fdcee98641ac080791ac2a573752edae5"
+    },
+    {
+      "path": "tools/node_sim/stub/std_msgs/msg/string.hpp",
+      "sha256": "036dc4a475b0be8182967702e1ad935648d3aa2483cb5b4fd66eef1fe3198310"
+    },
+    {
+      "path": "tools/replay_main.cpp",
+      "sha256": "5272c479827e057c477c800fda2a8afc586f3941520a5ec9772d885946252762"
+    },
+    {
+      "path": "tools/smoke_main.cpp",
+      "sha256": "b392a5c9553b3831d90b49591cfbf4fd3edd7797b9e17649e66d0e8366193d8b"
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "sha256": "ed2ea35a709c6fde28fe2b80eeaaa5a4ff5b682e1e3f2e17002db7af3b4732d5"
+    },
+    {
+      "path": "tests/llm_worker_tests.cpp",
+      "sha256": "f5dccf630779fb1a4a2af3fba133ca642a403727304172c1587c178ae3deea93"
+    },
+    {
+      "path": "tests/node_scope_tests.cpp",
+      "sha256": "6b22218e7fd9a26aa10976d703352fcfabeeb2de5c4c153bdc6c3c8315e68878"
+    },
+    {
+      "path": "tests/v4_tests.cpp",
+      "sha256": "486ea2b85958a48bb70837926f6e034adc46d2ac884155574d0b10263fca634a"
+    },
+    {
+      "path": "tests/v6_tests.cpp",
+      "sha256": "b3b650233e6a1c59c62c9beef6278a769a43740c9d76b58b538e4a91a0665f1f"
+    },
+    {
+      "path": "tests/v7_tests.cpp",
+      "sha256": "ce85902bf0d6cdaa9b50e6897e8139324462575aae1f3fac7d8ee016673a837e"
+    },
+    {
+      "path": "tests/v8_tests.cpp",
+      "sha256": "34c6270c56ed43e818c92e26a3d8f7ef1b9be80d891a18c19c1e82d8cf6861d8"
+    },
+    {
+      "path": "tests/v9_tests.cpp",
+      "sha256": "b6a4fff4440400fd469ea2dd532ee75b48ee9ddb41eb2f66952fbdf04aecac62"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/battle.cpp",
+      "sha256": "16d69f00a758beb3cf363aeb7e382f603f19b48182764aca300c3445fec165f3"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/battle.hpp",
+      "sha256": "e02f7afc36999325df9ff320871303c8467450df16ab0727886bcf20cf64c9d2"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/bot.cpp",
+      "sha256": "baea46c512758996f73d5031a06b1bb536d36397f380ad48826c6592ab872707"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/bot.hpp",
+      "sha256": "06e8bd2da0e6cb64b6a103f464465230b42e1483abe81e30f68410bbb909964a"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/combat.hpp",
+      "sha256": "9f0e4ae809ff8614c6e56908f7f74b68cb69042497b7f0f36955015f8c32debe"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/events.cpp",
+      "sha256": "d7c5aa1a9f10c41bb4805a3fc378fc87bedafbb86209b42bd490ae3bb0b31af7"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/events.hpp",
+      "sha256": "f781a29a166ca82aff2349aab2bf9ba5c05296aa48900a696d23514fa2907064"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/frame_gate.hpp",
+      "sha256": "49c24f2e2ab9bb5f8d4565b09a0962adafdbffcdf34be02c25781b2327b90e28"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/grid.cpp",
+      "sha256": "890e922efbdad19118d8ccaace4ea98ce5751af7a50872688034755033d7c695"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/grid.hpp",
+      "sha256": "123d79ed9089f5d2a8411e9a7329fe0e3307fe3af9faeea5f450278d4a16d950"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/parse.cpp",
+      "sha256": "d8543c170ce43932b0e91f6332f7a8ab019a26a1155229a1674395dfa1c0a41d"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/parse.hpp",
+      "sha256": "18ebfc4d937763203b8bd53a95371497738f7b100a5db2fa6e85000e6bb37cc9"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/types.cpp",
+      "sha256": "5c43cc005df2a028f88efb63313bddbc401b05abc0c5aa104fb35e9c289949e1"
+    },
+    {
+      "path": "baseline_v7/src/rmtc7/types.hpp",
+      "sha256": "7a33f16d7926f7ea97677d073ada2f2d6a07d40c0525265c47d8bb7d1548ff3f"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/announce.hpp",
+      "sha256": "aaa4621a1fceb22c190ec3ef10e21bbc772f1d99c6d69e99699500cc09e73e1f"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/battle.cpp",
+      "sha256": "1ebf672ada610e107b9dacca167ea99c9f484aa6b9e9c86106ed8e3b437f31ad"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/battle.hpp",
+      "sha256": "dde86b6db7964ed974ffd35438b192c1a90009ac149a77a11534d83fa399c3f3"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/bot.cpp",
+      "sha256": "f8957f52978e21014ca98675701dcd753258447d76635623959fcb247ceb0e67"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/bot.hpp",
+      "sha256": "daa42c566b37e24697553d11c61a7a5f1900133218b429b94df0cf86f494a586"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/combat.hpp",
+      "sha256": "78b446b4065acae9e6e35b28b05c2f46db4c20e653054c532ae719080e84d637"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/events.cpp",
+      "sha256": "1d83c97bd65e5986c584800586506ab43023e52166d1aa1e31e84084e719600c"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/events.hpp",
+      "sha256": "fb0a39397ad642be908f711bba4380a2d77884e4af28bed48bb9cd91ca35af23"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/frame_gate.hpp",
+      "sha256": "a1317efb21c07216b7db747b53bc839616dd8375edee404517ee555d70fe3a6e"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/grid.cpp",
+      "sha256": "cc248b08d098534415eeb7306d8385c7daedae1800d119220ec1d4975bc3ea1e"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/grid.hpp",
+      "sha256": "43d633eba6c55513410e35a96eb3adcb59903eba29ab2d89c7a6292b07d41443"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/parse.cpp",
+      "sha256": "40c35815e1a8ab62607bce285199b270c57cedd952cfd21b84cc88ff16637acd"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/parse.hpp",
+      "sha256": "3e937f2f21c8f500e774e52b7b9e1c3df23596f37d496f10c9bdca8b4cb759b0"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/types.cpp",
+      "sha256": "33fa06de7ae5eb4a47f0a8f6963d39725d03808c91f25bd497597e7f2799fbbb"
+    },
+    {
+      "path": "baseline_v8/src/rmtc8/types.hpp",
+      "sha256": "7e0deb151ecb310d27c869f83900f20d7809082906c311f7ae12b84d6947aa59"
+    },
+    {
+      "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+      "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
+    },
+    {
+      "path": "third_party/nlohmann/LICENSE.MIT",
+      "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+    },
+    {
+      "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+      "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
+    },
+    {
+      "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+      "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
+    },
+    {
+      "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+      "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
+    },
+    {
+      "path": "03_官方练习包_v1.1/dist.zip",
+      "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
+    }
+  ],
+  "regression_tests_executed": false,
+  "new_tests_added": false,
+  "benchmark_executed": false,
+  "official_ros_built": false,
+  "real_curl_transport_built": false,
+  "official_ai_verified": false,
+  "official_full_match_verified": false,
+  "warning_notes": "MSVC getenv deprecation warnings retained; CMake pthread probes fail normally on Windows then Threads is found"
+}

@@ -1,0 +1,29 @@
+Test project C:/Users/xwn07/Documents/ChatGPT/HERO/work/release_v10_20261027/build
+      Start  1: core_regression
+ 1/12 Test  #1: core_regression ........................   Passed    0.14 sec
+      Start  2: llm_session_lifecycle
+ 2/12 Test  #2: llm_session_lifecycle ..................   Passed    1.56 sec
+      Start  3: v4_rules_boundaries
+ 3/12 Test  #3: v4_rules_boundaries ....................   Passed    0.78 sec
+      Start  4: v6_physical_scenarios
+ 4/12 Test  #4: v6_physical_scenarios ..................   Passed    0.11 sec
+      Start  5: v7_contracts
+ 5/12 Test  #5: v7_contracts ...........................   Passed    0.06 sec
+      Start  6: v8_new_contracts
+ 6/12 Test  #6: v8_new_contracts .......................   Passed    6.71 sec
+      Start  7: v9_review_regressions
+ 7/12 Test  #7: v9_review_regressions ..................   Passed    0.08 sec
+      Start  8: v92_score_buffer_and_offset_fortress
+ 8/12 Test  #8: v92_score_buffer_and_offset_fortress ...   Passed    0.07 sec
+      Start  9: v93_shortest_path_exploration
+ 9/12 Test  #9: v93_shortest_path_exploration ..........   Passed    0.07 sec
+      Start 10: node_announcement_session
+10/12 Test #10: node_announcement_session ..............   Passed    1.06 sec
+      Start 11: v10_arrival_tail_receipt
+11/12 Test #11: v10_arrival_tail_receipt ...............   Passed    0.06 sec
+      Start 12: v10_recorded_bag_audit
+12/12 Test #12: v10_recorded_bag_audit .................   Passed    0.20 sec
+
+100% tests passed, 0 tests failed out of 12
+
+Total Test time (real) =  11.29 sec

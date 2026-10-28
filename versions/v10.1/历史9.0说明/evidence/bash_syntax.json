@@ -1,0 +1,30 @@
+[
+  {
+    "script": "bench.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "build.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "defect_cases.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "doctor.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "node_sim.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "run.sh",
+    "exit_code": 0
+  },
+  {
+    "script": "test.sh",
+    "exit_code": 0
+  }
+]

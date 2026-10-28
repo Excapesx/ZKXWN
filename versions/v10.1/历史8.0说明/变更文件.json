@@ -1,0 +1,907 @@
+[
+  {
+    "path": ".gitattributes",
+    "baseline_path": ".gitattributes",
+    "change": "unchanged"
+  },
+  {
+    "path": ".gitignore",
+    "baseline_path": ".gitignore",
+    "change": "unchanged"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "baseline_path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+    "change": "unchanged"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "baseline_path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+    "change": "unchanged"
+  },
+  {
+    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+    "baseline_path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+    "change": "unchanged"
+  },
+  {
+    "path": "03_官方练习包_v1.1/dist.zip",
+    "baseline_path": "03_官方练习包_v1.1/dist.zip",
+    "change": "unchanged"
+  },
+  {
+    "path": "7.0检查报告.md",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "baseline_path": "CMakeLists.txt",
+    "change": "modified"
+  },
+  {
+    "path": "README.md",
+    "baseline_path": "README.md",
+    "change": "modified"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/battle.cpp",
+    "baseline_path": "src/rmtc7/battle.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/battle.hpp",
+    "baseline_path": "src/rmtc7/battle.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/bot.cpp",
+    "baseline_path": "src/rmtc7/bot.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/bot.hpp",
+    "baseline_path": "src/rmtc7/bot.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/combat.hpp",
+    "baseline_path": "src/rmtc7/combat.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/events.cpp",
+    "baseline_path": "src/rmtc7/events.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/events.hpp",
+    "baseline_path": "src/rmtc7/events.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/frame_gate.hpp",
+    "baseline_path": "src/rmtc7/frame_gate.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/grid.cpp",
+    "baseline_path": "src/rmtc7/grid.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/grid.hpp",
+    "baseline_path": "src/rmtc7/grid.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/parse.cpp",
+    "baseline_path": "src/rmtc7/parse.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/parse.hpp",
+    "baseline_path": "src/rmtc7/parse.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/types.cpp",
+    "baseline_path": "src/rmtc7/types.cpp",
+    "change": "moved"
+  },
+  {
+    "path": "baseline_v7/src/rmtc7/types.hpp",
+    "baseline_path": "src/rmtc7/types.hpp",
+    "change": "moved"
+  },
+  {
+    "path": "evidence/7.0缺陷对照.txt",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/8.0_测试.txt",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v7_fail_every3.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v7_latency150.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v7_latency3000.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v8_fail_every3.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v8_latency150.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/node_sim/v8_latency3000.out",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/frozen_sources.json",
+    "baseline_path": "evidence/validation/frozen_sources.json",
+    "change": "modified"
+  },
+  {
+    "path": "evidence/validation/practice_stage1.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/practice_stage2.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_16x16_v4.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_16x16_v4.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v2.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v2.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v3.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v3.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed71000.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed71000.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed90000.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed90000.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed95000.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_20x20_v4_seed95000.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_24x24_v4.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_24x24_v4.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_practice_map.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage1_practice_map.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_1v1_vs7.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_1v1_vs7.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_32x16_v2.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_32x16_v2.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_duel_mode.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_duel_mode.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_extra_hazards.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_extra_hazards.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_markdown.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_markdown.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_unknown_entry.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_llm_unknown_entry.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_practice.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_practice.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_standard.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_events_standard.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_777.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_777.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_7g7.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_7g7.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_7rc.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_7rc.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_888.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_888.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_ccc.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_ccc.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_ggg.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_ggg.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_grw.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_grw.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_rrr.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_rrr.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_www.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_field_www.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_practice_map.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_practice_map.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_practice_map_events.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/stage2_practice_map_events.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/summary.json",
+    "baseline_path": "evidence/validation/summary.json",
+    "change": "modified"
+  },
+  {
+    "path": "evidence/validation/symmetry_8_vs_8.jsonl",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "evidence/validation/symmetry_8_vs_8.stdout.json",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "examples/本地回放示例.jsonl",
+    "baseline_path": "examples/本地回放示例.jsonl",
+    "change": "unchanged"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/CMakeLists.txt",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/CMakeLists.txt",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/config/decision_config.json",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/config/decision_config.json",
+    "change": "renamed"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/include/rmtc_bot8/llm.hpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/include/rmtc_bot7/llm.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/include/rmtc_bot8/node.hpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/include/rmtc_bot7/node.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/package.xml",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/package.xml",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/src/curl_transport.cpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/src/curl_transport.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/src/llm.cpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/src/llm.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/src/main.cpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/src/main.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot8/src/node.cpp",
+    "baseline_path": "ros2_ws/src/rmtc_bot7/src/node.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "baseline_path": "scripts/bench.sh",
+    "change": "modified"
+  },
+  {
+    "path": "scripts/build.sh",
+    "baseline_path": "scripts/build.sh",
+    "change": "modified"
+  },
+  {
+    "path": "scripts/defect_cases.sh",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "scripts/doctor.sh",
+    "baseline_path": "scripts/doctor.sh",
+    "change": "unchanged"
+  },
+  {
+    "path": "scripts/node_sim.sh",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "scripts/run.sh",
+    "baseline_path": "scripts/run.sh",
+    "change": "modified"
+  },
+  {
+    "path": "scripts/test.sh",
+    "baseline_path": "scripts/test.sh",
+    "change": "modified"
+  },
+  {
+    "path": "src/rmtc8/announce.hpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "src/rmtc8/battle.cpp",
+    "baseline_path": "src/rmtc7/battle.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/battle.hpp",
+    "baseline_path": "src/rmtc7/battle.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/bot.cpp",
+    "baseline_path": "src/rmtc7/bot.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/bot.hpp",
+    "baseline_path": "src/rmtc7/bot.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/combat.hpp",
+    "baseline_path": "src/rmtc7/combat.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/events.cpp",
+    "baseline_path": "src/rmtc7/events.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/events.hpp",
+    "baseline_path": "src/rmtc7/events.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/frame_gate.hpp",
+    "baseline_path": "src/rmtc7/frame_gate.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/grid.cpp",
+    "baseline_path": "src/rmtc7/grid.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/grid.hpp",
+    "baseline_path": "src/rmtc7/grid.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/parse.cpp",
+    "baseline_path": "src/rmtc7/parse.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/parse.hpp",
+    "baseline_path": "src/rmtc7/parse.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/types.cpp",
+    "baseline_path": "src/rmtc7/types.cpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "src/rmtc8/types.hpp",
+    "baseline_path": "src/rmtc7/types.hpp",
+    "change": "renamed_and_modified"
+  },
+  {
+    "path": "tests/core_tests.cpp",
+    "baseline_path": "tests/core_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/llm_worker_tests.cpp",
+    "baseline_path": "tests/llm_worker_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/v4_tests.cpp",
+    "baseline_path": "tests/v4_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/v6_tests.cpp",
+    "baseline_path": "tests/v6_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/v7_tests.cpp",
+    "baseline_path": "tests/v7_tests.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tests/v8_tests.cpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "third_party/nlohmann/LICENSE.MIT",
+    "baseline_path": "third_party/nlohmann/LICENSE.MIT",
+    "change": "unchanged"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "baseline_path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "change": "unchanged"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "baseline_path": "tools/bench/bench_main.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.hpp",
+    "baseline_path": "tools/bench/opponent_adapter.hpp",
+    "change": "modified"
+  },
+  {
+    "path": "tools/bench/referee.cpp",
+    "baseline_path": "tools/bench/referee.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tools/bench/referee.hpp",
+    "baseline_path": "tools/bench/referee.hpp",
+    "change": "modified"
+  },
+  {
+    "path": "tools/bench/v7_adapter.cpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/defect_cases.cpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/evaluate.py",
+    "baseline_path": "tools/evaluate.py",
+    "change": "modified"
+  },
+  {
+    "path": "tools/node_sim/mock_gateway.py",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/node_sim/node_sim_main.cpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/node_sim/stub/rclcpp/rclcpp.hpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/node_sim/stub/std_msgs/msg/string.hpp",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "tools/replay_main.cpp",
+    "baseline_path": "tools/replay_main.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "tools/smoke_main.cpp",
+    "baseline_path": "tools/smoke_main.cpp",
+    "change": "modified"
+  },
+  {
+    "path": "历史6.0说明/README.md",
+    "baseline_path": "历史6.0说明/README.md",
+    "change": "unchanged"
+  },
+  {
+    "path": "历史6.0说明/对抗验证报告.md",
+    "baseline_path": "历史6.0说明/对抗验证报告.md",
+    "change": "unchanged"
+  },
+  {
+    "path": "历史6.0说明/更新日志.md",
+    "baseline_path": "历史6.0说明/更新日志.md",
+    "change": "unchanged"
+  },
+  {
+    "path": "历史6.0说明/程序逻辑与学习指南.md",
+    "baseline_path": "历史6.0说明/程序逻辑与学习指南.md",
+    "change": "unchanged"
+  },
+  {
+    "path": "历史7.0说明/6.0检查报告.md",
+    "baseline_path": "6.0检查报告.md",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/README.md",
+    "baseline_path": "README.md",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/6.0缺陷对照.txt",
+    "baseline_path": "evidence/6.0缺陷对照.txt",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/7.0_对抗验证.txt",
+    "baseline_path": "evidence/7.0_对抗验证.txt",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/7.0_构建.txt",
+    "baseline_path": "evidence/7.0_构建.txt",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/7.0_测试.txt",
+    "baseline_path": "evidence/7.0_测试.txt",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/7.0_输入版本摘要.json",
+    "baseline_path": "evidence/7.0_输入版本摘要.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/duel_vs_six_91000.jsonl",
+    "baseline_path": "evidence/validation/duel_vs_six_91000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/duel_vs_six_91000.stdout.json",
+    "baseline_path": "evidence/validation/duel_vs_six_91000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/frozen_sources.json",
+    "baseline_path": "evidence/validation/frozen_sources.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_symmetry_99100.jsonl",
+    "baseline_path": "evidence/validation/seven_symmetry_99100.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_symmetry_99100.stdout.json",
+    "baseline_path": "evidence/validation/seven_symmetry_99100.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_greedy_83000.jsonl",
+    "baseline_path": "evidence/validation/seven_vs_greedy_83000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_greedy_83000.stdout.json",
+    "baseline_path": "evidence/validation/seven_vs_greedy_83000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_six_83000.jsonl",
+    "baseline_path": "evidence/validation/seven_vs_six_83000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_six_83000.stdout.json",
+    "baseline_path": "evidence/validation/seven_vs_six_83000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_six_rect_91000.jsonl",
+    "baseline_path": "evidence/validation/seven_vs_six_rect_91000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_six_rect_91000.stdout.json",
+    "baseline_path": "evidence/validation/seven_vs_six_rect_91000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_three_six_83000.jsonl",
+    "baseline_path": "evidence/validation/seven_vs_three_six_83000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/seven_vs_three_six_83000.stdout.json",
+    "baseline_path": "evidence/validation/seven_vs_three_six_83000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/stage1_7_vs_6_71000.jsonl",
+    "baseline_path": "evidence/validation/stage1_7_vs_6_71000.jsonl",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/stage1_7_vs_6_71000.stdout.json",
+    "baseline_path": "evidence/validation/stage1_7_vs_6_71000.stdout.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/evidence/validation/summary.json",
+    "baseline_path": "evidence/validation/summary.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/变更文件.json",
+    "baseline_path": "变更文件.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/对抗验证报告.md",
+    "baseline_path": "对抗验证报告.md",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/文件清单.json",
+    "baseline_path": "文件清单.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/更新日志.md",
+    "baseline_path": "更新日志.md",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/来源及验证.json",
+    "baseline_path": "来源及验证.json",
+    "change": "moved"
+  },
+  {
+    "path": "历史7.0说明/程序逻辑与学习指南.md",
+    "baseline_path": "程序逻辑与学习指南.md",
+    "change": "moved"
+  },
+  {
+    "path": "性能验证报告.md",
+    "baseline_path": null,
+    "change": "added"
+  },
+  {
+    "path": "更新日志.md",
+    "baseline_path": "更新日志.md",
+    "change": "modified"
+  },
+  {
+    "path": "程序逻辑与学习指南.md",
+    "baseline_path": "程序逻辑与学习指南.md",
+    "change": "modified"
+  },
+  {
+    "path": null,
+    "baseline_path": "tools/bench/v6_adapter.cpp",
+    "change": "removed"
+  }
+]

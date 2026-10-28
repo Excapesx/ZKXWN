@@ -1,6 +1,6 @@
 # 校内程序版本索引
 
-更新：2026-10-27。当前交接版为[10.0](../versions/v10.0/README.md)。赛事规则PDF为v1.2，随包协议/官方练习二进制仍v1.1；版本号不代表已通过正式赛事验收。
+更新：2026-10-28。当前交接版为[10.1](../versions/v10.1/README.md)。赛事规则PDF为v1.2，随包协议/官方练习二进制仍v1.1；版本号不代表已通过正式赛事验收。
 
 | 版本 | 主要工作 | ROS包及程序名 | 证据和已知局限 |
 | --- | --- | --- | --- |
@@ -16,8 +16,8 @@
 | [9.1](../versions/v9.1/README.md) | 官方默认模型限制、1024默认输出预算、交付一致性记录 | `rmtc_bot9`（9.1.0） | Windows编译及静态/清单核对；本轮未执行回归或对战。核心/自研裁判与9.0一致，真实ROS/统一LLM/官方整场仍待验收。 |
 | [9.2](../versions/v9.2/README.md) | 实录目标断档修复、缓冲与守分、偏移堡垒、诊断与导入防护 | `rmtc_bot9`（9.2.0） | Release/Debug各9组通过；328条离线比较总体接近9.1。真实ROS/LLM/v1.2官方验收待测。 |
 | [9.3](../versions/v9.3/README.md) | 同长度路径扩大视野、资源诊断及配对复测 | `rmtc_bot9`（9.3.0） | ROS构建、10组回归及发布复跑通过；离线均分小幅增加，真实LLM和正式v1.2裁判待验收。 |
-
 | [10.0](../versions/v10.0/README.md) | 到达时间竞争、保守候选路线、尾盘重算、逐tick回执和启动摘要 | `rmtc_bot9`（10.0.0） | Windows与离线证据见本版报告；真实ROS/官方整局/LLM待验，不承诺普遍涨分。 |
+| [10.1](../versions/v10.1/README.md) | 自动分时、资源机会/尾盘可得分约束和阶段日志 | `rmtc_bot9`（10.1.0） | Release/Debug各13组通过；第二阶段256场未见稳定涨分；官方ROS/LLM/整局待验。 |
 
 ## 如何看这些记录
 
@@ -30,13 +30,13 @@
 ## 当前运行入口
 
 ```bash
-cd ~/ZKXWN/versions/v10.0
+cd ~/ZKXWN/versions/v10.1
 python3 scripts/verify_delivery.py
 bash ./scripts/build.sh
 bash ./scripts/run.sh A 2
 ```
 
-依次进入10.0、只读核对交付文件、编译ROS节点、启动A席位第二阶段。需要先具备Ubuntu/Humble环境；裁判、公开ROS域和真实网关按官方要求另行准备。
+依次进入10.1、只读核对交付文件、编译ROS节点、启动A席位第二阶段。需要先具备Ubuntu/Humble环境；裁判、公开ROS域和真实网关按官方要求另行准备。
 
 各历史版README给出本版命令。不要把v5的目录名误认成rmtc_bot5：它仍叫rmtc_bot3；v3/v4都叫rmtc_bot2。
 

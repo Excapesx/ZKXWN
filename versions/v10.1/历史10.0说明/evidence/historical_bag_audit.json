@@ -1,0 +1,75 @@
+{
+  "scope": "offline recorded evidence; no judge controls; receive timestamps do not prove settlement deadlines",
+  "sqlite_integrity": [
+    "ok"
+  ],
+  "database_sha256": {
+    "stage2_92_20261027_0.db3": "b5531c3e30b2b543f08763dc51ec4874916b598c99fe2cce0a8fd230048dc356"
+  },
+  "counts": {
+    "/team_A/perception": 501,
+    "/team_A/action": 500
+  },
+  "sessions": [
+    {
+      "session_id": "practice-b7d9a57c46db469c88efd3d70e6524fb",
+      "first_tick": 0,
+      "last_tick": 500,
+      "perception_ticks": 501,
+      "action_ticks": 500,
+      "missing_action_ticks": [],
+      "conflicting_actions": [],
+      "duplicate_action_messages": 0,
+      "receipt_mismatches": [
+        {
+          "tick": 25,
+          "sent": "move",
+          "receipt_tick": 25,
+          "receipt_action": "wait"
+        }
+      ],
+      "receipt_unobserved_ticks": [],
+      "receipt_errors": [
+        {
+          "tick": 66,
+          "error": "E_BLOCKED"
+        },
+        {
+          "tick": 256,
+          "error": "E_BLOCKED"
+        },
+        {
+          "tick": 258,
+          "error": "E_BLOCKED"
+        },
+        {
+          "tick": 327,
+          "error": "E_BLOCKED"
+        },
+        {
+          "tick": 331,
+          "error": "E_BLOCKED"
+        }
+      ],
+      "observation_gaps_over_2s_or_missing_ticks": [
+        {
+          "after_tick": 25,
+          "next_tick": 26,
+          "seconds": 8.445843
+        },
+        {
+          "after_tick": 52,
+          "next_tick": 53,
+          "seconds": 3.091581
+        },
+        {
+          "after_tick": 223,
+          "next_tick": 224,
+          "seconds": 7.544113
+        }
+      ]
+    }
+  ],
+  "real_llm_qualified": "not checked",
+  "official_v1_2_compatible": "not checked"
+}
