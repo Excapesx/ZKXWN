@@ -1,0 +1,2267 @@
+[
+  {
+    "path": "baseline_v103/source_manifest.json",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/announce.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/battle.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/battle.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/bot.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/combat.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/events.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/events.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/frame_gate.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/grid.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/grid.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/opportunity_evaluator.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/parse.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/parse.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/phase_policy.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/policy_variant.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/receipt_audit.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/resource_race.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/round2_policy.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/score_model.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/short_routes.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/types.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v103/src/rmtc103/types.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/analysis.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/baseline_v103_full_manifest.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/configure_fixed.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/debug_build.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/debug_tests.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/development/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C0_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C1_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/reference101_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/frozen_release_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/frozen_release_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/10.4_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/10.4_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/10.4_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/batch.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/C0_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_stage1.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C0_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C1_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_stage1.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C2_stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/C_R_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/frozen_source.zip",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/pre_registered.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/reference101_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/reference101_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/reproduce/analyze_round3.py",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/reproduce/prepare_v104.py",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/reproduce/round3_development.py",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/reproduce/round3_final.py",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/reproduce/round3_traces.py",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/resource_gain_total_loss.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/resource_gain_total_loss_vs101.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_M_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_P_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/C_R_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/restoration/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/source_changes_from_v103.diff",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/test_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/530005_1_C0.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/530112_0_C0.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/530301_1_C0.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/530303_3_C0.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/530408_2_C0.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/raw_traces.zip",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/traces_extra_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/traces/traces_state_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/v104_checks.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/v104_checks_final.txt",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/variant_definitions.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/分时影响审计.md",
+    "kind": "added"
+  },
+  {
+    "path": "README.md",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/package.xml",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/test.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/opportunity_evaluator.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/phase_probe.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "src/rmtc9/phase_weights.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "tests/v104_production_scope.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tests/v104_tests.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/v103_adapter.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tools/phase_trace.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "VERSION",
+    "kind": "modified"
+  },
+  {
+    "path": "修复与验证报告.md",
+    "kind": "modified"
+  },
+  {
+    "path": "历史10.3说明/evidence/analysis.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/analysis_v2.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/debug_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/debug_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B0/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/source_changes_from_previous.diff",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B1/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/source_changes_from_previous.diff",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/source_changes_from_previous.diff",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B2_control/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/source_changes_from_previous.diff",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/source_changes_from_previous.diff",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/development/B3_no_cost/source_snapshot.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530112_0_10.1.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530112_0_10.3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530112_0_B3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530112_0_B3_safe.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530301_1_10.1.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530301_1_10.3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530301_1_B3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530301_1_B3_safe.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530408_2_10.1.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530408_2_10.3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530408_2_B3.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/530408_2_B3_safe.excerpt.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/B0_identity.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/B0_identity_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/forecast_followup.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/diagnosis/机制与案例.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/final_configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/first_holdout_report.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.1_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/10.2_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/frozen_source.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/no_cost_batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/pre_registered.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/stage1.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout/stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.1_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_duel.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/10.2_duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/frozen_source.zip",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_078large.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_078large.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_078large_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_08r.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_08r.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_08r_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_0gc.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_778.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_78g.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_78g.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_78g_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/no_cost_batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/pre_registered.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/stage1.stderr",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/holdout_v2/stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/no_cost_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/no_cost_configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/planner_timing/bench.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/planner_timing/build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/planner_timing/CMakeLists.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/planner_timing/configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/planner_timing/result.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/reproduce/analyze_round2.py",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/reproduce/prepare_v103.py",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/reproduce/round2_cost_control.py",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/reproduce/round2_experiment.py",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/reproduce/round2_final.py",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/restored_release_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/restored_release_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_cost_release_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_cost_release_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_debug_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_debug_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_no_cost_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_no_cost_configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_restored_configure.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_restored_release_build.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/evidence/safe_restored_release_tests.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/README.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/修复与验证报告.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/更新日志.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.3说明/来源及验证.json",
+    "kind": "added"
+  },
+  {
+    "path": "更新日志.md",
+    "kind": "modified"
+  },
+  {
+    "path": "来源及验证.json",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/__pycache__/audit_bag.cpython-312.pyc",
+    "kind": "generated_cache_excluded",
+    "preserved_at": "work/round3_v104_20261028/generated_cache"
+  },
+  {
+    "path": "变更文件.json",
+    "kind": "modified"
+  }
+]

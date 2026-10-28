@@ -1,0 +1,289 @@
+{
+  "selected_level": 3,
+  "opportunity_cost": true,
+  "selection": "B3 auditable irreversible-cost candidate, fixed phase multipliers unchanged. B2_control has a slightly higher development mean; not choosing on holdout.",
+  "seed_base": 103280000,
+  "jobs": "5 groups x16 maps x4 seats paired against each frozen baseline; 8 maps x12 same-game duel seats per baseline; stage1 40 maps; NC cost control on same 80 maps",
+  "source": [
+    {
+      "path": "src/rmtc9/announce.hpp",
+      "sha256": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd"
+    },
+    {
+      "path": "src/rmtc9/battle.cpp",
+      "sha256": "3a1f38beb0d8dad4efdda8d5fb332c3b9a3f1201cc6a2a9f2293aceaf623a068"
+    },
+    {
+      "path": "src/rmtc9/battle.hpp",
+      "sha256": "d7597140ebd7a7da2e2681f6f36816893869d86b030d0a26f40fc3d36e9c9db3"
+    },
+    {
+      "path": "src/rmtc9/bot.cpp",
+      "sha256": "d7c29c880a1bf5cebcd2bffcfa245413725a420c5157c92d527af36a9953dd70"
+    },
+    {
+      "path": "src/rmtc9/bot.hpp",
+      "sha256": "66eb2f2707de0613bc333cc356b9d5b99573194ed60f068744c1eb6144be0897"
+    },
+    {
+      "path": "src/rmtc9/combat.hpp",
+      "sha256": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5"
+    },
+    {
+      "path": "src/rmtc9/events.cpp",
+      "sha256": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e"
+    },
+    {
+      "path": "src/rmtc9/events.hpp",
+      "sha256": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083"
+    },
+    {
+      "path": "src/rmtc9/frame_gate.hpp",
+      "sha256": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f"
+    },
+    {
+      "path": "src/rmtc9/grid.cpp",
+      "sha256": "d1c20bdb5c54cde145b786be74091bd54011c518ea5e60ce435b8625fddee7e5"
+    },
+    {
+      "path": "src/rmtc9/grid.hpp",
+      "sha256": "d9224dac8b9bb5c39af3b0575f9bd4a12cd72ca21c5efd191566f4c81ada48c2"
+    },
+    {
+      "path": "src/rmtc9/opportunity_evaluator.hpp",
+      "sha256": "405ca82333654add18cf8d123e6683b436fc6f30a25112b9899621d9989fd297"
+    },
+    {
+      "path": "src/rmtc9/parse.cpp",
+      "sha256": "79916d76e2b92f2bd84525d55264d443dde0c4611992a697c3209b7195058a8f"
+    },
+    {
+      "path": "src/rmtc9/parse.hpp",
+      "sha256": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc"
+    },
+    {
+      "path": "src/rmtc9/phase_policy.hpp",
+      "sha256": "09ba97a54f0fdc31d892c041bdee867dc73ff98d2faeb89a8843d281a0bf7387"
+    },
+    {
+      "path": "src/rmtc9/policy_variant.hpp",
+      "sha256": "69e38436489731190b6898d532402161c8e750a8da5476204ce3337f40f52341"
+    },
+    {
+      "path": "src/rmtc9/receipt_audit.hpp",
+      "sha256": "8371a0e9eb3a53fd06b3ab20c8eba5768622d9d2d0d85cb313338f71dc1c5b05"
+    },
+    {
+      "path": "src/rmtc9/resource_race.hpp",
+      "sha256": "740bc5c732a9da09a4493849a7a43e23d3f330a193708ca9f188f6170a0dca2e"
+    },
+    {
+      "path": "src/rmtc9/round2_policy.hpp",
+      "sha256": "712a99a6888b48356239d72221c3ce549fb95b74dc0b6ca25b9603652b22638e"
+    },
+    {
+      "path": "src/rmtc9/score_model.hpp",
+      "sha256": "8e3e57d9486a1467fb4e45356838c92580ff9d698d7629eff83ce89dde69c49c"
+    },
+    {
+      "path": "src/rmtc9/short_routes.hpp",
+      "sha256": "234dcf8f401ffca6ee393578e9919a18ebddbd8d1dcaa576ee55ccf04bab5ca4"
+    },
+    {
+      "path": "src/rmtc9/types.cpp",
+      "sha256": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76"
+    },
+    {
+      "path": "src/rmtc9/types.hpp",
+      "sha256": "b9200769b2b7f5d01234d9310eef73bf301b2b698d757e403b41c0b646568627"
+    },
+    {
+      "path": "tools/bench/bench_main.cpp",
+      "sha256": "20a06f6ed40dbe7a39ba881ebfe478187542ee71b5adf0ed5019d66467828750"
+    },
+    {
+      "path": "tools/bench/opponent_adapter.hpp",
+      "sha256": "df2a49ffb7bf975881d9e79ad11b225e972be254ad8d186b66e03822bf65557e"
+    },
+    {
+      "path": "tools/bench/referee.cpp",
+      "sha256": "890ca8b9cae5b10a0a6d858cc6f97449ea59ab42cb1a6798a2aa6a48dc53f7e6"
+    },
+    {
+      "path": "tools/bench/referee.hpp",
+      "sha256": "3a194f790aec35335d63c5d713cf260b220840345d9a6d28e5f0700f59e328e1"
+    },
+    {
+      "path": "tools/bench/v100_adapter.cpp",
+      "sha256": "a57f0d9e344adea6d94e8e67e83c6569227d64dc1cfc834ed73cb792f718bf3a"
+    },
+    {
+      "path": "tools/bench/v101_adapter.cpp",
+      "sha256": "b69cb0df52226a72ff00be7eb1972a79b5aa73f1fe0d45239d2f087a354b7a2d"
+    },
+    {
+      "path": "tools/bench/v102_adapter.cpp",
+      "sha256": "73aedd54810b86498adc87f8093d7daadd3712a77de476d0989b1f77a0e7e28b"
+    },
+    {
+      "path": "tools/bench/v7_adapter.cpp",
+      "sha256": "a45dba558bf66867810278dc77f2be3117b37a95b827f163b1462e556f26ea6c"
+    },
+    {
+      "path": "tools/bench/v8_adapter.cpp",
+      "sha256": "382b0ebba34b6a4b359a70b44c431ae913df561140a85e63fca2926df0a32479"
+    },
+    {
+      "path": "tools/bench/v91_adapter.cpp",
+      "sha256": "995f0ebb43a13e665b13e2e324382cf336b0b0dcd3f0ea6940858b9dd2628bb6"
+    },
+    {
+      "path": "tools/bench/v93_adapter.cpp",
+      "sha256": "c66baf48cb6e7125ffab28486c87851ee56a07a08f216edca27883d80ab3e3b0"
+    },
+    {
+      "path": "tools/defect_cases.cpp",
+      "sha256": "f12c368ce64590f7154d4ae8ae3ff6d6b4935ba0d62dfccba2bf92185f29c8d0"
+    },
+    {
+      "path": "tools/evaluate.py",
+      "sha256": "700e40b1c28b552a26f21416ad014cd9e9727967eba4c42337eb7a6b57d6aeef"
+    },
+    {
+      "path": "tools/node_sim/mock_gateway.py",
+      "sha256": "e2e7b5be187e2ec0e9b86f1e621755d4163b1fd1c8f86e2a06ac877a9d64e50e"
+    },
+    {
+      "path": "tools/node_sim/node_sim_main.cpp",
+      "sha256": "d2c961c30aeaa24d3b4ba7f00f8c0d2e1b336df2ca1bea21ed11a657a88b0c50"
+    },
+    {
+      "path": "tools/node_sim/stub/rclcpp/rclcpp.hpp",
+      "sha256": "b9c489d0e4256ff98f64250cf76a040fdcee98641ac080791ac2a573752edae5"
+    },
+    {
+      "path": "tools/node_sim/stub/std_msgs/msg/string.hpp",
+      "sha256": "036dc4a475b0be8182967702e1ad935648d3aa2483cb5b4fd66eef1fe3198310"
+    },
+    {
+      "path": "tools/replay91_main.cpp",
+      "sha256": "7bcd8818ca1a790ffe6bbdfeaa38f043d315130af16f7c220310d0a3e02617c6"
+    },
+    {
+      "path": "tools/replay_main.cpp",
+      "sha256": "da516267f89d3621ffdadded18f7b89da88dca11f58e214a5a604f2d7fa66398"
+    },
+    {
+      "path": "tools/round2_trace.cpp",
+      "sha256": "d9ec927303fa47ba6f88c8de72cf5e7e0d7390b7b92cea635b173af1e5c442fc"
+    },
+    {
+      "path": "tools/smoke_main.cpp",
+      "sha256": "b392a5c9553b3831d90b49591cfbf4fd3edd7797b9e17649e66d0e8366193d8b"
+    },
+    {
+      "path": "tools/trace_main.cpp",
+      "sha256": "db8cd53b3bb1970ca15522bb68d16ebaf9f03f7508bc581c471da5ba55e9620c"
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "sha256": "0fdb675b040c30f0e998ce36ada68c44aa2ba5845803e357900fc6f8a1a8f710"
+    },
+    {
+      "path": "tests/llm_worker_tests.cpp",
+      "sha256": "f5dccf630779fb1a4a2af3fba133ca642a403727304172c1587c178ae3deea93"
+    },
+    {
+      "path": "tests/node_scope_tests.cpp",
+      "sha256": "04a4548ac48fc6cb43a3f882c5b8533a904a4ef832bd8bde9a08720af749cdd0"
+    },
+    {
+      "path": "tests/test_audit_bag.py",
+      "sha256": "1f31d782843e36bcf962eeae06ee74004f0e77740728e9978641f9ec09db9436"
+    },
+    {
+      "path": "tests/v101_tests.cpp",
+      "sha256": "0c60ad93f266a7cdcc7be83c2aa6ac83430a207e72997267f293c607b3522e1b"
+    },
+    {
+      "path": "tests/v102_tests.cpp",
+      "sha256": "30bbe2b474579b0272206e1097d0845d5370dee85b3c69ba17f22c0864621545"
+    },
+    {
+      "path": "tests/v103_tests.cpp",
+      "sha256": "9d226e45cb644c590f26a1a2aa4ae315407f2abac7998f53320a35ab0cc95f30"
+    },
+    {
+      "path": "tests/v10_tests.cpp",
+      "sha256": "e95771fdb7979784fd3894e8a6e56211227e35da222560e59ca904c903d3d624"
+    },
+    {
+      "path": "tests/v4_tests.cpp",
+      "sha256": "486ea2b85958a48bb70837926f6e034adc46d2ac884155574d0b10263fca634a"
+    },
+    {
+      "path": "tests/v6_tests.cpp",
+      "sha256": "9785d7b2ff46e9f4733c18df9026bf0cfb055b22283ebd13304dd561720acdd9"
+    },
+    {
+      "path": "tests/v7_tests.cpp",
+      "sha256": "ce85902bf0d6cdaa9b50e6897e8139324462575aae1f3fac7d8ee016673a837e"
+    },
+    {
+      "path": "tests/v8_tests.cpp",
+      "sha256": "34c6270c56ed43e818c92e26a3d8f7ef1b9be80d891a18c19c1e82d8cf6861d8"
+    },
+    {
+      "path": "tests/v92_tests.cpp",
+      "sha256": "2a2e423e80ad778ac0ac21551824dd4cfda1e3e6c9247ddef10cd317efbc4b21"
+    },
+    {
+      "path": "tests/v93_tests.cpp",
+      "sha256": "29e348e8385f508af66ec65d8ba7ebbb880166cb19e02beb8e27ef195c571659"
+    },
+    {
+      "path": "tests/v9_tests.cpp",
+      "sha256": "b6a4fff4440400fd469ea2dd532ee75b48ee9ddb41eb2f66952fbdf04aecac62"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
+      "sha256": "1a3952014b232065222c8d30c4bffb94d51f77f249eef3e69a9d08263cb0ca3d"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/config/decision_default.json",
+      "sha256": "b598517ea5d856f00f98846037753d77645873ecfab2283a73b98cdf32e37257"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/llm.hpp",
+      "sha256": "bc2aa0c61f7b58f9fab6fba4dfdca3299fc389fec1d37ce5be6f812c0e4d4302"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/node.hpp",
+      "sha256": "600ca86543b28ab0755c3ced714fb03823074dfae89546feb8cdc0b8ef097b43"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/package.xml",
+      "sha256": "ef63a341cf1c24d00d34db5d5f59d389bfce58784525c9a644552764b427cd8a"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/src/curl_transport.cpp",
+      "sha256": "e3cfbb8492a0f82611d0d8292a0d472c9dc8a5952f6b05a1755bf79b0fac7bc4"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/src/llm.cpp",
+      "sha256": "32058a2951852736bd8c95247a9189a31f6373403f2d08ab1abe7ff8fdfb6e98"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/src/main.cpp",
+      "sha256": "af2c29ab4e1a9f9ffcf2293439cc6714937d04b61d08560adc914d04cfd7e7ec"
+    },
+    {
+      "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
+      "sha256": "4839dad3e6c6fadd0d8d72640639b525b43e6ca51821f5a3f86b0c6711419e57"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "6be11eb6c11d325ddb84ef8715a373c3d69339f268fb9645340df6b44f15eaa9"
+    }
+  ]
+}

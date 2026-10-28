@@ -1,0 +1,23 @@
+{
+  "program_version": "8.0.0",
+  "baseline_version": "7.0.0（baseline_v7/src/rmtc7 与校内7.0 src/rmtc7 逐字相同）",
+  "official_material_version": "v1.1",
+  "created_date": "2026-10-24",
+  "compiler": "Apple clang（macOS），CMake 4.4.4 + CTest 与无 cmake 两条构建路径",
+  "test_assertions": 4076,
+  "test_groups": 6,
+  "evaluation_cases": 28,
+  "stage2_games_per_version": 6848,
+  "stage1_maps": 1001,
+  "evaluation_seeds_used_for_tuning": false,
+  "all_policy_invalid_total": 0,
+  "symmetry_difference": 0.0,
+  "node_end_to_end": "tools/node_sim：真实 node.cpp/llm.cpp/curl_transport.cpp + ROS 替身 + 本地假网关，见 evidence/node_sim/",
+  "official_ros_built": false,
+  "real_ai_gateway_verified": false,
+  "official_referee_full_match_verified": false,
+  "simulator_events": true,
+  "simulator_ai_qualification": "assumed, not obtained",
+  "decision_parameters": "全部写死在源码中，无环境变量通道；现场仅可切换 decision_type",
+  "git_upload_this_version": false
+}

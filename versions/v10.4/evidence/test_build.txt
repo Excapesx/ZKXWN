@@ -1,0 +1,9 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  rmtc9_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc9_core.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  v104_tests.cpp
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\tests\v104_tests.cpp(28,8): error C3861: “action_json”: 找不到标识符 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\v104_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\tests\v104_tests.cpp(28,56): error C3861: “action_json”: 找不到标识符 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\v104_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\tests\v104_tests.cpp(38,33): error C3861: “action_json”: 找不到标识符 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\v104_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\tests\v104_tests.cpp(38,82): error C3861: “action_json”: 找不到标识符 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\v104_tests.vcxproj]

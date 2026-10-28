@@ -1,0 +1,32 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  baseline102.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline102.lib
+  baseline100.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline100.lib
+  baseline101.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline101.lib
+  baseline7.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline7.lib
+  baseline91.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline91.lib
+  baseline8.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline8.lib
+  baseline93.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\baseline93.lib
+  types.cpp
+  grid.cpp
+  parse.cpp
+  bot.cpp
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.3\src\rmtc9\bot.cpp(454,54): warning C4456: “d”的声明隐藏了上一个本地声明 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\rmtc9_core.vcxproj]
+      C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.3\src\rmtc9\bot.cpp(449,19):
+      参见“d”的声明
+  
+  events.cpp
+  battle.cpp
+  正在生成代码...
+  rmtc9_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\rmtc9_core.lib
+  bench_main.cpp
+  referee.cpp
+  v7_adapter.cpp
+  v8_adapter.cpp
+  v91_adapter.cpp
+  v93_adapter.cpp
+  v100_adapter.cpp
+  v101_adapter.cpp
+  v102_adapter.cpp
+  正在生成代码...
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\build\Release\rmtc_arena.exe

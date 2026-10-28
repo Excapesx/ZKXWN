@@ -1,0 +1,7 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/work/round2_v103_20261028/planner_timing/CMakeLists.txt
+  bench.cpp
+  planner_timing.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round2_v103_20261028\planner_timing\build\Release\planner_timing.exe
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/work/round2_v103_20261028/planner_timing/CMakeLists.txt

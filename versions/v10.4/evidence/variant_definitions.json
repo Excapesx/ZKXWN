@@ -1,0 +1,31 @@
+{
+  "code": "shared source and same arena executable, offline factory config differences only",
+  "production_default": "C0",
+  "formula": "1 + alpha * (original - 1), restore_mask restores selected original family",
+  "variants": {
+    "C0": {
+      "alpha": 1,
+      "restore_mask": 0
+    },
+    "C1": {
+      "alpha": 0.5,
+      "restore_mask": 0
+    },
+    "C2": {
+      "alpha": 0,
+      "restore_mask": 0
+    },
+    "C_R": {
+      "alpha": 0,
+      "restore_mask": 1
+    },
+    "C_P": {
+      "alpha": 0,
+      "restore_mask": 2
+    },
+    "C_M": {
+      "alpha": 0,
+      "restore_mask": 4
+    }
+  }
+}
