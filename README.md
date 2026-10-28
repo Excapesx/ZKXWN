@@ -1,16 +1,14 @@
 # ZKXWN · RMTC校内赛
 
-当前交接版：[校内10.1](versions/v10.1/README.md)，程序 **10.1.0**，ROS包/程序仍为 `rmtc_bot9`。
+最新研究候选：[校内10.2](versions/v10.2/README.md)，程序 **10.2.0**。稳定对照保留[10.1](versions/v10.1/README.md)，ROS包/程序均仍为 `rmtc_bot9`。
 
-10.1按公开Tick和局势自动调整第二阶段倾向：0–99安全采集、中段比较机会、350 Tick后优先可得分目标。事件、生存和即时攻击继续参与判断；资源未满的安全开局基础估值提高20%。
+10.2将规则分增量与辅助偏好分列，增加公开机会、资源/任务联合路线、时间与风险比较和候选审计。它尚未证明优于10.1：新地图各320场均分41.495对41.716；同场96局40.340对41.247。当前不建议直接当作已提升的正式替代版。[完整验证](versions/v10.2/修复与验证报告.md)。
 
-本轮第二阶段同地图配对每版256场，10.1均分41.098，10.0均分41.141，未证明稳定涨分。Release/Debug各13组回归通过，真实ROS/LLM/官方整局待验。[验证报告](versions/v10.1/修复与验证报告.md)。
-
-- [10.1更新日志](versions/v10.1/更新日志.md) · [分时策略](versions/v10.1/分时策略说明.md) · [学习入口](versions/v10.1/程序逻辑与学习指南.md)
-- [实机记录模板](versions/v10.1/正式验收与技术报告模板.md) · [全部版本](docs/VERSION_HISTORY.md)
+- [10.2更新日志](versions/v10.2/更新日志.md) · [模型与日志](versions/v10.2/收益模型与日志说明.md) · [版本索引](docs/VERSION_HISTORY.md)
+- Windows Release/Debug各14组通过；真实ROS/官方整场/LLM本版未验。规则PDF为v1.2，随包协议/练习二进制仍v1.1。
 
 ```bash
-cd ~/ZKXWN/versions/v10.1
+cd ~/ZKXWN/versions/v10.2
 python3 scripts/verify_delivery.py
 bash scripts/test.sh
 bash scripts/build.sh
@@ -18,9 +16,7 @@ export ROS_DOMAIN_ID=27 ROS_LOCALHOST_ONLY=0 RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 bash scripts/run.sh A 2
 ```
 
-需要Ubuntu22.04、ROS2 Humble及C++17构建依赖；先停止旧节点，在新终端确认启动输出 `HERO 10.1.0`。仓库更新不会自动同步虚拟机。默认配置仅balanced/collect/fight，模型名留空，真实网关及令牌按官方通知配置，不能写入仓库或日志。
-
-v1.2规则明确伤害500达对抗满分；旧D/300提取稿已过时。规则PDF为v1.2，随包协议/练习二进制仍v1.1。历史版独立保留，正式资格和实机结果按每一版实际证据确认。
+需要Ubuntu22.04/Humble与C++17构建依赖，先停旧节点、用新终端确认HERO10.2.0及variant2。默认decision_type仍仅balanced/collect/fight，正式模型和网关按官方通知，令牌不写仓库或日志。仓库更新不会自动同步虚拟机。
 
 ## 版本入口
 
@@ -40,9 +36,10 @@ v1.2规则明确伤害500达对抗满分；旧D/300提取稿已过时。规则PD
 | [9.3](versions/v9.3/README.md) | 同长度路径扩大视野、资源诊断及配对复测 | `rmtc_bot9` |
 | [10.0](versions/v10.0/README.md) | 到达时间竞争、保守路线比较、尾盘预算、动作回执核验及完整默认配置 | `rmtc_bot9` |
 | [10.1](versions/v10.1/README.md) | 前期资源/中期局势/尾盘兑现的自动分时策略及公开状态约束 | `rmtc_bot9` |
+| [10.2](versions/v10.2/README.md) | 规则分增量、公开机会/联合路线及可解释辅助估值的研究候选 | `rmtc_bot9` |
 
 所有历史版的成绩按其自身测试环境理解，不能当作当前版本已验收。
 
 ## 根目录旧工程
 
-根目录 `decision/`、`rmtc_ws/`、`scripts/` 保留早期工程，不能与 `versions/v10.1` 混编。固定 1.0 源码见 `versions/v1/01_程序源码/ZKXWN`；[旧工程说明](README_RMTC_CPP.md)和[旧3.0结构导览](docs/PROJECT_STRUCTURE.md)属于历史资料，当前入口以10.1 README为准。
+根目录 `decision/`、`rmtc_ws/`、`scripts/` 保留早期工程，不能与 `versions/v10.1` 混编。固定 1.0 源码见 `versions/v1/01_程序源码/ZKXWN`；[旧工程说明](README_RMTC_CPP.md)和[旧3.0结构导览](docs/PROJECT_STRUCTURE.md)属于历史资料，10.1稳定对照与10.2候选分别按各自README运行。

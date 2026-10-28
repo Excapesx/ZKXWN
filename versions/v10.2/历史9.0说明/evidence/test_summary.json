@@ -1,0 +1,14 @@
+{
+  "Release": {
+    "groups": 8,
+    "checks": 4449,
+    "failures": 0,
+    "returncode": 0
+  },
+  "Debug": {
+    "groups": 8,
+    "checks": 4449,
+    "failures": 0,
+    "returncode": 0
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "stage": 1,
+  "vision_radius": 4,
+  "respawn_wait": 3,
+  "spawn_protection": 2,
+  "mission_text": "练习采集：自主收集资源。",
+  "robots": [
+    {
+      "team": "A",
+      "spawn": [
+        1,
+        1
+      ]
+    }
+  ],
+  "missions": [],
+  "map": {
+    "width": 18,
+    "height": 18,
+    "obstacles": [
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        14,
+        6
+      ]
+    ],
+    "resources": [
+      {
+        "id": "practice_0",
+        "position": [
+          2,
+          1
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_1",
+        "position": [
+          15,
+          1
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_2",
+        "position": [
+          1,
+          15
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_3",
+        "position": [
+          16,
+          15
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_4",
+        "position": [
+          4,
+          2
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_5",
+        "position": [
+          13,
+          2
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_6",
+        "position": [
+          2,
+          13
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_7",
+        "position": [
+          15,
+          13
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_8",
+        "position": [
+          4,
+          8
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_9",
+        "position": [
+          13,
+          9
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_10",
+        "position": [
+          8,
+          4
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_11",
+        "position": [
+          9,
+          13
+        ],
+        "value": 10
+      },
+      {
+        "id": "practice_12",
+        "position": [
+          5,
+          5
+        ],
+        "value": 20
+      },
+      {
+        "id": "practice_13",
+        "position": [
+          12,
+          5
+        ],
+        "value": 20
+      },
+      {
+        "id": "practice_14",
+        "position": [
+          5,
+          12
+        ],
+        "value": 20
+      },
+      {
+        "id": "practice_15",
+        "position": [
+          12,
+          12
+        ],
+        "value": 20
+      }
+    ]
+  },
+  "events": {
+    "enabled": false,
+    "max_hp": 100,
+    "base_attack_damage": 20,
+    "base_defended_damage": 10
+  }
+}

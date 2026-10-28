@@ -1,0 +1,698 @@
+[
+  {
+    "path": "baseline_v101/source_manifest.json",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/announce.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/battle.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/battle.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/bot.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/bot.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/combat.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/events.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/events.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/frame_gate.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/grid.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/grid.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/parse.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/parse.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/phase_policy.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/receipt_audit.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/resource_race.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/types.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "baseline_v101/src/rmtc101/types.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/aggregate.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/development/A_scores/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/A_scores/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/ablation.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/ablation_aggregate.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/ablation_continuation.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/ablation_joint.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/ablation_restore.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B2_joint/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B3_observation/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B4_continuation/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/B_opportunities/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C2_joint/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C3_observation/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C4_continuation/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/0gc.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/0gc_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/0rg.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/0rg_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/778.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/778_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/C_time/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/development/first_ABC_source.zip",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/divergence_420000.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/final_trace_420000.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/frozen_reproduction.jsonl",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/frozen_reproduction_summary.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/078_large_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/078_large_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/08r_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/08r_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/0gc_no_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/0gc_no_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/778_events.jsonl",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/778_events_summary.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/78g_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/78g_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/batch.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/duel.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/duel_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/holdout/stage1.jsonl",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/holdout/stage1_summary.json",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/recorded_replay.json",
+    "kind": "added"
+  },
+  {
+    "path": "evidence/tests_debug.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "evidence/tests_release.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "README.md",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/package.xml",
+    "kind": "modified"
+  },
+  {
+    "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/bench.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/compare_recorded.py",
+    "kind": "modified"
+  },
+  {
+    "path": "scripts/test.sh",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/bot.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/grid.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/grid.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/opportunity_evaluator.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "src/rmtc9/phase_policy.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "src/rmtc9/policy_variant.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "src/rmtc9/score_model.hpp",
+    "kind": "added"
+  },
+  {
+    "path": "tests/core_tests.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tests/v101_tests.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tests/v102_tests.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tests/v93_tests.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/bench_main.cpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/opponent_adapter.hpp",
+    "kind": "modified"
+  },
+  {
+    "path": "tools/bench/v101_adapter.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "tools/trace_main.cpp",
+    "kind": "added"
+  },
+  {
+    "path": "v1.2规则适配说明.md",
+    "kind": "modified"
+  },
+  {
+    "path": "VERSION",
+    "kind": "modified"
+  },
+  {
+    "path": "修复与验证报告.md",
+    "kind": "modified"
+  },
+  {
+    "path": "历史10.1说明/evidence/aggregate.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/778_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/778_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/peer24_none.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/peer24_none_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/rgc_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/development/rgc_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/frozen_reproduction.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/frozen_reproduction_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/778_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/778_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/788_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/788_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/batch.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/peer24_none.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/peer24_none_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/rgc_events.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/rgc_events_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/stage1.jsonl",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/holdout/stage1_summary.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/tests_debug.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/evidence/tests_release.txt",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/README.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/v1.2规则适配说明.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/修复与验证报告.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/分时策略说明.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/变更文件.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/文件清单.json",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/更新日志.md",
+    "kind": "added"
+  },
+  {
+    "path": "历史10.1说明/来源及验证.json",
+    "kind": "added"
+  },
+  {
+    "path": "收益模型与日志说明.md",
+    "kind": "added"
+  },
+  {
+    "path": "更新日志.md",
+    "kind": "modified"
+  },
+  {
+    "path": "来源及验证.json",
+    "kind": "modified"
+  },
+  {
+    "path": "正式验收与技术报告模板.md",
+    "kind": "modified"
+  },
+  {
+    "path": "程序逻辑与学习指南.md",
+    "kind": "modified"
+  }
+]

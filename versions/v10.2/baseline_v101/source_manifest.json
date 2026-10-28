@@ -1,0 +1,96 @@
+{
+  "source_commit": "a85c60a1fc3ad67caa51078bb884ff9bc21a7e09",
+  "transformation": "rmtc9 -> rmtc101 namespace/include only",
+  "files": [
+    {
+      "path": "src/rmtc9/announce.hpp",
+      "original_sha256": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd",
+      "transformed_sha256": "ef48dd7d64d996a77148e39b147ef0e4dbfb33133e7c2eaef020266b247062b0"
+    },
+    {
+      "path": "src/rmtc9/battle.cpp",
+      "original_sha256": "3a1f38beb0d8dad4efdda8d5fb332c3b9a3f1201cc6a2a9f2293aceaf623a068",
+      "transformed_sha256": "dd4b832a8c8d7a2c411806d2b1881a68dea52a9075e089280adc1b27c8131f70"
+    },
+    {
+      "path": "src/rmtc9/battle.hpp",
+      "original_sha256": "d7597140ebd7a7da2e2681f6f36816893869d86b030d0a26f40fc3d36e9c9db3",
+      "transformed_sha256": "73e5030460598f179bd3620e6a5476e8981581916124426822530bbe1bf5ff42"
+    },
+    {
+      "path": "src/rmtc9/bot.cpp",
+      "original_sha256": "43678fd35d2c8c3d686e5c9196c3beb8b72dfa68a27a58325d5ad24966b8e770",
+      "transformed_sha256": "6d939d1c7b35e0d8e0a1cbfb170d8df3a071727dda5330fdcefb9d3bb7057ff6"
+    },
+    {
+      "path": "src/rmtc9/bot.hpp",
+      "original_sha256": "29ed5011677e9fb47ba0e158cd8bdd3f22c22a7d3c0a67cf5150c335edc4fe59",
+      "transformed_sha256": "ac3b50652843c4a6070e0c662a09fc2f6992934c16acad3aebc89a2b5cf53dc1"
+    },
+    {
+      "path": "src/rmtc9/combat.hpp",
+      "original_sha256": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5",
+      "transformed_sha256": "5e4c813c68ed600d1b7681ee876d77e2490fd8aecd029347a59fc7c85e619360"
+    },
+    {
+      "path": "src/rmtc9/events.cpp",
+      "original_sha256": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e",
+      "transformed_sha256": "c2e77ab80aaef85a4d2b68acb17ef1823a8d7950476d3ac63909ea45aa06593c"
+    },
+    {
+      "path": "src/rmtc9/events.hpp",
+      "original_sha256": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083",
+      "transformed_sha256": "51d666dceb703c500b05e9f9f7405e92e601c314ef0e23a66e593c19bdfed471"
+    },
+    {
+      "path": "src/rmtc9/frame_gate.hpp",
+      "original_sha256": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f",
+      "transformed_sha256": "f119bea4b1180c93c05cce2dcd7addc712fcd252b4b61c38b9d975a58793af5f"
+    },
+    {
+      "path": "src/rmtc9/grid.cpp",
+      "original_sha256": "eeb89f98e7d82e76f95683d696ea106070f284ab49aa39065af08e2b0f00dc2d",
+      "transformed_sha256": "2a4d9acfbe3ea0796ca953bc168ec79c3837cb9367fbe2f68c35aca522c4f148"
+    },
+    {
+      "path": "src/rmtc9/grid.hpp",
+      "original_sha256": "188d49de6db3104cba6dfe286f687ea3a341867a560f90be3f432b2778a44260",
+      "transformed_sha256": "e9cb9c6b1c5dc8e439a563a8eb615bcb14a1861863aea4fcf232c52777b37bd0"
+    },
+    {
+      "path": "src/rmtc9/parse.cpp",
+      "original_sha256": "79916d76e2b92f2bd84525d55264d443dde0c4611992a697c3209b7195058a8f",
+      "transformed_sha256": "0983fef082a4db2a3bcd5d7c17b045f9a219f88ceeb6ba9a06194cf2300a3e2c"
+    },
+    {
+      "path": "src/rmtc9/parse.hpp",
+      "original_sha256": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc",
+      "transformed_sha256": "d2cf4bfe99a1715e8476d440d2fc282850f601d9efe19b68bcf3426c848f0b1e"
+    },
+    {
+      "path": "src/rmtc9/phase_policy.hpp",
+      "original_sha256": "b7408255c20ffc323bcea24952973f3e24a227eab19d99b5902bfefd638a004a",
+      "transformed_sha256": "998c419659447711e9936a049f22806f93489c627e9226c040b1f1dffccd959a"
+    },
+    {
+      "path": "src/rmtc9/receipt_audit.hpp",
+      "original_sha256": "8371a0e9eb3a53fd06b3ab20c8eba5768622d9d2d0d85cb313338f71dc1c5b05",
+      "transformed_sha256": "707d177fb53a0a79b7d0a9f2c7d88bc9eda38a5311af15efa9768e8757a1f336"
+    },
+    {
+      "path": "src/rmtc9/resource_race.hpp",
+      "original_sha256": "740bc5c732a9da09a4493849a7a43e23d3f330a193708ca9f188f6170a0dca2e",
+      "transformed_sha256": "5d1d501375a1aafb72d8eeab7bf6d0e7088e64daf155b12b13598e519335718c"
+    },
+    {
+      "path": "src/rmtc9/types.cpp",
+      "original_sha256": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76",
+      "transformed_sha256": "be0800f6a925c6fc63c8251590cd5e62670ea846bf59e276a3b0d1e635964774"
+    },
+    {
+      "path": "src/rmtc9/types.hpp",
+      "original_sha256": "b9200769b2b7f5d01234d9310eef73bf301b2b698d757e403b41c0b646568627",
+      "transformed_sha256": "58add73a5b1bb8a9072d3c771b0a56098db225b692f29bf4ad770c9d83e0be24"
+    }
+  ]
+}

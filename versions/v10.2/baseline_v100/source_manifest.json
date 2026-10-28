@@ -1,0 +1,92 @@
+{
+  "source_commit": "e1685e573fed3a28d7c198707ff8efb696128a2d",
+  "source_root": "versions/v10.0",
+  "transformation": "rmtc9 -> rmtc100 namespace/include replacement only",
+  "files": [
+    {
+      "path": "src/rmtc9/announce.hpp",
+      "original_sha256": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd",
+      "transformed_sha256": "9b99ce53967b344d3fe51a7835458f4496bebec53335ef9719c0b4ecd63c9bf4"
+    },
+    {
+      "path": "src/rmtc9/battle.cpp",
+      "original_sha256": "3a1f38beb0d8dad4efdda8d5fb332c3b9a3f1201cc6a2a9f2293aceaf623a068",
+      "transformed_sha256": "82252a9555d71f54121c48b34579b318e33d7dfa009b34221f025f13d499f03e"
+    },
+    {
+      "path": "src/rmtc9/battle.hpp",
+      "original_sha256": "d7597140ebd7a7da2e2681f6f36816893869d86b030d0a26f40fc3d36e9c9db3",
+      "transformed_sha256": "5e0b3e8e1d1fb4b3349d60d3e3809814e36e8154cf10614d45aed233937bf205"
+    },
+    {
+      "path": "src/rmtc9/bot.cpp",
+      "original_sha256": "f03416ea2b05af084534a9efc2cea866d683b01a67af14e76175777e3bfc78a4",
+      "transformed_sha256": "f98c9d33776ddb26a25187fc55fab8f37c6bb5591fe614793dae50f422a09347"
+    },
+    {
+      "path": "src/rmtc9/bot.hpp",
+      "original_sha256": "382d3f325594d74d6642cd2166a5db04bca562dd5343e27c32c0b44da2981f6f",
+      "transformed_sha256": "d6e54339b2c5a32012a0fa533d8749f7374c9dc07e3fc1cbf06e0f3c085f3a3b"
+    },
+    {
+      "path": "src/rmtc9/combat.hpp",
+      "original_sha256": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5",
+      "transformed_sha256": "9886b37d768ffbafe2fcedf54b32005525e009821f6fe25d00e5bef27d54b5e4"
+    },
+    {
+      "path": "src/rmtc9/events.cpp",
+      "original_sha256": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e",
+      "transformed_sha256": "edd7bff245c37258f668c4d576c09c5aa6cb0b1186baec6761028900e34f9c69"
+    },
+    {
+      "path": "src/rmtc9/events.hpp",
+      "original_sha256": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083",
+      "transformed_sha256": "aa7b57507434da43b586d2b8b1bbf87a10638c8eaf77db22c5612c915b8181cb"
+    },
+    {
+      "path": "src/rmtc9/frame_gate.hpp",
+      "original_sha256": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f",
+      "transformed_sha256": "d1d8aad77aeaea983e3c120d67ea4fe00242ba0b5d1d0ef44e58bb2a9f3f6247"
+    },
+    {
+      "path": "src/rmtc9/grid.cpp",
+      "original_sha256": "eeb89f98e7d82e76f95683d696ea106070f284ab49aa39065af08e2b0f00dc2d",
+      "transformed_sha256": "37be303ee8803e89c6d33e34457ce55cb7aba58febe376e7dab9af5a62b60006"
+    },
+    {
+      "path": "src/rmtc9/grid.hpp",
+      "original_sha256": "188d49de6db3104cba6dfe286f687ea3a341867a560f90be3f432b2778a44260",
+      "transformed_sha256": "275c31f96285e08f8f0a37b34d46ffed20afd17903976b1d3a0bd23612043ca3"
+    },
+    {
+      "path": "src/rmtc9/parse.cpp",
+      "original_sha256": "79916d76e2b92f2bd84525d55264d443dde0c4611992a697c3209b7195058a8f",
+      "transformed_sha256": "a2d7a59959e523d15af66a9d30604229ab5c553f7aaa943b0e083ce5cb00528b"
+    },
+    {
+      "path": "src/rmtc9/parse.hpp",
+      "original_sha256": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc",
+      "transformed_sha256": "8c776433ae132ecad5c00fba05f3ffdb540a2aeafccf27613c2400c5fd86ce3e"
+    },
+    {
+      "path": "src/rmtc9/receipt_audit.hpp",
+      "original_sha256": "8371a0e9eb3a53fd06b3ab20c8eba5768622d9d2d0d85cb313338f71dc1c5b05",
+      "transformed_sha256": "fd91c6d36182673467822b5963aa84d496abbff08dd9c0ae4e4b0b4b15eabab0"
+    },
+    {
+      "path": "src/rmtc9/resource_race.hpp",
+      "original_sha256": "740bc5c732a9da09a4493849a7a43e23d3f330a193708ca9f188f6170a0dca2e",
+      "transformed_sha256": "9239b62db9c655af6795124e56395ef33c38e60f9de8f1ade48fe5d42f1f1024"
+    },
+    {
+      "path": "src/rmtc9/types.cpp",
+      "original_sha256": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76",
+      "transformed_sha256": "75add68fc345209d078219fde4480ebb0c43a26e1dddc1a4ac2810850ac7ba06"
+    },
+    {
+      "path": "src/rmtc9/types.hpp",
+      "original_sha256": "b9200769b2b7f5d01234d9310eef73bf301b2b698d757e403b41c0b646568627",
+      "transformed_sha256": "9db4b1123385403a7d34999739b43daec0285a01d451a4e686c7c6e5befbc04e"
+    }
+  ]
+}

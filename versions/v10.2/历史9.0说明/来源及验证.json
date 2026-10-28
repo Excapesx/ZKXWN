@@ -1,0 +1,65 @@
+{
+  "program_version": "9.0.0",
+  "base_version": "校内8.0",
+  "official_material_version": "v1.1",
+  "created_date": "2026-10-25",
+  "compiler": "Windows MSVC 19.51 x64, Visual Studio 18 2026, C++17",
+  "tests": {
+    "Release": {
+      "groups": 8,
+      "checks": 4449,
+      "failures": 0,
+      "returncode": 0
+    },
+    "Debug": {
+      "groups": 8,
+      "checks": 4449,
+      "failures": 0,
+      "returncode": 0
+    }
+  },
+  "fixed_review_findings": 7,
+  "new_test_groups": 2,
+  "new_checks": 373,
+  "changed_legacy_contracts": [
+    "duplicate event ID deduplication",
+    "quiet enemy with meaningful death cost retains lethal risk"
+  ],
+  "frozen_baseline8_files": 15,
+  "frozen_baseline7_files": 14,
+  "benchmark_groups": 9,
+  "paired_records": 1668,
+  "raw_statistics_errors": [],
+  "benchmark_development_cases_reused_for_final_verification": true,
+  "benchmark_ai_qualification": "assumed, not obtained",
+  "all_candidate_ab_invalid_total": 0,
+  "node_session_test": "production node.cpp/llm.cpp + ROS stub + in-process fake HTTP, no network",
+  "official_ros_built": false,
+  "real_curl_transport_built": false,
+  "real_ai_gateway_verified": false,
+  "official_full_match_verified": false,
+  "unscoped_topic_policy": "diagnostic only; accepted perception text is authoritative; late-join history may be incomplete",
+  "official_files": [
+    {
+      "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
+      "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114",
+      "same_as_v8": true
+    },
+    {
+      "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
+      "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a",
+      "same_as_v8": true
+    },
+    {
+      "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
+      "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae",
+      "same_as_v8": true
+    },
+    {
+      "path": "03_官方练习包_v1.1/dist.zip",
+      "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84",
+      "same_as_v8": true
+    }
+  ],
+  "github_upload_this_version": false
+}
