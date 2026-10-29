@@ -1,0 +1,34 @@
+--- B3_no_cost/ros2_ws/src/rmtc_bot9/src/node.cpp
++++ B3/ros2_ws/src/rmtc_bot9/src/node.cpp
+@@ -255,6 +255,7 @@
+                 {"death_score_loss",c.deathLoss},{"delay_aux_loss",c.delayAuxLoss},
+                 {"lost_if_one_tick_delayed",c.lostIfDelayed},{"missed_resource_loss",c.missedResourceLoss},
+                 {"recoverable_task_aux",c.deferredTaskAux},
++                {"rival_choice_heuristic",c.rivalCommitment},{"route_ids",c.routeIds},{"route_eta",c.routeEtas},
+                 {"death_loss_already_in_combat",c.kind=="attack"},
+                 {"priority_aux",c.phaseAux},{"priority",c.priority},{"selected",chosen},
+                 {"evaluation_denominator",c.kind=="attack"?1:c.eta+1},
+--- B3_no_cost/src/rmtc9/short_routes.hpp
++++ B3/src/rmtc9/short_routes.hpp
+@@ -37,6 +37,9 @@
+             next[state.first]+=state.second*(1-c);
+             next[{v+item.resource.value,n+(item.resource.value<20),h+(item.resource.value>=20)}]+=state.second*c;
+         }
++        // Conservative fallback for malformed/custom values creating too many
++        // distinct scenarios. Standard 10/20 resources stay far below 256.
++        if(next.size()>256)return {};
+         states=std::move(next);
+         if(item.rival>=0)denial+=.025*item.resource.value*c;
+     }
+--- B3_no_cost/tools/round2_trace.cpp
++++ B3/tools/round2_trace.cpp
+@@ -34,7 +34,8 @@
+     {"eta",c.eta},{"rival_eta",c.rivalEta},{"age",c.age},{"stops",c.stops},
+     {"points",c.score.points()},{"resource",c.score.resource},{"task",c.score.taskConditional},
+     {"aux",c.score.auxiliary()},{"priority",c.priority},{"confidence",c.confidence},
+-    {"missed",c.missedResourceLoss},{"deferred",c.deferredTaskAux},{"reject",c.rejected}});
++    {"missed",c.missedResourceLoss},{"deferred",c.deferredTaskAux},{"choice",c.rivalCommitment},
++    {"route_ids",c.routeIds},{"route_etas",c.routeEtas},{"reject",c.rejected}});
+   }
+   for(int i=0;i<4;++i){auto a=bots[i]->act(ref.perceive(i));ref.submit(i,a);if(i==seat)j["executed"]=rmtc9::action_json(a,t,p.session);}
+   auto resources=ref.map().resources;ref.step();

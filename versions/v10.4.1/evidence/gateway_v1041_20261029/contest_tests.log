@@ -1,0 +1,41 @@
+Test project C:/Users/xwn07/Documents/ChatGPT/HERO/work/gateway_v1041_20261029/build
+      Start  1: core_regression
+ 1/18 Test  #1: core_regression ..........................   Passed    0.02 sec
+      Start  2: llm_session_lifecycle
+ 2/18 Test  #2: llm_session_lifecycle ....................   Passed    1.51 sec
+      Start  3: v4_rules_boundaries
+ 3/18 Test  #3: v4_rules_boundaries ......................   Passed    0.18 sec
+      Start  4: v6_physical_scenarios
+ 4/18 Test  #4: v6_physical_scenarios ....................   Passed    0.01 sec
+      Start  5: v7_contracts
+ 5/18 Test  #5: v7_contracts .............................   Passed    0.01 sec
+      Start  6: v8_new_contracts
+ 6/18 Test  #6: v8_new_contracts .........................   Passed    0.49 sec
+      Start  7: v9_review_regressions
+ 7/18 Test  #7: v9_review_regressions ....................   Passed    0.01 sec
+      Start  8: v92_score_buffer_and_offset_fortress
+ 8/18 Test  #8: v92_score_buffer_and_offset_fortress .....   Passed    0.04 sec
+      Start  9: v93_shortest_path_exploration
+ 9/18 Test  #9: v93_shortest_path_exploration ............   Passed    0.01 sec
+      Start 10: node_announcement_session
+10/18 Test #10: node_announcement_session ................   Passed    0.88 sec
+      Start 11: v10_arrival_tail_receipt
+11/18 Test #11: v10_arrival_tail_receipt .................   Passed    0.01 sec
+      Start 12: v10_recorded_bag_audit
+12/18 Test #12: v10_recorded_bag_audit ...................   Passed    0.14 sec
+      Start 13: v101_phase_safety_and_deadlines
+13/18 Test #13: v101_phase_safety_and_deadlines ..........   Passed    0.01 sec
+      Start 14: v102_scores_opportunities_and_risk
+14/18 Test #14: v102_scores_opportunities_and_risk .......   Passed    0.01 sec
+      Start 15: v103_resource_choice_route_outcomes
+15/18 Test #15: v103_resource_choice_route_outcomes ......   Passed    0.01 sec
+      Start 16: v104_numeric_phase_scope_and_safety
+16/18 Test #16: v104_numeric_phase_scope_and_safety ......   Passed    0.02 sec
+      Start 17: v104_production_without_offline_probes
+17/18 Test #17: v104_production_without_offline_probes ...   Passed    0.01 sec
+      Start 18: desktop_parse_probe
+18/18 Test #18: desktop_parse_probe ......................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 18
+
+Total Test time (real) =   3.45 sec

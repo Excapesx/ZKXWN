@@ -1,0 +1,30 @@
+{
+  "scope": "Historical-observation policy replay; NOT a counterfactual match/score evaluation",
+  "9.1": {
+    "frames": 501,
+    "different_from_recorded_actions": 0,
+    "tail_297_to_499_actions": {
+      "wait": 203
+    },
+    "tail_reasons": {
+      "stage2_explore": 203
+    },
+    "frontiers_at_297": 0
+  },
+  "10.0": {
+    "frames": 501,
+    "different_from_recorded_actions": 262,
+    "tail_297_to_499_actions": {
+      "move": 200,
+      "wait": 3
+    },
+    "tail_reasons": {
+      "seek": 116,
+      "hunt": 83,
+      "explore_no_frontier": 3,
+      "intercept": 1
+    },
+    "frontiers_at_297": 0
+  },
+  "ok": true
+}

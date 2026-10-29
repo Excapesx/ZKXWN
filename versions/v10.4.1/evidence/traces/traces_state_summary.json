@@ -1,0 +1,380 @@
+[
+  {
+    "name": "530112_0_C0",
+    "actual": "C0",
+    "seed": 530112,
+    "seat": 0,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530112",
+      "0",
+      "C0",
+      "78g",
+      "18",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 0,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 9,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 0,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 3,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        1,
+        7
+      ],
+      "resource": 40.0,
+      "score": 35.0
+    },
+    "seconds": 1.578999999910593
+  },
+  {
+    "name": "530112_0_C1",
+    "actual": "C1",
+    "seed": 530112,
+    "seat": 0,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530112",
+      "0",
+      "C1",
+      "78g",
+      "18",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 0,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 9,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 0,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 3,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        1,
+        7
+      ],
+      "resource": 40.0,
+      "score": 35.0
+    },
+    "seconds": 1.656999999890104
+  },
+  {
+    "name": "530112_0_C2",
+    "actual": "C2",
+    "seed": 530112,
+    "seat": 0,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530112",
+      "0",
+      "C2",
+      "78g",
+      "18",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 0,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 9,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 0,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 3,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        1,
+        7
+      ],
+      "resource": 40.0,
+      "score": 35.0
+    },
+    "seconds": 1.6089999999385327
+  },
+  {
+    "name": "530301_1_C0",
+    "actual": "C0",
+    "seed": 530301,
+    "seat": 1,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530301",
+      "1",
+      "C0",
+      "0gc",
+      "18",
+      "none"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 4,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 12,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 4,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 2,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        13,
+        16
+      ],
+      "resource": 30.0,
+      "score": 32.5
+    },
+    "seconds": 0.34300000010989606
+  },
+  {
+    "name": "530301_1_C1",
+    "actual": "C1",
+    "seed": 530301,
+    "seat": 1,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530301",
+      "1",
+      "C1",
+      "0gc",
+      "18",
+      "none"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 4,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 12,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 4,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 2,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        13,
+        16
+      ],
+      "resource": 30.0,
+      "score": 32.5
+    },
+    "seconds": 0.32899999991059303
+  },
+  {
+    "name": "530301_1_C2",
+    "actual": "C2",
+    "seed": 530301,
+    "seat": 1,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530301",
+      "1",
+      "C2",
+      "0gc",
+      "18",
+      "none"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 8,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 4,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 12,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 4,
+      "C2_target_changed": 0
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 2,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        13,
+        16
+      ],
+      "resource": 30.0,
+      "score": 32.5
+    },
+    "seconds": 0.34300000010989606
+  },
+  {
+    "name": "530408_2_C0",
+    "actual": "C0",
+    "seed": 530408,
+    "seat": 2,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530408",
+      "2",
+      "C0",
+      "078",
+      "24",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 5,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 1,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 10,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 3,
+      "C2_target_changed": 1
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 6,
+      "invalid": 0,
+      "missions": 3,
+      "moved": false,
+      "pos": [
+        1,
+        22
+      ],
+      "resource": 60.0,
+      "score": 45.0
+    },
+    "seconds": 2.875
+  },
+  {
+    "name": "530408_2_C1",
+    "actual": "C1",
+    "seed": 530408,
+    "seat": 2,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530408",
+      "2",
+      "C1",
+      "078",
+      "24",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 5,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 1,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 10,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 3,
+      "C2_target_changed": 1
+    },
+    "final": {
+      "damage": 560.0,
+      "deaths": 6,
+      "invalid": 0,
+      "missions": 3,
+      "moved": false,
+      "pos": [
+        1,
+        22
+      ],
+      "resource": 60.0,
+      "score": 45.0
+    },
+    "seconds": 2.9840000001713634
+  },
+  {
+    "name": "530408_2_C2",
+    "actual": "C2",
+    "seed": 530408,
+    "seat": 2,
+    "command": [
+      "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\round3_v104_20261028\\build\\Release\\rmtc_phase_trace.exe",
+      "530408",
+      "2",
+      "C2",
+      "078",
+      "24",
+      "standard"
+    ],
+    "frames": 500,
+    "counts": {
+      "C1_rank_changed": 6,
+      "C1_action_changed": 0,
+      "C1_candidate_set_changed": 0,
+      "C1_winner_changed": 1,
+      "C1_target_changed": 0,
+      "C2_rank_changed": 14,
+      "C2_action_changed": 0,
+      "C2_candidate_set_changed": 0,
+      "C2_winner_changed": 4,
+      "C2_target_changed": 2
+    },
+    "final": {
+      "damage": 620.0,
+      "deaths": 6,
+      "invalid": 0,
+      "missions": 2,
+      "moved": false,
+      "pos": [
+        15,
+        4
+      ],
+      "resource": 50.0,
+      "score": 37.5
+    },
+    "seconds": 2.8439999998081475
+  }
+]

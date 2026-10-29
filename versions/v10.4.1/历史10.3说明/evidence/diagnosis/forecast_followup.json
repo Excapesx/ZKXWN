@@ -1,0 +1,107 @@
+[
+  {
+    "seed": 530301,
+    "seat": 1,
+    "tick": 7,
+    "reason": "resource_plan",
+    "forecast": {
+      "eta": 8,
+      "id": "h15",
+      "kind": "resource_plan",
+      "resource_est": 7.125,
+      "route_etas": [
+        5,
+        8
+      ],
+      "route_ids": [
+        "h15",
+        "n5"
+      ],
+      "target": [
+        16,
+        11
+      ],
+      "task_est": 9.5
+    },
+    "observed_horizon_end_tick": 15,
+    "removed_planned_resources": [
+      {
+        "id": "n5",
+        "tick": 9,
+        "ours": false,
+        "value": 10
+      },
+      {
+        "id": "h15",
+        "tick": 11,
+        "ours": true,
+        "value": 20
+      }
+    ],
+    "actual_resource_points_delta": 5.0,
+    "actual_conditional_task_delta": 5,
+    "interrupt_actions": [],
+    "target_changes_before_first_arrival": []
+  },
+  {
+    "seed": 530408,
+    "seat": 2,
+    "tick": 10,
+    "reason": "resource_plan",
+    "forecast": {
+      "eta": 3,
+      "id": "h12",
+      "kind": "resource_plan",
+      "resource_est": 4.75,
+      "route_etas": [
+        3
+      ],
+      "route_ids": [
+        "h12"
+      ],
+      "target": [
+        0,
+        14
+      ],
+      "task_est": 0.0
+    },
+    "observed_horizon_end_tick": 13,
+    "removed_planned_resources": [
+      {
+        "id": "h12",
+        "tick": 12,
+        "ours": true,
+        "value": 20
+      }
+    ],
+    "actual_resource_points_delta": 5.0,
+    "actual_conditional_task_delta": 0,
+    "interrupt_actions": [],
+    "target_changes_before_first_arrival": []
+  },
+  {
+    "seed": 530112,
+    "seat": 0,
+    "tick": 9,
+    "reason": "hunt",
+    "forecast": {
+      "eta": 1,
+      "id": "",
+      "kind": "hunt",
+      "resource_est": 0.0,
+      "route_etas": [],
+      "route_ids": [],
+      "target": [
+        0,
+        8
+      ],
+      "task_est": 0.0
+    },
+    "observed_horizon_end_tick": 10,
+    "removed_planned_resources": [],
+    "actual_resource_points_delta": 0.0,
+    "actual_conditional_task_delta": 0,
+    "interrupt_actions": [],
+    "target_changes_before_first_arrival": []
+  }
+]

@@ -1,0 +1,38 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  baseline101.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline101.lib
+  baseline103.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline103.lib
+  baseline102.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline102.lib
+  baseline100.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline100.lib
+  baseline7.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline7.lib
+  baseline91.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline91.lib
+  baseline93.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline93.lib
+  baseline8.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\baseline8.lib
+  rmtc9_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc9_core.lib
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\llm_worker_tests.exe
+  production_scope_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\production_scope_core.lib
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\core_tests.exe
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_replay.exe
+  node_scope_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\node_scope_tests.exe
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_smoke.exe
+  rmtc_replay91.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_replay91.exe
+  v101_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v101_tests.exe
+  v102_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v102_tests.exe
+  v103_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v103_tests.exe
+  rmtc_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_trace.exe
+  v104_production_scope.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v104_production_scope.exe
+  v104_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v104_tests.exe
+  round2_trace.cpp
+  phase_trace.cpp
+  v10_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v10_tests.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v4_tests.exe
+  bench_main.cpp
+  v7_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v7_tests.exe
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v6_tests.exe
+  v8_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v8_tests.exe
+  v93_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v93_tests.exe
+  v9_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v9_tests.exe
+  v92_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\v92_tests.exe
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_arena.exe
+  rmtc_round2_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_round2_trace.exe
+  rmtc_phase_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Release\rmtc_phase_trace.exe

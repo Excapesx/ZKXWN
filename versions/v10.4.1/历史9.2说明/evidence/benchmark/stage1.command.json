@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\release_v92_20261027\\build\\Release\\rmtc_arena.exe",
+    "--a",
+    "9.2",
+    "--b",
+    "9.1",
+    "--threads",
+    "2",
+    "--output",
+    "C:\\Users\\xwn07\\Documents\\ChatGPT\\HERO\\work\\release_v92_20261027\\validation\\stage1.jsonl",
+    "--stage",
+    "1",
+    "--maps",
+    "16",
+    "--events",
+    "none",
+    "--seed",
+    "20261027"
+  ],
+  "exit": 0,
+  "seconds": 0.04781746864318848
+}

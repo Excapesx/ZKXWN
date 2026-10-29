@@ -1,0 +1,60 @@
+CMake is re-running because C:/Users/xwn07/Documents/ChatGPT/HERO/work/release_v9_20261025/build/CMakeFiles/generate.stamp is out-of-date.
+  the file 'C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt'
+  is newer than 'C:/Users/xwn07/Documents/ChatGPT/HERO/work/release_v9_20261025/build/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring done (0.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/xwn07/Documents/ChatGPT/HERO/work/release_v9_20261025/build
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\llm_worker_tests.exe
+  baseline8.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\baseline8.lib
+  baseline7.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\baseline7.lib
+  battle.cpp
+  bot.cpp
+  正在生成代码...
+  rmtc9_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\rmtc9_core.lib
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt
+  v7_tests.cpp
+  v6_tests.cpp
+  v9_tests.cpp
+  node.cpp
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\core_tests.exe
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\v4_tests.exe
+  v8_adapter.cpp
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\rmtc_replay.exe
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(27,26): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+  v8_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\v8_tests.exe
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(129,21): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(138,21): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(107,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(143,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(163,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(199,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(217,43): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(221,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(222,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(309,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Desktop\HERO\校内9.0\ros2_ws\src\rmtc_bot9\src\node.cpp(312,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\node_scope_tests.vcxproj]
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\rmtc_smoke.exe
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\rmtc_arena.exe
+  v7_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\v7_tests.exe
+  v9_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\v9_tests.exe
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\v6_tests.exe
+  node_scope_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\release_v9_20261025\build\Release\node_scope_tests.exe
+  Building Custom Rule C:/Users/xwn07/Desktop/HERO/校内9.0/CMakeLists.txt

@@ -1,0 +1,236 @@
+适用于 .NET Framework MSBuild 版本 18.10.1-1.26427.6+3cd27c13e
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  types.cpp
+  types.cpp
+  types.cpp
+  types.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  types.cpp
+  types.cpp
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  bot.cpp
+  bot.cpp
+  bot.cpp
+  bot.cpp
+  bot.cpp
+  bot.cpp
+  events.cpp
+  events.cpp
+  events.cpp
+  events.cpp
+  events.cpp
+  events.cpp
+  battle.cpp
+  battle.cpp
+  battle.cpp
+  battle.cpp
+  battle.cpp
+  battle.cpp
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  baseline7.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline7.lib
+  baseline100.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline100.lib
+  baseline101.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline101.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  baseline8.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline8.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  types.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  types.cpp
+  types.cpp
+  baseline102.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline102.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  llm_worker_tests.cpp
+  grid.cpp
+  types.cpp
+  baseline103.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline103.lib
+  grid.cpp
+  grid.cpp
+  grid.cpp
+  llm.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  parse.cpp
+  parse.cpp
+  parse.cpp
+  v101_tests.cpp
+  parse.cpp
+  v101_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v101_tests.exe
+  正在生成代码...
+  bot.cpp
+  bot.cpp
+  bot.cpp
+  llm_worker_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\llm_worker_tests.exe
+  bot.cpp
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\src\rmtc9\bot.cpp(457,54): warning C4456: “d”的声明隐藏了上一个本地声明 [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\rmtc9_core.vcxproj]
+      C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\src\rmtc9\bot.cpp(452,19):
+      参见“d”的声明
+  
+  events.cpp
+  events.cpp
+  events.cpp
+  battle.cpp
+  battle.cpp
+  events.cpp
+  battle.cpp
+  正在生成代码...
+  正在生成代码...
+  battle.cpp
+  正在生成代码...
+  baseline91.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline91.lib
+  baseline93.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\baseline93.lib
+  正在生成代码...
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  replay91_main.cpp
+  rmtc9_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc9_core.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  production_scope_core.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\production_scope_core.lib
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  core_tests.cpp
+  v10_tests.cpp
+  v8_tests.cpp
+  v102_tests.cpp
+  node_scope_tests.cpp
+  v103_tests.cpp
+  referee.cpp
+  v4_tests.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  v9_tests.cpp
+  rmtc_replay91.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_replay91.exe
+  v92_tests.cpp
+  node.cpp
+  v103_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v103_tests.exe
+  v6_tests.cpp
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(29,26): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(138,21): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(147,21): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(113,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(116,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(152,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(172,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(208,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(216,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(268,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(269,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(272,9): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(276,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(278,43): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(282,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(284,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(286,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(374,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+C:\Users\xwn07\Documents\ChatGPT\HERO\ZKXWN\versions\v10.4\ros2_ws\src\rmtc_bot9\src\node.cpp(377,17): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\node_scope_tests.vcxproj]
+  正在生成代码...
+  referee.cpp
+  referee.cpp
+  v8_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v8_tests.exe
+  core_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\core_tests.exe
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  referee.cpp
+  llm.cpp
+  v9_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v9_tests.exe
+  v104_tests.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  v7_tests.cpp
+  正在生成代码...
+  正在生成代码...
+  正在生成代码...
+  v104_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v104_tests.exe
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  v93_tests.cpp
+  正在生成代码...
+  v4_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v4_tests.exe
+  v92_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v92_tests.exe
+  v102_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v102_tests.exe
+  trace_main.cpp
+  node_scope_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\node_scope_tests.exe
+  v10_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v10_tests.exe
+  smoke_main.cpp
+  replay_main.cpp
+  v7_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v7_tests.exe
+  v6_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v6_tests.exe
+  round2_trace.cpp
+  bench_main.cpp
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt
+  v93_tests.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v93_tests.exe
+  phase_trace.cpp
+  referee.cpp
+  referee.cpp
+  rmtc_replay.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_replay.exe
+  referee.cpp
+  referee.cpp
+  v104_production_scope.cpp
+  正在生成代码...
+  referee.cpp
+  v7_adapter.cpp
+  rmtc_smoke.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_smoke.exe
+  v104_production_scope.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\v104_production_scope.exe
+  v8_adapter.cpp
+  v101_adapter.cpp
+  v7_adapter.cpp
+  v7_adapter.cpp
+  正在生成代码...
+  v8_adapter.cpp
+  v8_adapter.cpp
+  v7_adapter.cpp
+  v91_adapter.cpp
+  v91_adapter.cpp
+  v8_adapter.cpp
+  v93_adapter.cpp
+  rmtc_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_trace.exe
+  v93_adapter.cpp
+  v91_adapter.cpp
+  v100_adapter.cpp
+  v100_adapter.cpp
+  v93_adapter.cpp
+  v101_adapter.cpp
+  v101_adapter.cpp
+  v100_adapter.cpp
+  v102_adapter.cpp
+  v102_adapter.cpp
+  v101_adapter.cpp
+  v103_adapter.cpp
+  v103_adapter.cpp
+  v102_adapter.cpp
+  正在生成代码...
+  v103_adapter.cpp
+  正在生成代码...
+  正在生成代码...
+  rmtc_arena.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_arena.exe
+  rmtc_round2_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_round2_trace.exe
+  rmtc_phase_trace.vcxproj -> C:\Users\xwn07\Documents\ChatGPT\HERO\work\round3_v104_20261028\build\Debug\rmtc_phase_trace.exe
+  Building Custom Rule C:/Users/xwn07/Documents/ChatGPT/HERO/ZKXWN/versions/v10.4/CMakeLists.txt

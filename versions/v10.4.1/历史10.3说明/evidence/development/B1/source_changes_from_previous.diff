@@ -1,0 +1,102 @@
+--- B0/src/rmtc9/opportunity_evaluator.hpp
++++ B1/src/rmtc9/opportunity_evaluator.hpp
+@@ -7,6 +7,7 @@
+ #include <vector>
+ #include "rmtc9/score_model.hpp"
+ #include "rmtc9/resource_race.hpp"
++#include "rmtc9/round2_policy.hpp"
+ 
+ namespace rmtc9 {
+ struct CandidateAudit {
+@@ -17,6 +18,9 @@
+     double phaseAux=0,priority=0;
+     double lostIfDelayed=0,missedResourceLoss=0;
+     double deferredTaskAux=0;
++    double rivalCommitment=0;
++    std::vector<std::string> routeIds;
++    std::vector<int> routeEtas;
+     ScoreEstimate score;
+ };
+ struct OpportunityResult { std::vector<CandidateAudit> goals; int expansions=0,bfsRuns=0; };
+@@ -27,23 +31,46 @@
+     return std::clamp(timing*std::max(.40,fresh),0.0,1.0);
+ }
+ 
++// Bounds the effect of a distance-only claim. A robot can choose another
++// public resource or fight. This is an uncalibrated choice heuristic.
++inline double choice_confidence(int ours,int rival,int age,double commitment) {
++    if(kRound2Level==0)return resource_confidence(ours,rival,age);
++    const double timing=rival<0?.95:(1-std::clamp(commitment,0.0,1.0))*.95+
++        std::clamp(commitment,0.0,1.0)*resource_race(ours,rival).availability;
++    const double fresh=1.0/(1.0+std::max(0,age)/60.0);
++    return std::clamp(timing*std::max(.40,fresh),0.0,1.0);
++}
++
+ // At most 12 stops considered, depth<=3 and <=2000 expansions, BFS only on
+ // the public-memory block mask. Singleton distant goals remain eligible.
+ inline OpportunityResult resource_opportunities(const Perception& p,const WorldMap& mem,
+     const BlockMask& mask,const Field& field,const std::vector<Field>& enemies,int remaining,
+     const HazardField* hazards=nullptr) {
+     OpportunityResult out;
+-    struct Node { Resource r;int d=0,rival=-1,age=0;double rank=0; };
++    struct Node { Resource r;int d=0,rival=-1,age=0;double rank=0,commitment=1; };
+     std::vector<Node> nodes;
+     for(const auto& item:mem.resources()) {
+         const auto& r=item.second;int d=field.at(r.pos);
+         if(d<=0 || d>remaining)continue;
+-        int rival=-1;
+-        for(const auto& e:enemies){int q=e.at(r.pos);if(q>=0 && (rival<0 || q<rival))rival=q;}
++        int rival=-1;double commitment=0;double worstConfidence=1;
++        for(const auto& e:enemies){
++            const int q=e.at(r.pos);if(q<0)continue;
++            double choice=.85;int alternative=1<<20;
++            for(const auto& other:mem.resources())if(other.first!=r.id){
++                const int z=e.at(other.second.pos);if(z>=0)alternative=std::min(alternative,z);
++            }
++            if(alternative+1<q)choice=.25;
++            else if(alternative<=q+1)choice=.55;
++            const double candidate=choice_confidence(d,q,0,choice);
++            if((kRound2Level==0 && (rival<0 || q<rival)) ||
++               (kRound2Level>0 && candidate<worstConfidence)) {
++                rival=q;commitment=choice;worstConfidence=candidate;
++            }
++        }
+         int age=r.observedTick<0?0:std::max(0,p.tick-r.observedTick);
+         auto gain=collection_score(p,mem.normalCollected(),mem.highCollected(),{r});
+-        double confidence=resource_confidence(d,rival,age);
+-        nodes.push_back({r,d,rival,age,gain.utility()*confidence/(d+1.0)});
++        double confidence=choice_confidence(d,rival,age,commitment);
++        nodes.push_back({r,d,rival,age,gain.utility()*confidence/(d+1.0),commitment});
+     }
+     std::set<Point> reachPositions;
+     for(const auto& m:p.missions)if(m.type=="reach" && m.position && !score_mission_done(p,m.id) &&
+@@ -72,8 +99,8 @@
+             if(hazards && (hazards->lethalAt(nodes[j].r.pos,p.tick+spent,false) ||
+                 hazards->blockedAt(nodes[j].r.pos,p.tick+spent) ||
+                 hazards->damageAt(nodes[j].r.pos,p.tick+spent,false)>=p.hp))return;
+-            const double confidence=nodes[j].r.value>0?resource_confidence(spent,nodes[j].rival,nodes[j].age):1.0;
+-            const double delayedConfidence=nodes[j].r.value>0?resource_confidence(spent+1,nodes[j].rival,nodes[j].age+1):1.0;
++            const double confidence=nodes[j].r.value>0?choice_confidence(spent,nodes[j].rival,nodes[j].age,nodes[j].commitment):1.0;
++            const double delayedConfidence=nodes[j].r.value>0?choice_confidence(spent+1,nodes[j].rival,nodes[j].age+1,nodes[j].commitment):1.0;
+             delayedJoint=std::min(delayedJoint,delayedConfidence);
+             joint=std::min(joint,confidence);prefix.push_back(nodes[j].r);
+             const auto current=collection_score(p,mem.normalCollected(),mem.highCollected(),prefix);
+@@ -92,6 +119,8 @@
+         CandidateAudit c;c.kind=nodes[first].r.value>0?"resource_plan":"task_plan";c.id=nodes[first].r.id;c.target=nodes[first].r.pos;
+         c.eta=time;c.rivalEta=nodes[first].rival;c.age=nodes[first].age;c.stops=depth;
+         c.nominalGain=previous.points();c.confidence=joint;c.score=expected;
++        c.rivalCommitment=nodes[first].commitment;
++        {int arrival=0,prior=-1;for(int k=0;k<depth;++k){int j=order[k];arrival+=prior<0?nodes[j].d:between[prior].at(nodes[j].r.pos);c.routeIds.push_back(nodes[j].r.id);c.routeEtas.push_back(arrival);prior=j;}}
+         c.lostIfDelayed=std::max(0.0,expected.points()-delayed.points());
+         c.priority=expected.utility()/(time+1.0);
+         if(!found[first] || c.priority>best[first].priority) {best[first]=std::move(c);found[first]=true;}
+--- B0/src/rmtc9/round2_policy.hpp
++++ B1/src/rmtc9/round2_policy.hpp
+@@ -0,0 +1,7 @@
++#pragma once
++// Offline compile-time ablation. Release selection is sealed in this file.
++#ifndef RMTC_ROUND2_LEVEL
++#define RMTC_ROUND2_LEVEL 0
++#endif
++static_assert(RMTC_ROUND2_LEVEL>=0 && RMTC_ROUND2_LEVEL<=3,"invalid round2 level");
++namespace rmtc9 { inline constexpr int kRound2Level=RMTC_ROUND2_LEVEL; }

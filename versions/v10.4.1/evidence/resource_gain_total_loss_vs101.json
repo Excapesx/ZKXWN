@@ -1,0 +1,62 @@
+[
+  {
+    "variant": "C0",
+    "scene": "08r",
+    "map": 0,
+    "seat": 0,
+    "resource_gain_points": 2.5,
+    "score": 42.5,
+    "reference101_score": 45.0,
+    "missions": 2,
+    "reference101_missions": 3,
+    "damage": 560.0,
+    "reference101_damage": 574.2857142857142,
+    "deaths": 12,
+    "reference101_deaths": 7
+  },
+  {
+    "variant": "C1",
+    "scene": "08r",
+    "map": 0,
+    "seat": 0,
+    "resource_gain_points": 2.5,
+    "score": 42.5,
+    "reference101_score": 45.0,
+    "missions": 2,
+    "reference101_missions": 3,
+    "damage": 560.0,
+    "reference101_damage": 574.2857142857142,
+    "deaths": 12,
+    "reference101_deaths": 7
+  },
+  {
+    "variant": "C2",
+    "scene": "08r",
+    "map": 0,
+    "seat": 0,
+    "resource_gain_points": 2.5,
+    "score": 42.5,
+    "reference101_score": 45.0,
+    "missions": 2,
+    "reference101_missions": 3,
+    "damage": 560.0,
+    "reference101_damage": 574.2857142857142,
+    "deaths": 12,
+    "reference101_deaths": 7
+  },
+  {
+    "variant": "C_R",
+    "scene": "08r",
+    "map": 0,
+    "seat": 0,
+    "resource_gain_points": 2.5,
+    "score": 42.5,
+    "reference101_score": 45.0,
+    "missions": 2,
+    "reference101_missions": 3,
+    "damage": 560.0,
+    "reference101_damage": 574.2857142857142,
+    "deaths": 12,
+    "reference101_deaths": 7
+  }
+]

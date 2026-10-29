@@ -1,0 +1,199 @@
+--- B2/src/rmtc9/bot.cpp
++++ B2_control/src/rmtc9/bot.cpp
+@@ -194,6 +194,7 @@
+     diagnostics_.resourceAhead=diagnostics_.resourceTied=diagnostics_.resourceLate=0;
+     diagnostics_.resourceRaces.clear();
+     diagnostics_.candidates.clear();diagnostics_.rejectionCounts.clear();diagnostics_.candidatesSeen=0;
++    diagnostics_.selectedValid=false;
+     diagnostics_.plannerExpansions=diagnostics_.plannerBfs=0;
+     diagnostics_.resourcePoints=resource_points(p.resourceValue);
+     diagnostics_.combatPoints=combat_points(p.effectiveDamage);
+@@ -1075,7 +1076,17 @@
+     if(kUseOpportunities && !finishShot && !plan_.fury.active(tick))for(const auto& g:goals)
+         if(g.reason=="resource_plan" && g.audit.score.resource>0 && field_.at(g.pos)<=8 &&
+             safe_step(p,field_.firstAt(g.pos)) && (!urgentAlternative || g.score>urgentAlternative->score))urgentAlternative=&g;
+-    const double missedForAttack=urgentAlternative?urgentAlternative->audit.lostIfDelayed:0;
++    auto immediateLoss=[&](int delay) {
++        if(!urgentAlternative)return 0.0;
++        if(kRound2Level<3)return delay*urgentAlternative->audit.lostIfDelayed;
++        if(!RMTC_ENABLE_OPPORTUNITY_COST)return 0.0;
++        const auto it=mem_.resources().find(urgentAlternative->audit.id);
++        if(it==mem_.resources().end())return 0.0;
++        double gain=resource_points(p.resourceValue+it->second.value)-resource_points(p.resourceValue);
++        return irreversible_resource_loss(gain,field_.at(it->second.pos),urgentAlternative->audit.rivalEta,
++            urgentAlternative->audit.age,urgentAlternative->audit.rivalCommitment,delay);
++    };
++    const double missedForAttack=immediateLoss(1);
+     Field urgentReverse;
+     if(urgentAlternative)urgentReverse=bfs(mask_,urgentAlternative->pos,remaining);
+     if(bestAttack>0 && incoming_damage(p,false)+hz_.damageAt(p.self,tick,p.protectedSpawn)<p.hp)
+@@ -1167,7 +1178,8 @@
+         if(!fatal && urgentAlternative && g.pos!=urgentAlternative->pos) {
+             const int now=field_.at(urgentAlternative->pos),later=urgentReverse.at(next);
+             const int delay=first==kFirstWait?1:later<0?2:std::clamp(1+later-now,0,2);
+-            g.audit.missedResourceLoss=delay*urgentAlternative->audit.lostIfDelayed;
++            const bool alreadyInRoute=kRound2Level>=3 && std::find(g.audit.routeIds.begin(),g.audit.routeIds.end(),urgentAlternative->audit.id)!=g.audit.routeIds.end();
++            g.audit.missedResourceLoss=alreadyInRoute?0:immediateLoss(delay);
+             s-=g.audit.missedResourceLoss/(g.audit.eta+1.0);
+         }
+         if (s>0 && has_last_goal_ && g.pos == last_goal_) s *= 1.12;
+@@ -1220,6 +1232,7 @@
+             last_goal_ = chosen.pos;
+             has_last_goal_ = true;
+             const int send = (plan_.valid && plan_.inverted.active(tick)) ? (dir + 2) % 4 : dir;
++            diagnostics_.selected=chosen.audit;diagnostics_.selectedValid=true;
+             return {Action::move(kDirX[send], kDirY[send]), chosen.reason, chosenScore};
+         }
+     }
+--- B2/src/rmtc9/bot.hpp
++++ B2_control/src/rmtc9/bot.hpp
+@@ -27,6 +27,8 @@
+     double availability=1;
+ };
+ struct DecisionDiagnostics {
++    CandidateAudit selected;
++    bool selectedValid=false;
+     double resourcePoints=0,combatPoints=0,taskPointsConditional=0;
+     double resourceSpace=0,combatSpace=0;
+     int plannerExpansions=0,plannerBfs=0;
+--- B2/src/rmtc9/opportunity_evaluator.hpp
++++ B2_control/src/rmtc9/opportunity_evaluator.hpp
+@@ -40,6 +40,13 @@
+         std::clamp(commitment,0.0,1.0)*resource_race(ours,rival).availability;
+     const double fresh=1.0/(1.0+std::max(0,age)/60.0);
+     return std::clamp(timing*std::max(.40,fresh),0.0,1.0);
++}
++
++inline double irreversible_resource_loss(double gain,int ours,int rival,int age,double choice,int delay) {
++    if(rival<0 || delay<=0 || gain<=0)return 0;
++    // Hold observation freshness fixed: uncertainty becoming older is not an
++    // observed irreversible loss. Compare the same publicly contested pickup.
++    return gain*std::max(0.0,choice_confidence(ours,rival,age,choice)-choice_confidence(ours+delay,rival,age,choice));
+ }
+ 
+ // At most 12 stops considered, depth<=3 and <=2000 expansions, BFS only on
+--- B2/src/rmtc9/round2_policy.hpp
++++ B2_control/src/rmtc9/round2_policy.hpp
+@@ -4,4 +4,7 @@
+ #define RMTC_ROUND2_LEVEL 0
+ #endif
+ static_assert(RMTC_ROUND2_LEVEL>=0 && RMTC_ROUND2_LEVEL<=3,"invalid round2 level");
++#ifndef RMTC_ENABLE_OPPORTUNITY_COST
++#define RMTC_ENABLE_OPPORTUNITY_COST 1
++#endif
+ namespace rmtc9 { inline constexpr int kRound2Level=RMTC_ROUND2_LEVEL; }
+--- B2/src/rmtc9/short_routes.hpp
++++ B2_control/src/rmtc9/short_routes.hpp
+@@ -29,6 +29,7 @@
+     double denial=0;
+     for(const auto& item:pickups) {
+         int age=item.resource.observedTick<0?0:std::max(0,p.tick-item.resource.observedTick);
++        if(kRound2Level<3)age+=delay; // B2 control retains the old age-delay penalty.
+         const double c=choice_confidence(item.eta+delay,item.rival,age,item.commitment);
+         std::map<Key,double> next;
+         for(const auto& state:states) {
+--- B2/tools/bench/bench_main.cpp
++++ B2_control/tools/bench/bench_main.cpp
+@@ -43,6 +43,11 @@
+         return true;
+     }
+     const char* name() const override { return "v9"; }
++    PolicyAudit audit() const override {
++        const auto& d=bot_.diagnostics();PolicyAudit a;a.switches=d.targetSwitches;a.detailed=true;
++        if(d.selectedValid && d.selected.kind=="resource_plan"){a.targetId=d.selected.id;a.target=d.selected.target;}
++        return a;
++    }
+ 
+ private:
+     rmtc9::Bot bot_;
+@@ -226,6 +231,7 @@
+     int missions = 0, deaths = 0, kills = 0, invalid = 0, eventDeaths = 0, plansOk = 0, plansBad = 0;
+     int missNormal = 0, missHigh = 0, missReach = 0, rank = 0;
+     int waits=0,moves=0,attacks=0,defends=0,blockedMoves=0,maxLiveWait=0;
++    int switches=-1,contestsLost=-1;
+ };
+ Json encode(const Sample& s) {
+     return {{"score", s.score}, {"resource", s.resource}, {"damage", s.damage}, {"attack_damage", s.attack},
+@@ -234,7 +240,8 @@
+             {"mission_normal", s.missNormal}, {"mission_high", s.missHigh}, {"mission_reach", s.missReach},
+             {"damage_capped", s.damage >= 500 ? 1 : 0}, {"rank", s.rank},
+             {"waits",s.waits},{"moves",s.moves},{"attacks",s.attacks},{"defends",s.defends},
+-            {"blocked_moves",s.blockedMoves},{"max_live_wait_streak",s.maxLiveWait}};
++            {"blocked_moves",s.blockedMoves},{"max_live_wait_streak",s.maxLiveWait},
++            {"target_switches",s.switches},{"selected_resource_lost",s.contestsLost}};
+ }
+ 
+ double mean(const std::vector<double>& a) { return a.empty() ? 0 : std::accumulate(a.begin(), a.end(), 0.0) / a.size(); }
+@@ -255,6 +262,7 @@
+     std::vector<Sample> out(versions.size());
+     std::vector<int> waitStreak(versions.size(),0);
+     std::vector<bool> triedMove(versions.size(),false);
++    std::vector<PolicyAudit> audits(versions.size());
+     for (int t = 0; t < ticks; ++t) {
+         // oracle：公告后 latency Tick 交付（模拟异步模型返回）
+         if (stage == 2 && !map.events.empty() && t >= o.latency && bench::has_announcement(map, t - o.latency)) {
+@@ -278,9 +286,18 @@
+             triedMove[i]=p.alive&&action.kind==rmtc9::Act::Move;
+             if (times && i == timedSeat)
+                 times->push_back(std::chrono::duration<double, std::micro>(std::chrono::steady_clock::now() - begin).count());
++            audits[i]=bots[static_cast<std::size_t>(i)]->audit();
++            if(audits[i].switches>=0)sample.switches=audits[i].switches;
++            if(audits[i].detailed && sample.contestsLost<0)sample.contestsLost=0;
+             ref.submit(i, action);
+         }
+         ref.step();
++        // Post-step truth is used only by this evaluator, never by policies.
++        for(int i=0;i<ref.robot_count();++i)if(audits[i].detailed&&!audits[i].targetId.empty()) {
++            bool exists=std::any_of(ref.map().resources.begin(),ref.map().resources.end(),[&](const auto& r){return r.id==audits[i].targetId;});
++            if(!exists && ref.robots()[i].pos!=audits[i].target &&
++               std::any_of(ref.robots().begin(),ref.robots().end(),[&](const auto& r){return r.team!=ref.robots()[i].team && r.alive && r.pos==audits[i].target;}))++out[i].contestsLost;
++        }
+         for(int i=0;i<ref.robot_count();++i)
+             if(triedMove[i]&&!ref.robots()[i].lastMoved)++out[i].blockedMoves;
+     }
+@@ -320,7 +337,7 @@
+     Json j;
+     for (const char* key : {"score", "resource", "damage", "attack_damage", "kill_credit", "missions", "deaths", "kills", "invalid", "event_deaths", "plans_ok", "plans_rejected",
+                             "mission_normal", "mission_high", "mission_reach", "damage_capped", "rank",
+-                            "waits","moves","attacks","defends","blocked_moves","max_live_wait_streak"}) {
++                            "waits","moves","attacks","defends","blocked_moves","max_live_wait_streak","target_switches","selected_resource_lost"}) {
+         std::vector<double> values;
+         for (const auto& s : ss) values.push_back(encode(s)[key].get<double>());
+         j[key] = mean(values);
+@@ -456,7 +473,7 @@
+                           {"height", imported?imported->h:o.h}, {"vision", imported?imported->vision:o.vision}, {"field", o.field},
+                           {"unique_map_count", imported?1:o.maps},
+                           {"events", o.events}, {"noise", o.noise}, {"latency", o.latency}, {"practice", o.practice},
+-                          {"a_version", o.a=='9'?"10.2":o.a=='2'?"10.1":o.a=='0'?"10.0":o.a=='3'?"9.3":o.a=='1'?"9.1":std::string(1,o.a)}, {"b_version", o.b=='9'?"10.2":o.b=='2'?"10.1":o.b=='0'?"10.0":o.b=='3'?"9.3":o.b=='1'?"9.1":std::string(1,o.b)},
++                          {"a_version", o.a=='9'?"10.3":o.a=='4'?"10.2":o.a=='2'?"10.1":o.a=='0'?"10.0":o.a=='3'?"9.3":o.a=='1'?"9.1":std::string(1,o.a)}, {"b_version", o.b=='9'?"10.3":o.b=='4'?"10.2":o.b=='2'?"10.1":o.b=='0'?"10.0":o.b=='3'?"9.3":o.b=='1'?"9.1":std::string(1,o.b)},
+                           {"a", summarize(as, ta)}, {"b", summarize(bs, tb)}, {"wins", wins}, {"draws", draws}, {"losses", losses},
+                           {"win_rate", as.empty() ? 0.0 : static_cast<double>(wins) / as.size()},
+                           {"mean_difference", mean(mapDiff)}, {"map_bootstrap_95", {quantile(boot, .025), quantile(boot, .975)}},
+@@ -468,3 +485,4 @@
+         return 2;
+     }
+ }
++
+--- B2/tools/bench/opponent_adapter.hpp
++++ B2_control/tools/bench/opponent_adapter.hpp
+@@ -5,6 +5,12 @@
+ 
+ #include "rmtc9/types.hpp"
+ 
++struct PolicyAudit {
++    int switches=-1;
++    bool detailed=false;
++    std::string targetId;
++    rmtc9::Point target;
++};
+ struct IPolicy {
+     virtual ~IPolicy() = default;
+     virtual rmtc9::Action act(const rmtc9::Perception& p) = 0;
+@@ -14,6 +20,7 @@
+         return false;
+     }
+     virtual const char* name() const = 0;
++    virtual PolicyAudit audit() const { return {}; }
+ };
+ 
+ std::unique_ptr<IPolicy> make_v7_bot(int stage, int maxTicks);
