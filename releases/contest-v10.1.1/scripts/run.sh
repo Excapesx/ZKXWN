@@ -10,6 +10,6 @@ if [[ ! -f "$ROOT/ros2_ws/install/setup.bash" ]]; then
 fi
 source /opt/ros/humble/setup.bash
 source "$ROOT/ros2_ws/install/setup.bash"
-export RMTC_DECISION_CONFIG="${RMTC_DECISION_CONFIG:-$ROOT/ros2_ws/src/rmtc_bot9/config/decision_default.json}"
+export RMTC_DECISION_CONFIG="${RMTC_DECISION_CONFIG:-$ROOT/decision_config.json}"
 python3 "$ROOT/scripts/run_identity.py" --binary "$(ros2 pkg prefix rmtc_bot9)/lib/rmtc_bot9/rmtc_bot9" --config "$RMTC_DECISION_CONFIG"
 exec ros2 run rmtc_bot9 rmtc_bot9 --ros-args -p team:="$SEAT" -p stage:="$STAGE"

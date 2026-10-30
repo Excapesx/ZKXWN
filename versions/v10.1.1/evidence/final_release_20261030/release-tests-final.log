@@ -1,0 +1,36 @@
+Internal ctest changing into directory: /home/excapesx/ZKXWN/build/final-selection-20261030/release-core
+Test project /home/excapesx/ZKXWN/build/final-selection-20261030/release-core
+      Start  1: core_regression
+ 1/15 Test  #1: core_regression ........................   Passed    0.01 sec
+      Start  2: llm_session_lifecycle
+ 2/15 Test  #2: llm_session_lifecycle ..................   Passed    1.41 sec
+      Start  3: v4_rules_boundaries
+ 3/15 Test  #3: v4_rules_boundaries ....................   Passed    0.40 sec
+      Start  4: v6_physical_scenarios
+ 4/15 Test  #4: v6_physical_scenarios ..................   Passed    0.00 sec
+      Start  5: v7_contracts
+ 5/15 Test  #5: v7_contracts ...........................   Passed    0.00 sec
+      Start  6: v8_new_contracts
+ 6/15 Test  #6: v8_new_contracts .......................   Passed    0.94 sec
+      Start  7: v9_review_regressions
+ 7/15 Test  #7: v9_review_regressions ..................   Passed    0.01 sec
+      Start  8: v92_score_buffer_and_offset_fortress
+ 8/15 Test  #8: v92_score_buffer_and_offset_fortress ...   Passed    0.05 sec
+      Start  9: v93_shortest_path_exploration
+ 9/15 Test  #9: v93_shortest_path_exploration ..........   Passed    0.00 sec
+      Start 10: node_announcement_session
+10/15 Test #10: node_announcement_session ..............   Passed    0.52 sec
+      Start 11: v10_arrival_tail_receipt
+11/15 Test #11: v10_arrival_tail_receipt ...............   Passed    0.00 sec
+      Start 12: v10_recorded_bag_audit
+12/15 Test #12: v10_recorded_bag_audit .................   Passed    0.08 sec
+      Start 13: v101_phase_safety_and_deadlines
+13/15 Test #13: v101_phase_safety_and_deadlines ........   Passed    0.01 sec
+      Start 14: v101_task_variants
+14/15 Test #14: v101_task_variants .....................   Passed    0.00 sec
+      Start 15: v1011_gateway_budget
+15/15 Test #15: v1011_gateway_budget ...................   Passed    3.38 sec
+
+100% tests passed, 0 tests failed out of 15
+
+Total Test time (real) =   6.82 sec

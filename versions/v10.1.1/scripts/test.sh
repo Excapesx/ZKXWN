@@ -17,13 +17,15 @@ F=(-std=c++17 -O2 -I"$ROOT/src" -I"$ROOT/third_party/nlohmann/include")
 for t in v4_tests v6_tests v8_tests v92_tests v93_tests; do
   "$CXX" "${F[@]}" -I"$ROOT/tools/bench" "$ROOT/tests/$t.cpp" "$ROOT/tools/bench/referee.cpp" "${CORE[@]}" -o "$OUT/$t"
 done
-for t in v7_tests v9_tests v10_tests v101_tests; do
+for t in v7_tests v9_tests v10_tests v101_tests v101_task_variants; do
   "$CXX" "${F[@]}" "$ROOT/tests/$t.cpp" "${CORE[@]}" -o "$OUT/$t"
 done
 "$CXX" "${F[@]}" -I"$ROOT/tools/node_sim/stub" -I"$ROOT/ros2_ws/src/rmtc_bot9/include" \
  "$ROOT/tests/node_scope_tests.cpp" "$ROOT/ros2_ws/src/rmtc_bot9/src/node.cpp" "$ROOT/ros2_ws/src/rmtc_bot9/src/llm.cpp" "${CORE[@]}" -pthread -o "$OUT/node_scope_tests"
+"$CXX" "${F[@]}" -I"$ROOT/tools/node_sim/stub" -I"$ROOT/ros2_ws/src/rmtc_bot9/include" \
+ "$ROOT/tests/v1011_gateway_budget_tests.cpp" "$ROOT/ros2_ws/src/rmtc_bot9/src/node.cpp" "$ROOT/ros2_ws/src/rmtc_bot9/src/llm.cpp" "${CORE[@]}" -pthread -o "$OUT/v1011_gateway_budget_tests"
 fail=0
-for t in core_tests llm_worker_tests v4_tests v6_tests v7_tests v8_tests v9_tests v92_tests v93_tests v10_tests v101_tests node_scope_tests; do
+for t in core_tests llm_worker_tests v4_tests v6_tests v7_tests v8_tests v9_tests v92_tests v93_tests v10_tests v101_tests v101_task_variants node_scope_tests v1011_gateway_budget_tests; do
   echo "== $t"
   if ! "$OUT/$t"; then fail=1; fi
 done

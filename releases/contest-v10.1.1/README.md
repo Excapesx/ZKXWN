@@ -1,5 +1,12 @@
 # HERO 10.1.1 精简参赛包
 
-10.1决策核心+最新网关/启动修复。[参赛操作卡](参赛操作卡.md)列出待填域号、席位、阶段、网关和令牌。Ubuntu下先`bash scripts/build.sh`，再`bash scripts/contest.sh`；令牌隐藏输入不写文件。
+本机10.1策略（2000伤害阈值）+官方网关请求修复+默认512输出限制，默认balanced。与versions/v10.1.1运行源码逐字节一致，不含历史对手、离线测试和完整证据
 
-不含旧版对手、离线测试和根研究CMake；完整开发版在versions/v10.1.1。本版14组测试来自完整开发包，真实ROS/官方网关和现场脚本尚未验。详细README后续按用户要求完善。
+```bash
+python3 scripts/verify_delivery.py
+bash scripts/doctor.sh
+bash scripts/build.sh
+bash scripts/contest.sh
+```
+
+[参赛操作卡](参赛操作卡.md)说明本场接入信息、隐藏令牌输入和策略窗口。完整测试与来源见[开发版](../../versions/v10.1.1/README.md)。真实官方网关及AI资格待现场确认，练习45分和mock成功不能当作正式成绩或资格

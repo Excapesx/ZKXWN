@@ -23,7 +23,7 @@ void LlmWorker::configure(const std::string& endpoint, const std::string& token,
         throw std::invalid_argument("Custom model is forbidden; clear RMTC_MODEL and the ROS model parameter");
     }
     if (maxTokens < 0) {
-        throw std::invalid_argument("max_tokens must be nonnegative; 0 selects the 1024 default");
+        throw std::invalid_argument("max_tokens must be nonnegative; 0 selects the 512 default");
     }
     if (worker_.joinable()) {
         throw std::logic_error("Stop the LLM worker before reconfiguration");
@@ -34,7 +34,7 @@ void LlmWorker::configure(const std::string& endpoint, const std::string& token,
     if(!endpoint_.empty() && endpoint_.compare(endpoint_.size()>=3?endpoint_.size()-3:0,3,"/v1")==0) endpoint_ += "/chat/completions";
     else if(!endpoint_.empty() && endpoint_.find(suffix)==std::string::npos) endpoint_ += suffix;
     token_ = token;
-    maxTokens_ = maxTokens == 0 ? 1024 : maxTokens;
+    maxTokens_ = maxTokens == 0 ? 512 : maxTokens;
     timeoutMs_ = std::max(200, std::min(29000, timeoutMs));
     enabled_ = !endpoint_.empty() && !token_.empty();
 }

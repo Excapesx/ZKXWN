@@ -21,7 +21,8 @@ if [[ "$STAGE" == 2 ]]; then
   export RMTC_AI_GATEWAY RMTC_TEAM_TOKEN
 fi
 export ROS_DOMAIN_ID ROS_LOCALHOST_ONLY=0 RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-export RMTC_TEAM_NAME=HERO-10.1.1 RMTC_MAX_TOKENS=1024 RMTC_HTTP_TIMEOUT_MS=15000
+export RMTC_TEAM_NAME=HERO-10.1.1 RMTC_MAX_TOKENS=512 RMTC_HTTP_TIMEOUT_MS=15000
+export RMTC_DECISION_CONFIG="$ROOT/decision_config.json"
 python3 "$ROOT/scripts/verify_delivery.py"
 if [[ "$STAGE" == 2 ]]; then python3 "$ROOT/scripts/verify_delivery.py" --require-llm; fi
 echo "Launching HERO 10.1.1, seat=$SEAT, stage=$STAGE, domain=$ROS_DOMAIN_ID. Ctrl+C stops this bot."

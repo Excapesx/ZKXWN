@@ -158,3 +158,10 @@ add_executable(v101_task_variants tests/v101_task_variants.cpp)
 target_link_libraries(v101_task_variants PRIVATE rmtc9_core)
 add_test(NAME v101_task_variants COMMAND v101_task_variants)
 set_tests_properties(v101_task_variants PROPERTIES TIMEOUT 60)
+
+# Production node/worker budget and request fields, injected HTTP only.
+add_executable(v1011_gateway_budget_tests tests/v1011_gateway_budget_tests.cpp ros2_ws/src/rmtc_bot9/src/node.cpp ros2_ws/src/rmtc_bot9/src/llm.cpp)
+target_include_directories(v1011_gateway_budget_tests PRIVATE tools/node_sim/stub ros2_ws/src/rmtc_bot9/include)
+target_link_libraries(v1011_gateway_budget_tests PRIVATE rmtc9_core Threads::Threads)
+add_test(NAME v1011_gateway_budget COMMAND v1011_gateway_budget_tests)
+set_tests_properties(v1011_gateway_budget PROPERTIES TIMEOUT 30)

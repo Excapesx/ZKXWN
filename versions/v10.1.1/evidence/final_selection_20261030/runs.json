@@ -1,0 +1,173 @@
+{
+  "local": {
+    "1": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1",
+        "score": 40.0,
+        "resource_value": 200.0,
+        "effective_damage": 0.0,
+        "mission_completed": 0,
+        "invalid_actions": 0,
+        "hp": 100,
+        "alive": true
+      },
+      "actions": 100,
+      "receipts": 100,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "2": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1",
+        "score": 45.0,
+        "resource_value": 60.0,
+        "effective_damage": 730.0,
+        "mission_completed": 3,
+        "invalid_actions": 0,
+        "hp": 0,
+        "alive": false
+      },
+      "actions": 500,
+      "receipts": 500,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "http": {
+      "label": "local",
+      "executable_sha256": "df2045b142cf1d4604f1f49b80eeb3b54693ae7935c760267755c969a8bc19bd",
+      "requests": 29,
+      "successes": 29,
+      "target_512_all": true,
+      "thinking_disabled_all": false,
+      "json_mode_all": false,
+      "within_100": true,
+      "model_omitted_all": true,
+      "max_request_bytes": 7453,
+      "public_domain": 220,
+      "internal_domain": 221,
+      "port": 18096
+    }
+  },
+  "stock": {
+    "1": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1.1",
+        "score": 40.0,
+        "resource_value": 200.0,
+        "effective_damage": 0.0,
+        "mission_completed": 0,
+        "invalid_actions": 0,
+        "hp": 100,
+        "alive": true
+      },
+      "actions": 100,
+      "receipts": 100,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "2": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1.1",
+        "score": 45.0,
+        "resource_value": 60.0,
+        "effective_damage": 620.0,
+        "mission_completed": 3,
+        "invalid_actions": 0,
+        "hp": 80,
+        "alive": true
+      },
+      "actions": 500,
+      "receipts": 500,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "http": {
+      "label": "stock",
+      "executable_sha256": "cf889eb64b4593ceb5b9021de207de2aa4622892b5cbd9ab8301bf72c8b78378",
+      "requests": 29,
+      "successes": 29,
+      "target_512_all": true,
+      "thinking_disabled_all": true,
+      "json_mode_all": true,
+      "within_100": true,
+      "model_omitted_all": true,
+      "max_request_bytes": 7525,
+      "public_domain": 224,
+      "internal_domain": 225,
+      "port": 18097
+    }
+  },
+  "recommended": {
+    "1": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1-final",
+        "score": 40.0,
+        "resource_value": 200.0,
+        "effective_damage": 0.0,
+        "mission_completed": 0,
+        "invalid_actions": 0,
+        "hp": 100,
+        "alive": true
+      },
+      "actions": 100,
+      "receipts": 100,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "2": {
+      "team": {
+        "team": "A",
+        "team_name": "HERO-10.1-final",
+        "score": 45.0,
+        "resource_value": 60.0,
+        "effective_damage": 730.0,
+        "mission_completed": 3,
+        "invalid_actions": 0,
+        "hp": 0,
+        "alive": false
+      },
+      "actions": 500,
+      "receipts": 500,
+      "missing_actions": [],
+      "missing_receipts": [],
+      "session_mismatch": [],
+      "passed": true,
+      "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+    },
+    "http": {
+      "label": "recommended",
+      "executable_sha256": "b7caa1ca59d9aa73c4257f071975fcc1323ca6edf4d06d96cc4b5d81a1798459",
+      "requests": 29,
+      "successes": 29,
+      "target_512_all": true,
+      "thinking_disabled_all": true,
+      "json_mode_all": true,
+      "within_100": true,
+      "model_omitted_all": true,
+      "max_request_bytes": 7525,
+      "public_domain": 228,
+      "internal_domain": 229,
+      "port": 18098
+    }
+  }
+}

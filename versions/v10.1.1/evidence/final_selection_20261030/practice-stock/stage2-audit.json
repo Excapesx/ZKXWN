@@ -1,0 +1,20 @@
+{
+  "team": {
+    "team": "A",
+    "team_name": "HERO-10.1.1",
+    "score": 45.0,
+    "resource_value": 60.0,
+    "effective_damage": 620.0,
+    "mission_completed": 3,
+    "invalid_actions": 0,
+    "hp": 80,
+    "alive": true
+  },
+  "actions": 500,
+  "receipts": 500,
+  "missing_actions": [],
+  "missing_receipts": [],
+  "session_mismatch": [],
+  "passed": true,
+  "ai_note": "Official practice mock HTTP only; no event understanding or formal AI qualification"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "case": "balanced",
+    "ok": true,
+    "expected": true
+  },
+  {
+    "case": "collect",
+    "ok": true,
+    "expected": true
+  },
+  {
+    "case": "fight",
+    "ok": true,
+    "expected": true
+  },
+  {
+    "case": "extra_key",
+    "ok": false,
+    "expected": false
+  },
+  {
+    "case": "unknown",
+    "ok": false,
+    "expected": false
+  },
+  {
+    "case": "wrong_type",
+    "ok": false,
+    "expected": false
+  },
+  {
+    "case": "source_change_rejected",
+    "ok": false,
+    "expected": false
+  }
+]

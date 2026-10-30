@@ -1,5 +1,21 @@
 # ZKXWN · RMTC校内赛
 
+当前参赛组合：[v10.1.1完整开发版](versions/v10.1.1/README.md) · [精简参赛包](releases/contest-v10.1.1/README.md) · [操作卡](releases/contest-v10.1.1/参赛操作卡.md)
+
+2026-10-30整合：保留已验证的本机10.1策略（2000伤害阈值），加入官方网关关闭思考/JSON输出及启动修复，默认max_tokens=512、decision_type=balanced。运行标识HERO-10.1.1，ROS包/程序名仍为rmtc_bot9
+
+128张第二阶段地图、1024场模拟，资源与总分基本不变，保守前二64.06%到67.38%，收益主要是同分排名。正式动作周期的v1.1练习两阶段40/45分、非法动作0，使用mock AI；真实官方网关、正式AI资格及现场网络仍需联调。[完整报告](versions/v10.1.1/最终组合与测试报告.md)
+
+```bash
+cd ~/ZKXWN/releases/contest-v10.1.1
+python3 scripts/verify_delivery.py
+bash scripts/build.sh
+bash scripts/contest.sh
+```
+
+以下为历史版本与研究记录；其中“最新”“未验”等表述仅描述当时版本，当前入口以上方v10.1.1说明为准
+
+
 2026-10-30 新增：[10.1.1](versions/v10.1.1/README.md)（保留10.1策略，移入最新网关与启动修复）· [精简参赛包](releases/contest-v10.1.1/README.md)。不宣称唯一最强；详细README待后续要求。
 
 

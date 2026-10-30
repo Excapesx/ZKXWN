@@ -18,7 +18,7 @@ int main() {
         envelopeValid = envelopeValid && !body.contains("model")
             && body.at("thinking").at("type")=="disabled"
             && body.at("response_format").at("type")=="json_object"
-            && body.at("max_tokens")==1024 && body.at("stream")==false
+            && body.at("max_tokens")==512 && body.at("stream")==false
             && body.at("messages").at(0).at("content").get<std::string>().find("JSON")!=std::string::npos;
         if(calls==1){entered=true;cv.notify_all();cv.wait(lock,[&]{return release;});}
         if(endpoint!="http://localhost:8080/v1/chat/completions") return false;

@@ -1,0 +1,15 @@
+{
+  "label": "stock",
+  "executable_sha256": "cf889eb64b4593ceb5b9021de207de2aa4622892b5cbd9ab8301bf72c8b78378",
+  "requests": 29,
+  "successes": 29,
+  "target_512_all": true,
+  "thinking_disabled_all": true,
+  "json_mode_all": true,
+  "within_100": true,
+  "model_omitted_all": true,
+  "max_request_bytes": 7525,
+  "public_domain": 224,
+  "internal_domain": 225,
+  "port": 18097
+}

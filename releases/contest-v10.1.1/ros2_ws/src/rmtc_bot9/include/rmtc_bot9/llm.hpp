@@ -38,7 +38,7 @@ public:
     explicit LlmWorker(HttpTransport transport) : transport_(std::move(transport)) {}
     ~LlmWorker();
 
-    // model must be empty; maxTokens=0 uses 1024, negative values are rejected.
+    // model must be empty; maxTokens=0 uses 512, negative values are rejected.
     void configure(const std::string& endpoint, const std::string& token, const std::string& model,
                    int maxTokens, int timeoutMs);
     void start();
@@ -66,7 +66,7 @@ private:
     bool enabled_ = false;
     std::string endpoint_;
     std::string token_;
-    int maxTokens_ = 1024;
+    int maxTokens_ = 512;
     int timeoutMs_ = 15000;
 
     mutable std::mutex mutex_;

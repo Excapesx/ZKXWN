@@ -67,7 +67,7 @@ public:
         const std::string gateway = declare_parameter<std::string>("gateway", env("RMTC_AI_GATEWAY"));
         const std::string token = env("RMTC_TEAM_TOKEN");  // 令牌只从环境读，不进参数
         const std::string model = declare_parameter<std::string>("model", env("RMTC_MODEL"));
-        const int maxTokens = declare_parameter<int>("max_tokens", env_int("RMTC_MAX_TOKENS", 1024));
+        const int maxTokens = declare_parameter<int>("max_tokens", env_int("RMTC_MAX_TOKENS", 512));
         const int timeoutMs = declare_parameter<int>("http_timeout_ms", env_int("RMTC_HTTP_TIMEOUT_MS", 15000));
 
         if (seat_.size() != 1 || seat_[0] < 'A' || seat_[0] > 'D') {
@@ -81,7 +81,7 @@ public:
         if (!env("RMTC_MODEL").empty() || !model.empty()) {
             throw std::runtime_error("Custom model is forbidden; clear RMTC_MODEL and the ROS model parameter");
         }
-        if (maxTokens < 0) throw std::runtime_error("max_tokens must be nonnegative (0 means 1024)");
+        if (maxTokens < 0) throw std::runtime_error("max_tokens must be nonnegative (0 means 512)");
 
         rmtc9::Config cfg;
         cfg.stage = stage_;
@@ -109,7 +109,7 @@ public:
         bot_.set_profile(profile.aggression, profile.huntRadius);
 
         llm_.configure(gateway, token, model, maxTokens, timeoutMs);
-        RCLCPP_INFO(get_logger(), "HERO 10.1.1; official default model; max_tokens=%d", maxTokens == 0 ? 1024 : maxTokens);
+        RCLCPP_INFO(get_logger(), "HERO 10.1.1; official default model; max_tokens=%d", maxTokens == 0 ? 512 : maxTokens);
         if (llm_.enabled() && stage_==2) {
             llm_.start();
             RCLCPP_INFO(get_logger(), "LLM 已启用（凭据及完整网关地址不写日志）");

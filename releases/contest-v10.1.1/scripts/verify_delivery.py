@@ -33,6 +33,8 @@ def main():
         errors.append('actual root differs from expected root')
 
     count = 0
+    decision_type = None
+    decision_config_changed = False
     try:
         manifest = json.loads((root / '文件清单.json').read_text(encoding='utf-8'))
         if not isinstance(manifest, list) or not manifest:
@@ -52,8 +54,21 @@ def main():
             if not path.is_file():
                 errors.append('manifest file missing: ' + name)
                 continue
-            if (path.stat().st_size != row['bytes']
-                    or hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']):
+            changed = (path.stat().st_size != row['bytes']
+                       or hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256'])
+            # Only this registered enum may change in the organizer's window.
+            # The source manifest remains strict for every other file.
+            allowed_config = False
+            if name == 'decision_config.json':
+                config = json.loads(path.read_text(encoding='utf-8'))
+                allowed_config = (isinstance(config, dict) and set(config) == {'decision_type'}
+                                  and config['decision_type'] in ('balanced', 'collect', 'fight'))
+                if not allowed_config:
+                    errors.append('invalid registered decision_config')
+                else:
+                    decision_type = config['decision_type']
+                    decision_config_changed = changed
+            if changed and not allowed_config:
                 errors.append('manifest mismatch: ' + name)
             count += 1
     except (OSError, ValueError, TypeError, KeyError, AttributeError):
@@ -102,6 +117,8 @@ def main():
         'git_commit': commit, 'git_clean': clean,
         'llm_config_checked': args.require_llm or args.official_gateway is not None,
         'gateway_contacted': False,
+        'decision_type': decision_type,
+        'decision_config_changed': decision_config_changed,
         'binary_source_provenance_verified': False,
         'errors': errors, 'ok': not errors,
     }

@@ -6,23 +6,33 @@
   },
   {
     "path": ".gitignore",
-    "bytes": 46,
-    "sha256": "60f2157154157a63de8b787d9beee65c72bf8eede31a68d6650cbc3640fb7a38"
+    "bytes": 76,
+    "sha256": "55cf46caabb5b298f811941e98dc40b6d346d8bb88784780dd6672754e373f61"
   },
   {
     "path": "10.1.1来源说明.json",
-    "bytes": 2354,
-    "sha256": "eadae65b9cdaeea2231c42c50a06718bc3641da0a1cf03bbde3e02dc5d892f7c"
+    "bytes": 2894,
+    "sha256": "a4e4c969700236dc6b7f8b4cae65a2e431a3a7237e93499f41a57fe013553691"
   },
   {
     "path": "10.1.1验证报告.md",
-    "bytes": 3078,
-    "sha256": "928bbe3ff795681f63cd9a2c5b8b6411f3eb91327c9dada23d41ca181ee64a27"
+    "bytes": 487,
+    "sha256": "1b24465a16780fa9325bf28bfbedc0db43a285d3016b1126d1799e379dfc33e1"
   },
   {
     "path": "README.md",
-    "bytes": 502,
-    "sha256": "de6b437b4895f2a5cfa501543a80d2170c7418cf5092c4f76fe10278e9df6d74"
+    "bytes": 629,
+    "sha256": "6b82d634ff8af75c7a97363c0759974ffc82964f8ee2c44ca1b6fe401e6d95e0"
+  },
+  {
+    "path": "VERSION",
+    "bytes": 7,
+    "sha256": "0bc23630256f9d80581f933b0b538600a6c156033cfb644f0982d026d7116045"
+  },
+  {
+    "path": "decision_config.json",
+    "bytes": 29,
+    "sha256": "0cbfca6971ed09b57bc39ef1fcdefa9ff14a267f388d8f386cc54eac75ec78f7"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/CMakeLists.txt",
@@ -36,8 +46,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/llm.hpp",
-    "bytes": 3216,
-    "sha256": "bc2aa0c61f7b58f9fab6fba4dfdca3299fc389fec1d37ce5be6f812c0e4d4302"
+    "bytes": 3214,
+    "sha256": "c036e1a95fb7b4ad5d59861e8864de4dceb1bae40232ac8bb2f895461fa26607"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/node.hpp",
@@ -56,8 +66,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/llm.cpp",
-    "bytes": 7879,
-    "sha256": "394fa0467e99cb2fa0eb4163895bd19013313457c5a7d3fc0cc1678a091927f1"
+    "bytes": 7877,
+    "sha256": "06600e08a2244918a32c8b8845ae18e8004e1d5032dc06480e8d8eecc31763fe"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/main.cpp",
@@ -66,8 +76,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
-    "bytes": 21055,
-    "sha256": "18832f11e07d0b839b95473cb5442fe1a54f6b1ef5d907de4a2a54368d061b58"
+    "bytes": 21052,
+    "sha256": "e8ce4b90fd2e425fdb44d9e6d724942def7db429d7acf856f60043d662bac2f4"
   },
   {
     "path": "scripts/build.sh",
@@ -76,8 +86,8 @@
   },
   {
     "path": "scripts/contest.sh",
-    "bytes": 1641,
-    "sha256": "09d9414475803bc2aaaa3cbe542120772541ddc6d72fcd1bc24da2d1301359f2"
+    "bytes": 1697,
+    "sha256": "023f33e32a0d5a8e383636189ff2b0977360fcf8808a9a3143b50c70e2c9fe91"
   },
   {
     "path": "scripts/doctor.sh",
@@ -86,8 +96,8 @@
   },
   {
     "path": "scripts/run.sh",
-    "bytes": 728,
-    "sha256": "c6d4ee17e2704f9fe4561f93c79671b18665f4cdce01d099a6f93cd76500ddfc"
+    "bytes": 698,
+    "sha256": "14397148a31d5d7b11174c75a5e9e6c7eab32630069c2183b158ba21a99fdbe2"
   },
   {
     "path": "scripts/run_identity.py",
@@ -96,8 +106,8 @@
   },
   {
     "path": "scripts/verify_delivery.py",
-    "bytes": 5077,
-    "sha256": "a3e7027a6765fc5cc09dc3023a72b58f3f0f181dc9cb0f18b71faeaff706f278"
+    "bytes": 6037,
+    "sha256": "8425cee30008ee4403a67ba5814ce68ace3c980b400d88fb9911297e16dd2b0a"
   },
   {
     "path": "src/rmtc9/announce.hpp",
@@ -116,8 +126,8 @@
   },
   {
     "path": "src/rmtc9/bot.cpp",
-    "bytes": 64159,
-    "sha256": "43678fd35d2c8c3d686e5c9196c3beb8b72dfa68a27a58325d5ad24966b8e770"
+    "bytes": 65275,
+    "sha256": "c01810677bfc7f55d7b93dfc9ce8995b722eabc4b2fe2aff66031e2bc79eafd9"
   },
   {
     "path": "src/rmtc9/bot.hpp",
@@ -190,23 +200,18 @@
     "sha256": "b9200769b2b7f5d01234d9310eef73bf301b2b698d757e403b41c0b646568627"
   },
   {
-    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
-    "bytes": 919975,
-    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
-  },
-  {
     "path": "third_party/nlohmann/LICENSE.MIT",
     "bytes": 1097,
     "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
   },
   {
-    "path": "VERSION",
-    "bytes": 8,
-    "sha256": "8acc63ad268836b4eb7e9fd1cd22b01968fbb9749e1204ce9744d7fdea82afaa"
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 919975,
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
   },
   {
     "path": "参赛操作卡.md",
-    "bytes": 5577,
-    "sha256": "175a179905cf10dc5d9084ac133bc39defbdda4400c6e411f24f8d8caf1714e4"
+    "bytes": 2512,
+    "sha256": "422de57bbf39647f7263eb5c4d2ae7b73afe4c389f3d0090395a8b3616964a53"
   }
 ]

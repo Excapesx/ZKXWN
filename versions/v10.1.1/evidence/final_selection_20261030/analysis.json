@@ -1,0 +1,284 @@
+{
+  "labels": {
+    "a": "本机10.1（2000阈值）",
+    "b": "仓库10.1/10.1.1（560阈值）"
+  },
+  "maps": 128,
+  "paired_seat_samples": 512,
+  "simulated_games": 1024,
+  "scenes": {
+    "peers_events": {
+      "a": {
+        "score": 40.234375,
+        "resource": 50.0,
+        "damage": 1088.4691220238096,
+        "deaths": 6.234375,
+        "missions": 2.546875,
+        "rank": 2.3984375,
+        "rank_last": 2.3984375,
+        "invalid": 0.0,
+        "attacks": 47.9453125,
+        "waits": 23.0,
+        "top2_safe": 0.5234375,
+        "top2_possible": 0.5234375
+      },
+      "b": {
+        "score": 40.234375,
+        "resource": 50.0,
+        "damage": 592.5390625,
+        "deaths": 5.609375,
+        "missions": 2.546875,
+        "rank": 2.4921875,
+        "rank_last": 2.5078125,
+        "invalid": 0.0,
+        "attacks": 30.46875,
+        "waits": 17.84375,
+        "top2_safe": 0.4921875,
+        "top2_possible": 0.5078125
+      },
+      "delta": {
+        "score": 0.0,
+        "resource": 0.0,
+        "damage": 495.93005952380963,
+        "deaths": 0.625,
+        "missions": 0.0,
+        "rank": -0.09375,
+        "rank_last": -0.109375,
+        "invalid": 0.0,
+        "attacks": 17.4765625,
+        "waits": 5.15625,
+        "top2_safe": 0.03125,
+        "top2_possible": 0.015625
+      }
+    },
+    "mixed_events": {
+      "a": {
+        "score": 41.16484375,
+        "resource": 53.671875,
+        "damage": 850.1674107142858,
+        "deaths": 4.9296875,
+        "missions": 2.5625,
+        "rank": 2.0,
+        "rank_last": 2.0,
+        "invalid": 0.0,
+        "attacks": 33.1953125,
+        "waits": 19.625,
+        "top2_safe": 0.65625,
+        "top2_possible": 0.65625
+      },
+      "b": {
+        "score": 41.12734375,
+        "resource": 53.671875,
+        "damage": 584.4698660714286,
+        "deaths": 4.171875,
+        "missions": 2.5625,
+        "rank": 2.0625,
+        "rank_last": 2.0625,
+        "invalid": 0.0,
+        "attacks": 25.1875,
+        "waits": 13.328125,
+        "top2_safe": 0.6328125,
+        "top2_possible": 0.6328125
+      },
+      "delta": {
+        "score": 0.03750000000000142,
+        "resource": 0.0,
+        "damage": 265.6975446428572,
+        "deaths": 0.7578125,
+        "missions": 0.0,
+        "rank": -0.0625,
+        "rank_last": -0.0625,
+        "invalid": 0.0,
+        "attacks": 8.0078125,
+        "waits": 6.296875,
+        "top2_safe": 0.0234375,
+        "top2_possible": 0.0234375
+      }
+    },
+    "collectors_none": {
+      "a": {
+        "score": 41.312890624999994,
+        "resource": 53.046875,
+        "damage": 733.125,
+        "deaths": 2.40625,
+        "missions": 2.671875,
+        "rank": 1.4921875,
+        "rank_last": 1.5,
+        "invalid": 0.0,
+        "attacks": 29.28125,
+        "waits": 11.3046875,
+        "top2_safe": 0.921875,
+        "top2_possible": 0.921875
+      },
+      "b": {
+        "score": 41.312890624999994,
+        "resource": 53.046875,
+        "damage": 561.015625,
+        "deaths": 2.1015625,
+        "missions": 2.671875,
+        "rank": 1.484375,
+        "rank_last": 1.484375,
+        "invalid": 0.0,
+        "attacks": 22.5703125,
+        "waits": 7.2578125,
+        "top2_safe": 0.921875,
+        "top2_possible": 0.921875
+      },
+      "delta": {
+        "score": 0.0,
+        "resource": 0.0,
+        "damage": 172.109375,
+        "deaths": 0.3046875,
+        "missions": 0.0,
+        "rank": 0.0078125,
+        "rank_last": 0.015625,
+        "invalid": 0.0,
+        "attacks": 6.7109375,
+        "waits": 4.046875,
+        "top2_safe": 0.0,
+        "top2_possible": 0.0
+      }
+    },
+    "events_delay": {
+      "a": {
+        "score": 41.1328125,
+        "resource": 51.40625,
+        "damage": 1182.5737847222222,
+        "deaths": 7.90625,
+        "missions": 2.65625,
+        "rank": 2.3359375,
+        "rank_last": 2.34375,
+        "invalid": 0.0,
+        "attacks": 51.0703125,
+        "waits": 26.8359375,
+        "top2_safe": 0.59375,
+        "top2_possible": 0.6015625
+      },
+      "b": {
+        "score": 41.1328125,
+        "resource": 51.40625,
+        "damage": 607.3542906746031,
+        "deaths": 6.25,
+        "missions": 2.65625,
+        "rank": 2.4609375,
+        "rank_last": 2.4609375,
+        "invalid": 0.0,
+        "attacks": 30.84375,
+        "waits": 19.5546875,
+        "top2_safe": 0.515625,
+        "top2_possible": 0.515625
+      },
+      "delta": {
+        "score": 0.0,
+        "resource": 0.0,
+        "damage": 575.219494047619,
+        "deaths": 1.65625,
+        "missions": 0.0,
+        "rank": -0.125,
+        "rank_last": -0.1171875,
+        "invalid": 0.0,
+        "attacks": 20.2265625,
+        "waits": 7.28125,
+        "top2_safe": 0.078125,
+        "top2_possible": 0.0859375
+      }
+    }
+  },
+  "overall": {
+    "a": {
+      "score": 40.96123046875,
+      "resource": 52.03125,
+      "damage": 963.5838293650794,
+      "deaths": 5.369140625,
+      "missions": 2.609375,
+      "rank": 2.056640625,
+      "rank_last": 2.060546875,
+      "invalid": 0.0,
+      "attacks": 40.373046875,
+      "waits": 20.19140625,
+      "top2_safe": 0.673828125,
+      "top2_possible": 0.67578125
+    },
+    "b": {
+      "score": 40.95185546875,
+      "resource": 52.03125,
+      "damage": 586.344711061508,
+      "deaths": 4.533203125,
+      "missions": 2.609375,
+      "rank": 2.125,
+      "rank_last": 2.12890625,
+      "invalid": 0.0,
+      "attacks": 27.267578125,
+      "waits": 14.49609375,
+      "top2_safe": 0.640625,
+      "top2_possible": 0.64453125
+    },
+    "delta": {
+      "score": 0.009375000000005684,
+      "resource": 0.0,
+      "damage": 377.23911830357144,
+      "deaths": 0.8359375,
+      "missions": 0.0,
+      "rank": -0.068359375,
+      "rank_last": -0.068359375,
+      "invalid": 0.0,
+      "attacks": 13.10546875,
+      "waits": 5.6953125,
+      "top2_safe": 0.033203125,
+      "top2_possible": 0.03125
+    },
+    "delta_ci95": {
+      "score": [
+        0.0,
+        0.028124999999999983
+      ],
+      "resource": [
+        0.0,
+        0.0
+      ],
+      "damage": [
+        354.07205636160717,
+        400.5126720610119
+      ],
+      "deaths": [
+        0.732421875,
+        0.9375
+      ],
+      "missions": [
+        0.0,
+        0.0
+      ],
+      "rank": [
+        -0.09375,
+        -0.04296875
+      ],
+      "rank_last": [
+        -0.095703125,
+        -0.04296875
+      ],
+      "invalid": [
+        0.0,
+        0.0
+      ],
+      "attacks": [
+        12.3203125,
+        13.888671875
+      ],
+      "waits": [
+        5.28125,
+        6.09765625
+      ],
+      "top2_safe": [
+        0.017578125,
+        0.05078125
+      ],
+      "top2_possible": [
+        0.015625,
+        0.048828125
+      ]
+    }
+  },
+  "score_pairs_equal": 511,
+  "resources_pairs_equal": 512,
+  "limits": "All missions treated as qualified in simulation; no live AI. Opponents are scripted/frozen versions, not current competition teams. Conservative top-two counts unresolved boundary ties as not advanced."
+}
