@@ -1,0 +1,14 @@
+{
+  "program_version": "10.0.0",
+  "base_commit": "98cd892f90946289366295d058ae79ed0c7a5ccf",
+  "date": "2026-10-27",
+  "build": "Windows MSVC 19.51 C++17",
+  "release_test_groups": 12,
+  "debug_test_groups": 12,
+  "real_ros_built": false,
+  "real_llm_verified": false,
+  "official_v12_judge_verified": false,
+  "official_full_match_this_release": false,
+  "historical_bag_audit_is_v92": true,
+  "claims": "bounded policy changes and diagnostic/packaging improvements; no broad score advantage established"
+}

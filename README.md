@@ -1,5 +1,8 @@
 # ZKXWN · RMTC校内赛
 
+2026-10-30 新增：[10.1.1](versions/v10.1.1/README.md)（保留10.1策略，移入最新网关与启动修复）· [精简参赛包](releases/contest-v10.1.1/README.md)。不宣称唯一最强；详细README待后续要求。
+
+
 最新接入维护版：[10.4.1完整开发包](versions/v10.4.1/README.md) · [精简参赛包](releases/contest-v10.4.1/README.md) · [比赛操作卡](releases/contest-v10.4.1/参赛操作卡.md)。增加关闭思考/JSON输出请求，保留10.4默认策略；正式域号、席位、网关和令牌待现场填写。真实ROS与官方网关未验，详细README待后续要求。
 
 以下为此前10.4研究记录。
