@@ -10,7 +10,7 @@ bash scripts/build.sh             # 编译 ROS 节点
 bash scripts/contest.sh           # 按提示输入本场参数
 ```
 
-启动时输入官方 ROS 域号、A/B/C/D 席位与比赛阶段；第二阶段另输入官方 AI 网关和本场令牌，令牌隐藏输入。第一阶段只允许 A，第二阶段每场更换对应席位和令牌。`decision_config.json` 默认 `balanced`，需要切换时只按裁判允许的窗口和登记流程修改 `decision_type`
+可先用 `export RMTC_TEAM_NAME="登记队名"` 设置队名。启动时输入官方 ROS 域号、A/B/C/D 席位与比赛阶段；第二阶段另输入官方 AI 网关和本场令牌，令牌隐藏输入。第一阶段只允许 A，第二阶段每场更换对应席位和令牌。`decision_config.json` 默认 `balanced`，需要切换时只按裁判允许的窗口和登记流程修改 `decision_type`
 
 `src/rmtc9` 包含地图、BFS、采集和战斗策略；`ros2_ws/src/rmtc_bot9` 负责 ROS 收发和异步 AI；`scripts` 是运行工具；`tests` 是回归测试。历史源码保留在 `versions`，沿革见 [CHANGELOG.md](CHANGELOG.md)，比赛只运行 `v10.1.1`
 

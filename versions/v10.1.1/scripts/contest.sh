@@ -27,7 +27,7 @@ fi
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
 export NO_PROXY='*' no_proxy='*'
 export ROS_DOMAIN_ID ROS_LOCALHOST_ONLY=0 RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-export RMTC_TEAM_NAME=HERO-10.1.1 RMTC_MAX_TOKENS=512 RMTC_HTTP_TIMEOUT_MS=15000
+export RMTC_TEAM_NAME="${RMTC_TEAM_NAME:-HERO-10.1.1}" RMTC_MAX_TOKENS=512 RMTC_HTTP_TIMEOUT_MS=15000
 export RMTC_DECISION_CONFIG="$ROOT/decision_config.json"
 python3 "$ROOT/scripts/verify_delivery.py"
 if [[ "$STAGE" == 2 ]]; then python3 "$ROOT/scripts/verify_delivery.py" --require-llm; fi

@@ -76,8 +76,8 @@
   },
   {
     "path": "scripts/contest.sh",
-    "bytes": 2028,
-    "sha256": "50e3ba9e506da594897d219c2bc73c127b5164edcc47df3e9652fbd97759aadf"
+    "bytes": 2049,
+    "sha256": "67822ec5364117c002c116be5adabd107749f3d2c18e7a949b422a6d85d27f17"
   },
   {
     "path": "scripts/doctor.sh",
