@@ -56,7 +56,12 @@ void decision_rules(){
  p=frame(1);d=bot.decide(p);check(d.action.kind==Act::Wait,"active pre-move explosion cannot be escaped now");
  bot.configure({2,500});plan=Plan{};plan.session="s";plan.valid=true;Event fortress;fortress.id="f";fortress.kind="fortress";fortress.a={4,4};fortress.b={6,6};fortress.start=0;fortress.end=10;fortress.dwell=2;fortress.damage=50;fortress.defendDamage=10;plan.events={fortress};bot.set_plan(plan);
  bot.decide(frame(0));bot.decide(frame(1));p=frame(2);p.entities={robot("B",{6,6},40)};d=bot.decide(p);check(d.action.kind==Act::Attack,"fury attacks diagonal target");
- p.effectiveDamage=490;p.entities.push_back(robot("C",{4,4},40));d=bot.decide(p);check(d.value<2.0,"multi-victim score capped once");
+ p.effectiveDamage=490;p.entities.push_back(robot("C",{4,4},40));d=bot.decide(p);
+ // 对抗分仍然只算一次上限（见下一行的 combat_points 断言）。决策值另外可以带上规则 §3
+ // 的未截断有效伤害排名货币：490 起步的一帧最多再加约 200 点超额伤害，按 kTieBreakRate
+ // 折算，所以上限是"一次分数封顶 + 该帧可能的超额伤害价值"。
+ std::cout<<"DBG multi-victim value="<<d.value<<"\n";
+ check(d.value<2.0+0.010*200.0,"multi-victim score capped once");
  WorldMap memory;p=frame(0);Entity wall;wall.type=EntityType::Obstacle;wall.pos={6,5};p.entities={wall};memory.update(p);p.tick=1;p.observationComplete=false;p.entities.clear();memory.update(p);check(memory.isWall({6,5}),"unknown entity frame does not erase remembered wall");
  p=frame(0);p.session="fresh";p.self={2,2};memory.update(p);check(memory.spawn()&&*memory.spawn()==Point{2,2},"spawn reset per match");
  check(sanitize_action(Action::attack(1,0),p,1).kind==Act::Wait,"stage one attack guard");p.protectedSpawn=true;check(sanitize_action(Action::attack(1,0),p,2).kind==Act::Wait,"protection guard");

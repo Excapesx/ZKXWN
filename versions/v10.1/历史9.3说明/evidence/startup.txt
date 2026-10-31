@@ -1,3 +1,0 @@
-[INFO] [1793111249.366999976] [rmtc_bot9]: HERO 9.3.0; official default model; max_tokens=1024
-[INFO] [1793111249.367910792] [rmtc_bot9]: Ready: seat=A stage=1 max_ticks=100 profile=balanced
-[INFO] [1793111252.345839866] [rclcpp]: signal_handler(SIGINT/SIGTERM)

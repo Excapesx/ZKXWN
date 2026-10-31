@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 3.16)
-project(planner_timing LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 17)
-add_executable(planner_timing bench.cpp)
-get_filename_component(HERO_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../.." ABSOLUTE)
-target_include_directories(planner_timing PRIVATE "${HERO_ROOT}/ZKXWN/versions/v10.3/src" "${HERO_ROOT}/ZKXWN/versions/v10.3/third_party/nlohmann/include")
-target_link_libraries(planner_timing PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/../build/Release/rmtc9_core.lib")
-target_compile_options(planner_timing PRIVATE /utf-8)

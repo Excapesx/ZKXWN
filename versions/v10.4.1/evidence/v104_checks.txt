@@ -1,4 +1,0 @@
-lethal attack-before-move safety survives numeric ablation
-lethal attack-before-move safety survives numeric ablation
-lethal attack-before-move safety survives numeric ablation
-161 third-round checks, 3 failures

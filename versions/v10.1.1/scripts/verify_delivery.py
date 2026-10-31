@@ -36,7 +36,7 @@ def main():
     decision_type = None
     decision_config_changed = False
     try:
-        manifest = json.loads((root / '文件清单.json').read_text(encoding='utf-8'))
+        manifest = json.loads((root / 'manifest.json').read_text(encoding='utf-8'))
         if not isinstance(manifest, list) or not manifest:
             raise ValueError('invalid manifest')
         seen = set()

@@ -1,9 +1,0 @@
-{
-  "guard": 10396.004588281516,
-  "max_expansions": 1464,
-  "max_us": 13146.1,
-  "p50_us": 12080.9,
-  "p99_us": 12717.8,
-  "samples": 200,
-  "scope": "synthetic 12-resource public-memory planner only; not production latency distribution"
-}

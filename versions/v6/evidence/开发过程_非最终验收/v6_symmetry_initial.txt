@@ -1,8 +1,0 @@
-
-===== STAGE 2 (4-team, C/D = greedy) =====
-  A(6)  score mean= 31.46 p10= 16.50 p50= 32.50 p90= 45.00 | res=  43.5 dmg= 566.4 mis=2.38 kill=4.45 death=2.02
-  B(4)  score mean= 31.46 p10= 16.50 p50= 32.50 p90= 45.00 | res=  43.5 dmg= 566.4 mis=2.38 kill=4.45 death=2.02
-  head-to-head: A win=20 draw=0 loss=20  (A win rate 50.0%)
-  damage dealt per victim seat (avg): A -> [89 91 384 121]  B -> [89 91 384 121]
-  A(6) action mix: attack=889 dead_wait=243 defend_threat=659 hunt=5703 reach=2199 resource=938 stage2_explore=9369
-  decision time: A p50=14.3us p99=23.9us max=320.6us | B p50=15.1us p99=25.7us max=366.0us

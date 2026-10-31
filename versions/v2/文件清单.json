@@ -5,36 +5,6 @@
     "sha256": "22a41ccfbc9c7968353d17f4164519fd6915918d2be3891c5f95d4e70d07ae57"
   },
   {
-    "path": "01_1.0弱点分析.md",
-    "bytes": 13100,
-    "sha256": "8585393897af32983e7bf93249d4a28fb328de73a28b9df0b8f78864ae44274f"
-  },
-  {
-    "path": "02_2.0战术设计.md",
-    "bytes": 12079,
-    "sha256": "2cb49153620d3e83dcf1e91c9e6899429f20876603e5ff0217bc0b14bfd999af"
-  },
-  {
-    "path": "03_对抗验证报告.md",
-    "bytes": 8638,
-    "sha256": "7f6b8efbb997efb8d15140b8ce069def090289118e4d749e02b9e4ae6a9561b9"
-  },
-  {
-    "path": "04_提交与检录清单.md",
-    "bytes": 6270,
-    "sha256": "7b39199100fd7dbe65e5480dbc805df3a161705d7530a5b224021efb12f1e771"
-  },
-  {
-    "path": "evidence/bench_raw.txt",
-    "bytes": 2102,
-    "sha256": "ff9bac65376cbbd0a8870953d596a000142485412c57b79cd1ec280b7fbdfc62"
-  },
-  {
-    "path": "README.md",
-    "bytes": 10351,
-    "sha256": "5305ea3fdf5a42f63cdd3d2c0bedaec164a5058102a66858bb4904f96833b95c"
-  },
-  {
     "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
     "bytes": 1458,
     "sha256": "db6cd98e60e1f29964cb4789393971501d87a3ac396ff54974e707d387861f57"
@@ -135,14 +105,14 @@
     "sha256": "5d230d55c14770c910dcf72137ab459d563bf361a57708befaff357dfd571c06"
   },
   {
-    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
-    "bytes": 944740,
-    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
-  },
-  {
     "path": "third_party/nlohmann/LICENSE.MIT",
     "bytes": 1097,
     "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 944740,
+    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
   },
   {
     "path": "tools/bench/bench_main.cpp",
@@ -168,10 +138,5 @@
     "path": "tools/bench/referee.hpp",
     "bytes": 2375,
     "sha256": "e5beaff34f3b625aeced07050a52699818b65fecc75a2d4ff3a51821e0c86f97"
-  },
-  {
-    "path": "仓库发布说明.md",
-    "bytes": 943,
-    "sha256": "87fdf7a6ad5efe684c1c72d8529fd15d3f62b9c54885b6586ab73f7cc48ddf9f"
   }
 ]

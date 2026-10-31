@@ -1,8 +1,0 @@
-=== F3 复现：中文路径导致输出 JSON dump 失败 ===
-$ arena --a 10.4 --b my5.0 --field 5 --mode seat --stage 2 --practice <含中文的路径> --events standard --maps 1
-arena: [json.exception.type_error.316] invalid UTF-8 byte at index 31: 0xDA
-
-=== 同一命令改 ASCII 路径（p2.json）===
-{
-  "a": {
-    "all_missions_rate": 1.0,

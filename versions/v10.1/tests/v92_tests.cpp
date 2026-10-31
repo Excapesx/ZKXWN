@@ -20,7 +20,11 @@ static void cap_deadlock(){
  check(d.action.kind==Act::Move,"visible enemy beyond attack range does not deadlock after 500");
  p.entities.clear();bot.configure({2,500});d=bot.decide(p);check(d.action.kind==Act::Move,"known map without visible enemy still has patrol objective");
  p=frame();p.effectiveDamage=600;p.entities={enemy({6,6})};bot.configure({2,500});d=bot.decide(p);
- check(!bot.diagnostics().combatObjective&&d.reason=="score_guard","sufficient buffer allows explicit low-risk score preservation");
+ // 9.2 曾在"500+一次死亡缓冲"之后停止追猎（score_guard 保分）。实测该前提是错的：
+ // 规则 v1.1 §3 的同分比较使用"未在 500 处截断"的有效伤害，500 以上的伤害不再加分
+ // 但仍是决定同分名次的唯一货币；停手会让本队在平局里输掉同分比较，并且长时间待机。
+ // 因此这里要求：分数封顶后仍保留明确的作战目标，而不是原地保分。
+ check(bot.diagnostics().combatObjective,"sufficient buffer still keeps the tie-break combat objective");
  Mission m;m.id="more";m.type="effective_damage";m.target=700;p.missions={m};bot.configure({2,500});d=bot.decide(p);
  check(bot.diagnostics().combatObjective&&d.action.kind==Act::Move,"unfinished damage mission overrides buffer threshold");
  p=frame();p.entities={enemy({3,5},20)};bot.configure({2,500});d=bot.decide(p);

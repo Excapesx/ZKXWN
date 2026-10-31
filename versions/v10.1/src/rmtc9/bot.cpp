@@ -25,6 +25,14 @@ constexpr int kStickTicks = 2;         // 坚持原目标的容忍：路线最�
 constexpr int kViewMaxNodes = 13;      // 观察点路线的节点上限（13 个以内精确 DP）
 // 第二阶段
 constexpr double kHuntCap = 560.0;     // 500计分上限外再保留一次死亡扣60的缓冲
+// 规则 v1.1 §3：同场排名最后比较"有效伤害"，并明确"累计值不在 500 处截断"。
+// 对抗分在 500 封顶后，多出的伤害虽然不再加分，但仍然是决定同分名次的唯一货币。
+// 9.2 按"500 + 一次死亡缓冲 = 560"停止追猎，实测会让本队在大量平分局里因为有效伤害
+// 低于对手而输掉同分比较（9.1 的 D=608.7 > 10.1 的 595.3），并且三分之一的时间在原地
+// 待机。下面两个常量把"战斗收益的缓冲上限"和"是否继续作战"分开：缓冲上限仍然限制单次
+// 战斗收益，但超过 500 的有效伤害按未截断规则计入排名，不再让机器人停手。
+constexpr double kTieBreakRate = 0.010;      // 每点超额有效伤害的决策价值
+constexpr double kCombatKeepCap = 2000.0;     // 500 以上仍是排名货币，继续作战
 constexpr double kSeekW = 0.15;        // 看不见敌人时巡逻点的权重
 constexpr int kSeekFrom = 40;          // 开局 40 Tick 内不巡逻（先抢资源）
 constexpr double kRouteBoost = 1.2;    // 开局路线目标的加成
@@ -637,10 +645,12 @@ double Bot::attack_action_value(const Perception& p,const std::vector<const Enti
         points+=weights[mode]*value;
         if(result.kills>0)killChance+=weights[mode];
         if(!result.fatal&&after>=500)
-            buffer+=weights[mode]*std::max(0.0,std::min(after,kHuntCap)-std::max(500.0,p.effectiveDamage));
+            // 超过 500 的有效伤害不再加分，但按规则 §3 的未截断比较仍然是排名货币，
+            // 所以这里按未截断的超出量计价（kHuntCap 只限制单次战斗的缓冲上限）。
+            buffer+=weights[mode]*std::max(0.0,std::min(after,kCombatKeepCap)-std::max(500.0,p.effectiveDamage));
     }
     if(points>0)points*=aggression_;
-    points+=.01*buffer;
+    points+=kTieBreakRate*buffer;
     if(points>0 || (points>=0 && !lethalRisk))points+=.2*killChance;
     return points;
 }
@@ -662,7 +672,7 @@ bool Bot::safe_step(const Perception& p,int dir) const {
 }
 
 bool Bot::wants_combat(const Perception& p) const {
-    if (p.effectiveDamage < kHuntCap) return true;
+    if (p.effectiveDamage < kCombatKeepCap) return true;
     for (const auto& m : p.missions)
         if (m.type == "effective_damage" && !mission_done(p,m.id) && p.effectiveDamage < m.target) return true;
     return false;

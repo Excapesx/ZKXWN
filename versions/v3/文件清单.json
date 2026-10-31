@@ -10,59 +10,9 @@
     "sha256": "4c9c2c26cab53f96466b3737e9988db35250a5ee3e4fc7c9997e2c56378f3b72"
   },
   {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
-    "bytes": 2901418,
-    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
-    "bytes": 1731099,
-    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
-    "bytes": 1067940,
-    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
-  },
-  {
-    "path": "03_官方练习包_v1.1/dist.zip",
-    "bytes": 2123028,
-    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
-  },
-  {
     "path": "CMakeLists.txt",
     "bytes": 1076,
     "sha256": "4b9d6276e879f0de4b5ed232c77b808559d8d8850ee151c9c670d92c617ec4d0"
-  },
-  {
-    "path": "evidence/3.0_回归输出.txt",
-    "bytes": 1333,
-    "sha256": "a5569d1ac86ac60e41cbfd77ff9083dbec6720b6fe2099237f0732953f8789bd"
-  },
-  {
-    "path": "evidence/bench_raw.txt",
-    "bytes": 2102,
-    "sha256": "ff9bac65376cbbd0a8870953d596a000142485412c57b79cd1ec280b7fbdfc62"
-  },
-  {
-    "path": "evidence/ubuntu-foundation-fixes.md",
-    "bytes": 2742,
-    "sha256": "235d67cd5b116fad07f71adda1e0dd30dbe00a2f11b5b228b5bd3f110311a4f2"
-  },
-  {
-    "path": "evidence/变更文件.json",
-    "bytes": 2614,
-    "sha256": "c930253229fbb0ee5192a872ca967217646c0785e1fa4e9dada69b3e3688ad9c"
-  },
-  {
-    "path": "evidence/阅读说明.md",
-    "bytes": 391,
-    "sha256": "4908632cf69e4eef5cf6024724a527059a6f216ac57cac4ef00dace2fbbafccb"
-  },
-  {
-    "path": "README.md",
-    "bytes": 6493,
-    "sha256": "1a18bcb0271f8a08c90f2d72ec77ade862401f27ae0e21fd8455c89ee5dc9ef0"
   },
   {
     "path": "ros2_ws/src/rmtc_bot2/CMakeLists.txt",
@@ -195,14 +145,14 @@
     "sha256": "9cd88f1e3fe624ce839473623cb7c76edb15980ac8bfd5a9fcb6fafe67b77c89"
   },
   {
-    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
-    "bytes": 944740,
-    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
-  },
-  {
     "path": "third_party/nlohmann/LICENSE.MIT",
     "bytes": 1097,
     "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 944740,
+    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
   },
   {
     "path": "tools/bench/bench_main.cpp",
@@ -228,40 +178,5 @@
     "path": "tools/bench/referee.hpp",
     "bytes": 2375,
     "sha256": "e5beaff34f3b625aeced07050a52699818b65fecc75a2d4ff3a51821e0c86f97"
-  },
-  {
-    "path": "仓库发布说明.md",
-    "bytes": 940,
-    "sha256": "2d0132bdd62c427f21fdd8192875c5da4e8462788250992af741c6b260b01e14"
-  },
-  {
-    "path": "历史说明_2.0原文/01_1.0弱点分析.md",
-    "bytes": 13100,
-    "sha256": "8585393897af32983e7bf93249d4a28fb328de73a28b9df0b8f78864ae44274f"
-  },
-  {
-    "path": "历史说明_2.0原文/02_2.0战术设计.md",
-    "bytes": 12079,
-    "sha256": "2cb49153620d3e83dcf1e91c9e6899429f20876603e5ff0217bc0b14bfd999af"
-  },
-  {
-    "path": "历史说明_2.0原文/03_对抗验证报告.md",
-    "bytes": 8638,
-    "sha256": "7f6b8efbb997efb8d15140b8ce069def090289118e4d749e02b9e4ae6a9561b9"
-  },
-  {
-    "path": "历史说明_2.0原文/04_提交与检录清单.md",
-    "bytes": 6270,
-    "sha256": "7b39199100fd7dbe65e5480dbc805df3a161705d7530a5b224021efb12f1e771"
-  },
-  {
-    "path": "历史说明_2.0原文/README.md",
-    "bytes": 8263,
-    "sha256": "52b0f586a1042594cab14029e289df6978d83b5c16455eeb2aac7d067e62ab82"
-  },
-  {
-    "path": "更新日志.md",
-    "bytes": 4392,
-    "sha256": "c1a15e4bb4b1529a46acaac1c5ef49919f0ae4cd2c2aeb05b454d83d6bcad500"
   }
 ]

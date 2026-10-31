@@ -1,4 +1,0 @@
-{"program_version": "10.1.1", "package_root": "/home/excapesx/ZKXWN/build/release-v1011/versions/v10.1.1", "git_commit": "c960ccb931ab6fd30ef70e797cf8c9247259bb63", "git_clean": false, "binary_path": "/home/excapesx/ZKXWN/build/release-v1011/versions/v10.1.1/ros2_ws/build/rmtc_bot9/rmtc_bot9", "binary_sha256": "77c7caa868111713205cbe184b57f6284dd4af0e0e2a44b4fc787bf5a3e24f3f", "core_tree_sha256": "baad6d195b1ea50bdec447b539d1babd788fdc9538e81f69bdd2106ba3374125", "config_sha256": "0cbfca6971ed09b57bc39ef1fcdefa9ff14a267f388d8f386cc54eac75ec78f7", "decision_type": "balanced", "binary_source_provenance_verified": false}
-[INFO] [1793364156.176713611] [rmtc_bot9]: HERO 10.1.1; official default model; max_tokens=512
-[INFO] [1793364156.177669024] [rmtc_bot9]: Ready: seat=A stage=1 max_ticks=100 profile=balanced
-[INFO] [1793364158.319039682] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,55 @@
+{
+  "harness": "tests/se_compare.cpp",
+  "maps": 64,
+  "seats": 4,
+  "ticks": 500,
+  "geometry": "24x24, 13% random walls, 16 resources (12x10 + 4x20), 8 standard events, 3 standard tasks",
+  "event_plan": "offline oracle (not real LLM)",
+  "normal": {
+    "exact_equal": true,
+    "v1011": {
+      "A_score": 38.0469,
+      "resource": 43.438,
+      "damage": 1017.79,
+      "missions": 2.438,
+      "deaths": 9.703,
+      "invalid": 0
+    },
+    "v101se": {
+      "A_score": 38.0469,
+      "resource": 43.438,
+      "damage": 1017.79,
+      "missions": 2.438,
+      "deaths": 9.703,
+      "invalid": 0
+    }
+  },
+  "fallback": {
+    "meaning": "seat A structured missions hidden; v10.1se uses map missions as best-case fallback; v10.1.1 has no fallback",
+    "v1011": {
+      "A_score": 37.2656,
+      "resource": 43.75,
+      "damage": 998.61,
+      "missions": 2.266,
+      "deaths": 10.172,
+      "invalid": 0
+    },
+    "v101se": {
+      "A_score": 38.0469,
+      "resource": 43.438,
+      "damage": 1017.79,
+      "missions": 2.438,
+      "deaths": 9.703,
+      "invalid": 0
+    },
+    "diff_mean": 0.7812,
+    "diff_sd": 5.0567,
+    "bootstrap95": [
+      -0.4297,
+      2.0312
+    ],
+    "wins": 22,
+    "losses": 11,
+    "ties": 31
+  }
+}

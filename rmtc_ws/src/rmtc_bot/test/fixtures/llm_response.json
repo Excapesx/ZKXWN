@@ -1,9 +1,0 @@
-{
-  "choices": [
-    {
-      "message": {
-        "content": "{\"intent\": \"avoid\", \"priority\": 3, \"target\": [6, 6], \"valid_until\": 60, \"regions\": [{\"rect\": [0, 0, 2, 2], \"ticks\": [10, 11], \"damage\": 100}], \"effects\": {\"inverted_movement\": [20, 30]}}"
-      }
-    }
-  ]
-}

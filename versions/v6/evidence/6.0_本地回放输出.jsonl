@@ -1,5 +1,0 @@
-{"action":{"action":"attack","direction":"right","session_id":"demo","tick":0},"decision_ms":0.1921,"reason":"attack","utility":2.6}
-{"action":{"action":"attack","direction":"right","session_id":"demo","tick":0},"decision_ms":0.1921,"reason":"attack","utility":2.6}
-{"action":{"action":"move","direction":"left","session_id":"demo","tick":1},"decision_ms":0.0474,"reason":"information","utility":0.35000000000000003}
-{"action":{"action":"move","direction":"down","session_id":"new-match","tick":0},"decision_ms":0.0541,"reason":"information","utility":0.35000000000000003}
-{"rejected":"stale_frame"}

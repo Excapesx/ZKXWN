@@ -1,1 +1,0 @@
-arena: configuration stage differs from --stage

@@ -50,129 +50,14 @@
     "sha256": "25f3a38d701bec6a6ec9d1ba815a4ad775496aecf3fbb15276825b62820d6c22"
   },
   {
-    "path": "01_程序源码/ZKXWN/decision/INTEGRATION.md",
-    "bytes": 5750,
-    "sha256": "93a8a1994a04c67ff5f8cd36176f9b671ebc7f4009ccfcf3d88664b3f0b25a5d"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/decision/LEARNING.md",
-    "bytes": 4675,
-    "sha256": "6c36741f00d6bbd260cd4783546564aaa436a3ed3b9de0b766c768c862785f06"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/decision/README.md",
-    "bytes": 5807,
-    "sha256": "5080b3259af467de6ee3e658e786d22336bc9311263e6bb58ec78a71d4de9432"
-  },
-  {
     "path": "01_程序源码/ZKXWN/decision/src/engine.cpp",
     "bytes": 21598,
     "sha256": "fefc14cef56620482642195f8f2aff57081b1ff6b6e553fb5c5ef33eeef2e5e1"
   },
   {
-    "path": "01_程序源码/ZKXWN/decision/TEST_REPORT.md",
-    "bytes": 2731,
-    "sha256": "e9ca1e96f2df1f59efe93c32eb02973de7885e0d5d05872d7e18086b9acba0e0"
-  },
-  {
     "path": "01_程序源码/ZKXWN/decision/tests/scenarios.cpp",
     "bytes": 17924,
     "sha256": "e16e7746b06687c5310fd6df4abe10611d0c4f62d9789232d4dd60f3950a773b"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/ARCHITECTURE.md",
-    "bytes": 12519,
-    "sha256": "ab9e4b35eb1f4bc5e97ee980bf7ca6621f2bfdf0c13b60685018b644d51f8115"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/collection-comparison.json",
-    "bytes": 64658,
-    "sha256": "e0aa1e9058c6bc457eed8657a91d5e3a7044b7c8a08b89b780770c49c66f3daf"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/COLLECTION_OPTIMIZATION.md",
-    "bytes": 4257,
-    "sha256": "6a9f069c95da72506d73837f2c62e000d101f167ca367f4ee7e6acec7e9f9fe8"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/FOUNDATION.md",
-    "bytes": 2835,
-    "sha256": "5bb5ec5ba0a61c3a01001ed095fe656c5d1f2d5f4ed6822acb6828112ab1a306"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/HANDOVER.md",
-    "bytes": 2189,
-    "sha256": "771897a8651e3922e586be9f7949427ded01b8703f39f7c37f9cddaf3f6c79f0"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/multimap-results.json",
-    "bytes": 59382,
-    "sha256": "3ff6295457396dd7234ff64f4fc2cb7d967b6fe159e28e1997ca06022af250be"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/MULTIMAP.md",
-    "bytes": 5638,
-    "sha256": "4bc25be8411f419bee4ec75d878936aa2f951dfed9ffa42460396e9cc1570e60"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/RULES_V1.1_DELTA.md",
-    "bytes": 4341,
-    "sha256": "9363795b2d31dbf697353ecb03cacd8d6c158e34749841d5445defb861cad3bc"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/RULES_V1_1.md",
-    "bytes": 3527,
-    "sha256": "0472bc1d2de2567ddb5bfeb46c026309e7fcda2a45330e673798f7cd0dfe7609"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/SOURCE.md",
-    "bytes": 466,
-    "sha256": "992c38833d7776310fefe0fac9a772a450cbeb5d484d8c956bb6f483bfa6fb4d"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/stage1_v1_1_result.json",
-    "bytes": 1032,
-    "sha256": "8032b9c90e21731f7d50aeef6f2dd3374a48603028fa2046662c204d09125f5c"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/STRATEGY_HANDOVER.md",
-    "bytes": 4041,
-    "sha256": "f80b7a855ff6b5057deece5332337a5086297ee86680f5467ceae564b9af2e1a"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/STRATEGY_OPTIMIZATION_PLAN.md",
-    "bytes": 10022,
-    "sha256": "cff3edf15f65e6bfab6c30c9cc9b558313fb397f088ebc5f82d5e3b27674677e"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/STRATEGY_RULE_SOURCES.json",
-    "bytes": 743,
-    "sha256": "54bb12fbd9ee504b3eb9cb072c0317d43e5dd8297e899c980280b39e65fe8585"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/TEAM.md",
-    "bytes": 2782,
-    "sha256": "f6f42616f55fa759eefdfe883a908ef38c290a60b8c448c45dd8065f66eb897c"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/docs/TECH_REPORT_TEMPLATE.md",
-    "bytes": 28440,
-    "sha256": "a29f7226009913d5b9c30c354bcf13ba3c2c1a283d6d81c0150aa14a35404d0f"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/README.md",
-    "bytes": 5882,
-    "sha256": "a538b3e1a21300723481ff0b71b4b13c08d2a033cc416ba48d406edcacc9400b"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/README_RMTC_CPP.md",
-    "bytes": 963,
-    "sha256": "f77caa378b2ddec618720407d7864b5cc74943e6a2882ebb76596143bb8b33ad"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/RMTC_CPP_集成说明.md",
-    "bytes": 6422,
-    "sha256": "9fa9a8fa2675f65a63726af63e5cc44a49779cc22a80bc2a38a147d0e709f320"
   },
   {
     "path": "01_程序源码/ZKXWN/rmtc_ws/.gitignore",
@@ -255,19 +140,9 @@
     "sha256": "1e93c93d212f502f42d49d43a21d4641e99aa888148731c47e2a49428a188773"
   },
   {
-    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/INTERFACES.md",
-    "bytes": 2476,
-    "sha256": "9ddcf485103877c6127c2f1e6b3302232e5be736fbf5d70e1390d3efc589a1a4"
-  },
-  {
     "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/package.xml",
     "bytes": 582,
     "sha256": "0f2e62b4db776454ba700e296a712165e19a766a0c849697535a94471160b167"
-  },
-  {
-    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/README.md",
-    "bytes": 8235,
-    "sha256": "6078603abb1ec6d70724655ec67dc218eb1427e12b546164fc00d0be044beed6"
   },
   {
     "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/src/combat.cpp",
@@ -355,11 +230,6 @@
     "sha256": "35b0e63452e81659d852a545c7abf3d0c15a9ed74c3ef5cd86434928a07e4f67"
   },
   {
-    "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/maps/stage1_suite.json",
-    "bytes": 384032,
-    "sha256": "bb7279f252a17903fe846f6da1fb243a790037f399038b04f1d9655822b9cae3"
-  },
-  {
     "path": "01_程序源码/ZKXWN/rmtc_ws/src/rmtc_bot/test/stage1_multimap.cpp",
     "bytes": 7938,
     "sha256": "0378ece1ce924c075c9ac1c5c77dd1d9072eb00189986816241f75d8aa219700"
@@ -415,93 +285,13 @@
     "sha256": "35d67a9ad33b19099480a6e03084e312475f306b7b2c2cdd0916caff380624e1"
   },
   {
-    "path": "01_程序源码/ZKXWN/third_party/nlohmann/include/nlohmann/json.hpp",
-    "bytes": 944740,
-    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
-  },
-  {
     "path": "01_程序源码/ZKXWN/third_party/nlohmann/LICENSE.MIT",
     "bytes": 1097,
     "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
   },
   {
-    "path": "01_程序源码/ZKXWN/third_party/nlohmann/README.md",
-    "bytes": 405,
-    "sha256": "0739fe7337e22062bbdf7dc948ae84924bb8752b6af970fd30cb62ed4feccbb8"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
-    "bytes": 2901418,
-    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
-    "bytes": 1731099,
-    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
-    "bytes": 1067940,
-    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
-  },
-  {
-    "path": "03_官方练习包_v1.1/dist.zip",
-    "bytes": 2123028,
-    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
-  },
-  {
-    "path": "04_分工与交接说明/GROUP_QA.md",
-    "bytes": 3393,
-    "sha256": "46e626a191e8d12f6d11ae6ba721632398689ec2656f3da601dae1934b1ee801"
-  },
-  {
-    "path": "04_分工与交接说明/RMTC两人分工方案-通俗版.pdf",
-    "bytes": 253068,
-    "sha256": "b321e83d4b7474f0cc497528d0cc57158dedbbcdb1232e70350193c436fe605c"
-  },
-  {
-    "path": "04_分工与交接说明/RMTC图灵对决赛备赛指南.pdf",
-    "bytes": 599188,
-    "sha256": "213a7d270d82e9b471984cbe8958ee994586c26819c75bd779bfbcbba7518e77"
-  },
-  {
-    "path": "04_分工与交接说明/STRATEGY_PROGRESS_2026-10-23.md",
-    "bytes": 4032,
-    "sha256": "d6b833dcaade176741544e5b3abe28d97d610dc6e6ba5d68c969fca845e54811"
-  },
-  {
-    "path": "05_历史资料_v1.0_仅供对照/dist (1).zip",
-    "bytes": 2086914,
-    "sha256": "7c3de4eec8f0d0c6f3d171cc0d91e1521620b716a818db4e6ba92aed375a4b87"
-  },
-  {
-    "path": "05_历史资料_v1.0_仅供对照/RMTC 机甲⼤师图灵对决赛赛事规则v1.0.pdf",
-    "bytes": 2839040,
-    "sha256": "5390b3e30baa7a341aaff5d4893ac1c59b8edbb6f3c646674bd525d334d4775b"
-  },
-  {
-    "path": "05_历史资料_v1.0_仅供对照/RMTC 机甲⼤师图灵对决赛通信协议.pdf",
-    "bytes": 1664617,
-    "sha256": "b3282fc6274f07ad7024efef9b0322eee9b5d5a2a4b50d3ec5093579b898af5c"
-  },
-  {
-    "path": "05_历史资料_v1.0_仅供对照/裁判测试端使用教程 (2).pdf",
-    "bytes": 1022100,
-    "sha256": "a03a4bca20547f1fb95b11e4869388326c6cb126ae5f4bd942f0353b1694e1a3"
-  },
-  {
-    "path": "README.md",
-    "bytes": 2041,
-    "sha256": "03deed4b2260aac76fd95eab85aa91f2aba10a016db7884781ac5f4a9758eb77"
-  },
-  {
-    "path": "仓库发布说明.md",
-    "bytes": 828,
-    "sha256": "481f014d7890ac5f5ae447b884d47de25adfff53c59e9c5898f1686a95432d21"
-  },
-  {
-    "path": "先读我.md",
-    "bytes": 2551,
-    "sha256": "400e1d40f16f32b23c87328a4b526bd768b1a75ef1f5ef11bfffbb2005b45492"
+    "path": "01_程序源码/ZKXWN/third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 944740,
+    "sha256": "853b2eb3bf7632c949f4a2dd6fb8a629c5ff25cc0059d29c7d21915dc719487f"
   }
 ]

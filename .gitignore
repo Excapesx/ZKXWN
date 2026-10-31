@@ -1,7 +1,8 @@
 build/
+build_core/
 install/
 log/
-*.log
+__pycache__/
+*.pyc
 .env
-**/config/decision_config.json
 .DS_Store

@@ -47,6 +47,6 @@ target_link_libraries(rmtc_bot9 rmtc9_core Threads::Threads)
 ament_target_dependencies(rmtc_bot9 rclcpp std_msgs)
 
 install(TARGETS rmtc_bot9 DESTINATION lib/${PROJECT_NAME})
-install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
+install(FILES "${RMTC2_ROOT}/decision_config.json" DESTINATION share/${PROJECT_NAME})
 
 ament_package()

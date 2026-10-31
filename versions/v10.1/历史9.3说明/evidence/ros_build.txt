@@ -1,7 +1,0 @@
-Starting >>> rmtc_bot9
-Finished <<< rmtc_bot9 [25.3s]
-
-Summary: 1 package finished [25.6s]
-
-编译完成。加载环境：
-  source /home/excapesx/ZKXWN/versions/v9.3/ros2_ws/install/setup.bash

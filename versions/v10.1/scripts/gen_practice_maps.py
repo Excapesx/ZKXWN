@@ -2,20 +2,19 @@
 """生成"练习包几何"的第二阶段配置，供离线测评使用。
 
 为什么需要这个脚本：
-  官方练习包 `03_官方练习包_v1.1/dist.zip` 里的 stage2.json 是 18x18、只有 6 个障碍、
-  4 个角落出生点 [1,1][16,1][1,16][16,16]、16 个资源（12 普通 + 4 高价值），并且
-  4 个高价值资源分别落在四个象限 [5,5][12,5][5,12][12,12]（到各出生点曼哈顿距离都是 8），
-  到达任务是地图正中 [9,9]。整张图是四重对称的。
+  规则 v1.1 §4.2/§12：标准地图是第一阶段 20x20、第二阶段 **24x24**，实际尺寸随感知提供。
+  官方练习包里的 stage2.json 是 18x18 的**练习**图：4 个角落出生点、16 个资源
+  （12 普通 + 4 高价值），4 个高价值资源分别落在四个象限（到各出生点曼哈顿距离相同），
+  到达任务在地图正中，整张图四重对称。
 
-  之前 10.1 的离线测评一直用 24x24、13% 随机墙、资源随机撒点的地图。那种地图和正式
-  地图的几何完全不同：随机地图上资源要到 Tick~48 才会被采光，练习包几何上 Tick~14 就
-  采光了。在随机地图上调出来的权重，不代表正式地图上的行为。
-
-本脚本按练习包的结构生成多张同构地图，这样 A/B 对比才有统计意义。
-输出是官方练习包同样的 JSON 结构，tools/bench/referee.cpp 可以直接 --practice 加载。
+  之前 10.1 的离线测评用 24x24 + 13% 随机墙 + 资源随机撒点。**尺寸对了（24x24），
+  但版式是随机的**：练习包版式下机器人一出生就看得见自己象限的高价值资源，
+  随机版式下它常常在扫到之前资源就被别人拿走了（随机图 mission_high 只有 0.72）。
+  这个脚本按练习包的版式（对称、每象限一个高价值、到达任务在正中）生成 24x24 地图，
+  这才是标准地图最可能的形状。
 
 用法:
-  python3 scripts/gen_practice_maps.py <输出目录> [张数] [种子]
+  python3 scripts/gen_practice_maps.py <输出目录> [张数] [种子] [18|24]
 """
 import io
 import json
@@ -43,57 +42,58 @@ def load_official_events():
     return cfg["events"]
 
 
-def mirror(x, n=18):
-    return n - 1 - x
-
-
-def build(seed, events):
+def build(seed, events, size=24):
     rnd = random.Random(seed)
-    W = H = 18
+    n = size
+    last = n - 1
+    mid = n // 2
 
-    # 每个象限一个高价值资源，四向镜像，整张图保持四重对称。
-    hx = rnd.randint(3, 7)
-    hy = rnd.randint(3, 7)
-    highs = [[hx, hy], [mirror(hx), hy], [hx, mirror(hy)], [mirror(hx), mirror(hy)]]
+    def mirror(x):
+        return last - x
 
-    # 每象限三个普通资源，同样四向镜像。
+    # 四个象限各一个高价值资源：四向镜像，到各出生点距离相同。
+    # 练习包 18x18 的高价值资源恰好在 (5,5) = 出生点偏移 (mid//2, mid//2)，
+    # 这里沿用同样的半径结构（24x24 -> (7,7)），只做小幅抖动。
+    def off(delta):
+        return rnd.randint(mid // 2 - delta, mid // 2 + delta)
+
+    ox, oy = off(1), off(1)
+    highs = [[1 + ox, 1 + oy], [mirror(1 + ox), 1 + oy], [1 + ox, mirror(1 + oy)], [mirror(1 + ox), mirror(1 + oy)]]
+
+    # 每个象限四个普通资源，结构同样对齐练习包：
+    #   角点 (1,0)、边上 (4,1)、内圈 (4,mid-2)、内圈 (mid-2,4)。
     normals = []
-    for _ in range(3):
-        nx = rnd.randint(1, 8)
-        ny = rnd.randint(1, 8)
+    for (bx, by) in ((1, 0), (4, 1), (4, mid - 2), (mid - 2, 4)):
+        nx, ny = 1 + bx, 1 + by
+        if rnd.random() < 0.5:
+            nx, ny = ny, nx
         for p in ([[nx, ny], [mirror(nx), ny], [nx, mirror(ny)], [mirror(nx), mirror(ny)]]):
             if p not in normals and p not in highs:
                 normals.append(p)
-    # 不足时用练习包自己的角点/边/内圈固定点位补齐。
-    fixed = [[2, 1], [15, 1], [1, 15], [16, 15],
-             [4, 2], [13, 2], [2, 13], [15, 13],
-             [4, 8], [13, 9], [8, 4], [9, 13]]
-    for p in fixed:
-        if len(normals) >= 12:
-            break
-        if p not in normals and p not in highs:
-            normals.append(p)
     while len(normals) < 12:
-        normals.append(fixed[len(normals) % 12])
+        cand = [rnd.randint(1, last - 1), rnd.randint(1, last - 1)]
+        if cand not in normals and cand not in highs:
+            normals.append(cand)
+    normals = normals[:12]
 
     resources = []
-    for i, p in enumerate(normals[:12]):
+    for i, p in enumerate(normals):
         resources.append({"id": "n%d" % i, "position": p, "value": 10})
     for i, p in enumerate(highs):
         resources.append({"id": "h%d" % i, "position": p, "value": 20})
 
+    spawns = [[1, 1], [last - 1, 1], [1, last - 1], [last - 1, last - 1]]
     taken = {tuple(r["position"]) for r in resources}
-    taken |= {(1, 1), (16, 1), (1, 16), (16, 16)}
+    taken |= {tuple(s) for s in spawns}
     obstacles = []
     guard = 0
-    while len(obstacles) < 6 and guard < 400:
+    while len(obstacles) < 8 and guard < 600:
         guard += 1
-        x = rnd.randint(1, 16)
-        y = rnd.randint(1, 16)
+        x = rnd.randint(1, last - 1)
+        y = rnd.randint(1, last - 1)
         if (x, y) in taken:
             continue
-        if any(abs(x - sx) + abs(y - sy) < 3
-               for sx, sy in [(1, 1), (16, 1), (1, 16), (16, 16)]):
+        if any(abs(x - sx) + abs(y - sy) < 3 for sx, sy in spawns):
             continue
         obstacles.append([x, y])
         taken.add((x, y))
@@ -103,19 +103,14 @@ def build(seed, events):
         "vision_radius": 4,
         "respawn_wait": 3,
         "spawn_protection": 2,
-        "mission_text": "练习任务：收集两个普通资源、一个高价值资源，并到达 [9,9]。",
-        "robots": [
-            {"team": "A", "spawn": [1, 1]},
-            {"team": "B", "spawn": [16, 1]},
-            {"team": "C", "spawn": [1, 16]},
-            {"team": "D", "spawn": [16, 16]},
-        ],
+        "mission_text": "练习任务：收集两个普通资源、一个高价值资源，并到达 [%d,%d]。" % (mid, mid),
+        "robots": [{"team": c, "spawn": s} for c, s in zip("ABCD", spawns)],
         "missions": [
             {"id": "collect_two_normal", "type": "normal_resources", "target": 2},
             {"id": "collect_high_value", "type": "high_resources", "target": 1},
-            {"id": "reach_target", "type": "reach", "position": [9, 9]},
+            {"id": "reach_target", "type": "reach", "position": [mid, mid]},
         ],
-        "map": {"width": W, "height": H, "obstacles": obstacles, "resources": resources},
+        "map": {"width": n, "height": n, "obstacles": obstacles, "resources": resources},
         "events": events,
     }
 
@@ -127,16 +122,17 @@ def main():
     outdir = sys.argv[1]
     count = int(sys.argv[2]) if len(sys.argv) > 2 else 64
     seed = int(sys.argv[3]) if len(sys.argv) > 3 else 20261028
+    size = int(sys.argv[4]) if len(sys.argv) > 4 else 24
     events = load_official_events()
     if events is None:
         print("warning: %s not found, generating without events" % PRACTICE_ZIP)
         events = {"enabled": False}
     os.makedirs(outdir, exist_ok=True)
     for i in range(count):
-        cfg = build(seed + i * 7919, events)
+        cfg = build(seed + i * 7919, events, size)
         with open(os.path.join(outdir, "stage2_%03d.json" % i), "w", encoding="utf-8") as f:
             json.dump(cfg, f, ensure_ascii=False)
-    print("wrote %d practice-geometry configs to %s" % (count, outdir))
+    print("wrote %d %dx%d practice-geometry configs to %s" % (count, size, size, outdir))
     return 0
 
 

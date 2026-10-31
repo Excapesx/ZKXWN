@@ -1,9 +1,0 @@
-{
-  "session": "practice-5958ca34d05e456e99e4b578355db91a",
-  "recorded_version": "9.1.0",
-  "commit": "d9027c8471b28f781c6be72ca61582b1280f6bb8",
-  "raw_database_sha256": "d754a134b7b62a5db46485de5a56364bbda5251eb26448078c964e38710b53d6",
-  "purpose": "Only public perceptions and actions. Historical-observation replay cannot estimate counterfactual score, deaths or legal counterfactual trajectories.",
-  "judge": "official practice v1.1; mock AI",
-  "original_seed": 2026102601
-}

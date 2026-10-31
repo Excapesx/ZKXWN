@@ -1,8 +1,0 @@
-Same synthetic public observations; static libraries from v3 and v4.
-kind: 0=wait, 1=move, 2=attack, 3=defend.
-v3:
-inversion_attack kind=2 dx=-1 dy=0
-active_pre_move_fatal kind=1 reason=escape_hazard
-v4:
-inversion_attack kind=2 dx=1 dy=0
-active_pre_move_fatal kind=0 reason=pre_event_forced_death

@@ -5,49 +5,9 @@
     "sha256": "22a41ccfbc9c7968353d17f4164519fd6915918d2be3891c5f95d4e70d07ae57"
   },
   {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛赛事规则v1.1.pdf",
-    "bytes": 2901418,
-    "sha256": "bfee4aae18af2e49e1d33514795004d86ec236011070d87ef1e04b4d4d928114"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/RMTC 机甲⼤师图灵对决赛通信协议v1.1.pdf",
-    "bytes": 1731099,
-    "sha256": "635a7aa0152684537bd831f58eb78559223b1ed6822597f3a426c5751145895a"
-  },
-  {
-    "path": "02_官方规则_v1.1_当前/裁判测试端使用教程v1.1.pdf",
-    "bytes": 1067940,
-    "sha256": "03ba6a627ab0900dcf37b80b5eeae78eb63613f53ca42230a5ba4c2522e608ae"
-  },
-  {
-    "path": "03_官方练习包_v1.1/dist.zip",
-    "bytes": 2123028,
-    "sha256": "4abe666edddd4d92f5a290ce8175e7f20c1e4bf44c2a83afa7c5b35297051f84"
-  },
-  {
     "path": "CMakeLists.txt",
     "bytes": 2062,
     "sha256": "6e71dc91cd5a9ae2c84377259ea926dbd41b90ab8ce9616ee2643896e0316273"
-  },
-  {
-    "path": "evidence/bench_raw.txt",
-    "bytes": 2999,
-    "sha256": "1cf01e3fa9e63c3978518de2e8804c776c32c9c39dd8b410456bc9d05c52725d"
-  },
-  {
-    "path": "evidence/test_results.txt",
-    "bytes": 228,
-    "sha256": "a801b260e581ca81af4a58a965b6b8918fe0cc8c47182cfa2803159836cfeab2"
-  },
-  {
-    "path": "examples/本地回放示例.jsonl",
-    "bytes": 2447,
-    "sha256": "4194d7b22bfa0e413c2c32fdde542e74e39b8be3c0dbb6b12010d92104184ec0"
-  },
-  {
-    "path": "README.md",
-    "bytes": 6745,
-    "sha256": "02cc3d85437416ca6549d52b7956b44ff487bd621f8e9dd8df8a2bbd11118e50"
   },
   {
     "path": "ros2_ws/src/rmtc_bot3/CMakeLists.txt",
@@ -195,14 +155,14 @@
     "sha256": "9ba4fed44db02227fb9b4fce5e862946cc1c05c68ed07267682d3588909744aa"
   },
   {
-    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
-    "bytes": 919975,
-    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
-  },
-  {
     "path": "third_party/nlohmann/LICENSE.MIT",
     "bytes": 1097,
     "sha256": "6f48a03625699eea99e599744efea0bf9c9dd67a669e65554df1cd726b8a2477"
+  },
+  {
+    "path": "third_party/nlohmann/include/nlohmann/json.hpp",
+    "bytes": 919975,
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
   },
   {
     "path": "tools/bench/bench_main.cpp",
@@ -238,30 +198,5 @@
     "path": "tools/smoke_main.cpp",
     "bytes": 1541,
     "sha256": "20cddeb17b49e89ad718e5f1b3d8c09ed47fff438797231da401aca3327eb54d"
-  },
-  {
-    "path": "仓库发布说明.md",
-    "bytes": 932,
-    "sha256": "2cac5403e4fca662096f3c5e4428c4e2e26b684c1853d222a3c329e288b8bb07"
-  },
-  {
-    "path": "报告1_4.0弱点分析.md",
-    "bytes": 5074,
-    "sha256": "143b1585fb4f53a13e890ac7d68e4307177f8fa1bae94fc0f587754951f949d2"
-  },
-  {
-    "path": "报告2_5.0设计与实测.md",
-    "bytes": 4000,
-    "sha256": "a29fd0221393f913f1cf1eb5e7f0ff13c39b5cc101251cad879fde34c3e1b4cc"
-  },
-  {
-    "path": "报告3_对抗验证报告.md",
-    "bytes": 4230,
-    "sha256": "664bab00207d7e1db3fb61ae112f7a6309e05556984a681e0abc124ef1b4735a"
-  },
-  {
-    "path": "报告4_结论与后续.md",
-    "bytes": 3910,
-    "sha256": "1a0fe0c562b0c5415e70bccda9b3200fbef537e8dfae0809661ebecac83cb55e"
   }
 ]
