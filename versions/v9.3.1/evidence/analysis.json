@@ -1,0 +1,62 @@
+{
+  "0": {
+    "v9_3": {
+      "score": 40.25,
+      "resource": 50.0,
+      "damage": 577.5,
+      "missions": 2.55,
+      "deaths": 5.525,
+      "invalid": 0
+    },
+    "v9_3_1": {
+      "score": 40.25,
+      "resource": 50.0,
+      "damage": 577.5,
+      "missions": 2.55,
+      "deaths": 5.525,
+      "invalid": 0
+    },
+    "pairs": 80,
+    "equal_all_fields": 80
+  },
+  "1": {
+    "v9_3": {
+      "score": 40.5,
+      "resource": 50.0,
+      "damage": 588.875,
+      "missions": 2.6,
+      "deaths": 5.625,
+      "invalid": 0
+    },
+    "v9_3_1": {
+      "score": 40.5,
+      "resource": 50.0,
+      "damage": 588.875,
+      "missions": 2.6,
+      "deaths": 5.625,
+      "invalid": 0
+    },
+    "pairs": 80,
+    "equal_all_fields": 80
+  },
+  "2": {
+    "v9_3": {
+      "score": 39.2,
+      "resource": 196.0,
+      "damage": 0.0,
+      "missions": 0,
+      "deaths": 0,
+      "invalid": 0
+    },
+    "v9_3_1": {
+      "score": 39.2,
+      "resource": 196.0,
+      "damage": 0.0,
+      "missions": 0,
+      "deaths": 0,
+      "invalid": 0
+    },
+    "pairs": 20,
+    "equal_all_fields": 20
+  }
+}

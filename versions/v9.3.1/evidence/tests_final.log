@@ -1,0 +1,35 @@
+Test project C:/Users/xwn07/Documents/ChatGPT/HERO/work/release_v931_20261031/build
+      Start  1: core_regression
+ 1/15 Test  #1: core_regression ........................   Passed    0.01 sec
+      Start  2: v4_rules_boundaries
+ 2/15 Test  #2: v4_rules_boundaries ....................   Passed    0.19 sec
+      Start  3: v6_physical_scenarios
+ 3/15 Test  #3: v6_physical_scenarios ..................   Passed    0.01 sec
+      Start  4: v7_contracts
+ 4/15 Test  #4: v7_contracts ...........................   Passed    0.01 sec
+      Start  5: v8_new_contracts
+ 5/15 Test  #5: v8_new_contracts .......................   Passed    0.57 sec
+      Start  6: v9_review_regressions
+ 6/15 Test  #6: v9_review_regressions ..................   Passed    0.01 sec
+      Start  7: v92_score_buffer_and_offset_fortress
+ 7/15 Test  #7: v92_score_buffer_and_offset_fortress ...   Passed    0.02 sec
+      Start  8: v93_shortest_path_exploration
+ 8/15 Test  #8: v93_shortest_path_exploration ..........   Passed    0.01 sec
+      Start  9: receipt_audit_contract
+ 9/15 Test  #9: receipt_audit_contract .................   Passed    0.01 sec
+      Start 10: v101_task_variants
+10/15 Test #10: v101_task_variants .....................   Passed    0.01 sec
+      Start 11: v1012_task_settlement_deadlines
+11/15 Test #11: v1012_task_settlement_deadlines ........   Passed    0.01 sec
+      Start 12: llm_session_lifecycle
+12/15 Test #12: llm_session_lifecycle ..................   Passed    1.52 sec
+      Start 13: node_announcement_session
+13/15 Test #13: node_announcement_session ..............   Passed    0.74 sec
+      Start 14: v1011_gateway_budget
+14/15 Test #14: v1011_gateway_budget ...................   Passed   23.31 sec
+      Start 15: v10_recorded_bag_audit
+15/15 Test #15: v10_recorded_bag_audit .................   Passed    0.16 sec
+
+100% tests passed, 0 tests failed out of 15
+
+Total Test time (real) =  26.64 sec

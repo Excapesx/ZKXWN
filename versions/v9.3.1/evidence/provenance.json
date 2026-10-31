@@ -1,0 +1,34 @@
+{
+  "policy_baseline": "v9.3",
+  "engineering_baseline": "v10.1.2 at eee4e1e",
+  "source_hashes_v93": {
+    "announce.hpp": "c3f8326adb3e48c196e1e508f3887bfc7066e3138349c8be8fec89c0c692d7fd",
+    "battle.cpp": "fda34ce50c174bb51b5c89f08e1ad698b32b70081d2b638aff4c078a2f192aa2",
+    "battle.hpp": "a33e2c2851e0f61f9d673523f44ba16b18a468d68f83597fcceec308506d5bbf",
+    "bot.cpp": "7dc42ec297a2168dddf73c452816f46674697d1fc5096e8a1ced7b07318fcc5d",
+    "bot.hpp": "70b77e1057bbaa3bb56d5e09bf293eebcf3a64618b83af58b6793d391b849935",
+    "combat.hpp": "819ff17f40476aac670a64848bbd59b2d55f424014e99f4bbb56ee1fd637d2f5",
+    "events.cpp": "33826964c78a9f0e1b930c71fcf046dcde97f518107a4b61c7fa8071d603e12e",
+    "events.hpp": "183b54fef295ec27bf902199ceae3eb2d09bf53058908aee21bbc9928ec02083",
+    "frame_gate.hpp": "a1beedceb88132e1840bab211497b9f3c59486fa5195d59ef0acfe3f29f7c41f",
+    "grid.cpp": "eeb89f98e7d82e76f95683d696ea106070f284ab49aa39065af08e2b0f00dc2d",
+    "grid.hpp": "188d49de6db3104cba6dfe286f687ea3a341867a560f90be3f432b2778a44260",
+    "parse.cpp": "1f4166862859a642ae20c19a8b25b600abca469bed9c326d7eaeae0eda5f3b9d",
+    "parse.hpp": "375f25c6d49a4bd1b12984fb5c09853c0aea93ee05fe5331f01d439f5eb9a1bc",
+    "types.cpp": "d5234918f2e269bf8bbabf2de4446b0ac243a2378237e185dbe46ddc58313b76",
+    "types.hpp": "739588d9ea34336794b88107a0509fb75d33e43d385068868f9f7155a53cdc64"
+  },
+  "seed_bases": [
+    103190000,
+    103191000,
+    103192000
+  ],
+  "maps_per_scene": 20,
+  "field": "three frozen9.3 opponents; same map and tested seat",
+  "oracle_latency": 2,
+  "source_transform": "baseline namespace/include only",
+  "candidate_policy_changes": [
+    "bounded underfoot reach settlement only"
+  ],
+  "actual_http_test_run": false
+}
