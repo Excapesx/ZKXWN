@@ -31,6 +31,8 @@ struct LlmResult {
     std::string session;
     bool valid = false;
     bool httpSuccess = false;
+    long httpStatus = 0;  // -1: client timeout; 0: other transport error
+    int elapsedMs = 0;
 };
 
 class LlmWorker {

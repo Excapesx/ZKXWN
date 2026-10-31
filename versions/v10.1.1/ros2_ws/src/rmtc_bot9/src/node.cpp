@@ -329,7 +329,16 @@ private:
             if(result.session != session_) continue;
             // A successful HTTP 2xx call is the qualification record even when the
             // model returned empty content; content quality only affects the plan.
-            if(result.httpSuccess) firstSuccessSeen_=true;
+            if (result.httpSuccess) {
+                if (!firstSuccessSeen_) {
+                    RCLCPP_INFO(get_logger(), "本场 LLM HTTP 调用成功：source_tick=%d status=%ld elapsed_ms=%d；正式资格以官方网关记录为准",
+                                result.sourceTick, result.httpStatus, result.elapsedMs);
+                }
+                firstSuccessSeen_ = true;
+            } else {
+                RCLCPP_WARN(get_logger(), "LLM 请求失败：source_tick=%d status=%ld elapsed_ms=%d（-1=客户端超时，0=传输失败）",
+                            result.sourceTick, result.httpStatus, result.elapsedMs);
+            }
             // 8.0：只丢弃“比已采用计划还旧”的结果。7.0 要求 sourceTick 等于最近一次请求，
             // 公告频繁变化时结果一个个被当成过时，可能整场都用不上计划。
             if(result.sourceTick < appliedPlanTick_) continue;

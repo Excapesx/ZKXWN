@@ -339,6 +339,9 @@ bool parse_event(const Json& obj, int maxTicks, int mapW, int mapH, Event* out) 
     if (e.a.y > e.b.y) std::swap(e.a.y, e.b.y);
     if (e.b.x < 0 || e.b.y < 0 || e.a.x >= mapW || e.a.y >= mapH) return false;
     if (e.kind == "split" || e.kind == "chili" || e.kind == "heal") {
+        // Point events cannot turn two model-produced points into a rectangle.
+        // Reject the malformed item; the caller retains earlier valid plans.
+        if (e.a != e.b) return false;
         if (e.a.x < 0 || e.a.y < 0 || e.a.x >= mapW || e.a.y >= mapH) return false;  // 点位必须在图内
     }
     e.a.x = std::max(0, e.a.x); e.a.y = std::max(0, e.a.y);

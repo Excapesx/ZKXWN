@@ -52,6 +52,14 @@ static void parser_boundaries(){
   auto partial=parsed({{"hazards",J::array({good})},{"effects",{{"inverted",window}}}});
   check(partial.hazards.size()==1&&!partial.inverted.active(1),"valid hazard survives a malformed effect");
  }
+ // Real model regression: two chili points were incorrectly returned as a rectangle.
+ for(const char* kind:{"chili","heal","split"}){
+  J malformed={{"kind",kind},{"a",{2,2}},{"b",{7,7}},{"start",20},{"end",30}};
+  Plan rejected;check(!parse_plan(J{{"events",J::array({malformed})}}.dump(),"review",0,500,12,12,&rejected),"point event cannot describe a rectangle");
+  J point=malformed;point["b"]=point["a"];
+  auto partial=parsed({{"events",J::array({malformed,point})}});
+  check(partial.events.size()==1&&partial.events[0].a==partial.events[0].b,"valid point survives a malformed rectangle in the same response");
+ }
  auto valid=parsed({{"effects",{{"inverted",{0,20}}}}});check(valid.inverted.active(0)&&!valid.inverted.active(20),"integer effect uses half-open interval");
 }
 

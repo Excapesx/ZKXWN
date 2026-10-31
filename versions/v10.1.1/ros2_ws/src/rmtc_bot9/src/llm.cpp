@@ -135,6 +135,7 @@ void LlmWorker::loop() {
         std::string response;
         long status = 0;
         bool ok = false;
+        const auto started = std::chrono::steady_clock::now();
         for (int attempt = 0; attempt < 3 && !stopping_; ++attempt) {
             const bool transportOk = post(payload, &response, &status);
             if (transportOk && status >= 200 && status < 300) {
@@ -167,6 +168,9 @@ void LlmWorker::loop() {
         result.session = session;
         result.sourceTick = tick;
         result.httpSuccess = ok;
+        result.httpStatus = status;
+        result.elapsedMs = static_cast<int>(std::chrono::duration_cast<std::chrono::milliseconds>(
+            std::chrono::steady_clock::now() - started).count());
         if (ok) {
             try {
                 const Json envelope = Json::parse(response);

@@ -11,8 +11,8 @@
   },
   {
     "path": "CMakeLists.txt",
-    "bytes": 3169,
-    "sha256": "b09df18e59314bde9e73eb12057cdcc0ccf4b2c199368e2d28f2627976a55859"
+    "bytes": 3724,
+    "sha256": "95090bc0a4da8fa3135ec8d4c075ab9c2379174cfc0f16d05f689d18a897d50f"
   },
   {
     "path": "VERSION",
@@ -31,8 +31,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/llm.hpp",
-    "bytes": 3214,
-    "sha256": "c036e1a95fb7b4ad5d59861e8864de4dceb1bae40232ac8bb2f895461fa26607"
+    "bytes": 3311,
+    "sha256": "9b8dd685297e0996603844b2686eab8f587a4e12495ef1277cf303013cda287b"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/include/rmtc_bot9/node.hpp",
@@ -46,13 +46,13 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/curl_transport.cpp",
-    "bytes": 2380,
-    "sha256": "e3cfbb8492a0f82611d0d8292a0d472c9dc8a5952f6b05a1755bf79b0fac7bc4"
+    "bytes": 2583,
+    "sha256": "fcbd4755872a8d10e69b7b318f10d489cea756b53776924a70da4a7498eef3f4"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/llm.cpp",
-    "bytes": 7877,
-    "sha256": "06600e08a2244918a32c8b8845ae18e8004e1d5032dc06480e8d8eecc31763fe"
+    "bytes": 8145,
+    "sha256": "a0b448c75cacd238066fbaf483c0b84e4c99a709914c6d5446b178df834b9477"
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/main.cpp",
@@ -61,8 +61,8 @@
   },
   {
     "path": "ros2_ws/src/rmtc_bot9/src/node.cpp",
-    "bytes": 21052,
-    "sha256": "e8ce4b90fd2e425fdb44d9e6d724942def7db429d7acf856f60043d662bac2f4"
+    "bytes": 21658,
+    "sha256": "f5f6f3310523069e1f295ad820c0390d1059a9fce9b9b99f43b5ebbcfc5d91bc"
   },
   {
     "path": "scripts/audit_bag.py",
@@ -76,8 +76,8 @@
   },
   {
     "path": "scripts/contest.sh",
-    "bytes": 1697,
-    "sha256": "023f33e32a0d5a8e383636189ff2b0977360fcf8808a9a3143b50c70e2c9fe91"
+    "bytes": 2028,
+    "sha256": "50e3ba9e506da594897d219c2bc73c127b5164edcc47df3e9652fbd97759aadf"
   },
   {
     "path": "scripts/doctor.sh",
@@ -161,8 +161,8 @@
   },
   {
     "path": "src/rmtc9/parse.cpp",
-    "bytes": 24382,
-    "sha256": "79916d76e2b92f2bd84525d55264d443dde0c4611992a697c3209b7195058a8f"
+    "bytes": 24578,
+    "sha256": "0c31c3b31d7ad4402d1061dda3dc4cebe961ab8b633779a55edde8a9f4a87584"
   },
   {
     "path": "src/rmtc9/parse.hpp",
@@ -201,8 +201,8 @@
   },
   {
     "path": "tests/llm_worker_tests.cpp",
-    "bytes": 4872,
-    "sha256": "a66f8434be5c1fc68e00a3114c860309ea46cc2ac6eebbd53ac856bc3a24476a"
+    "bytes": 4998,
+    "sha256": "1fe856c20b995c799f7b0e5e43b52aec325f91e5cf39c816c0e14b7e7af978e5"
   },
   {
     "path": "tests/node_scope_tests.cpp",
@@ -286,8 +286,8 @@
   },
   {
     "path": "tests/v9_tests.cpp",
-    "bytes": 6827,
-    "sha256": "b6a4fff4440400fd469ea2dd532ee75b48ee9ddb41eb2f66952fbdf04aecac62"
+    "bytes": 7448,
+    "sha256": "2cf63f1828b52a0643dd891b4d6f6480a7c8c4c1b1ffb7a4fa47e77e4c5ccb67"
   },
   {
     "path": "third_party/nlohmann/LICENSE.MIT",
@@ -298,5 +298,15 @@
     "path": "third_party/nlohmann/include/nlohmann/json.hpp",
     "bytes": 919975,
     "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
+  },
+  {
+    "path": "tests/http_transport_probe.cpp",
+    "bytes": 361,
+    "sha256": "a55ca0375f00bc58780ac0f2af4d16de57c4abee3c22cecb38af4f2dbd79c99a"
+  },
+  {
+    "path": "tests/test_http_transport.py",
+    "bytes": 1609,
+    "sha256": "70cd5f3f70f977ed4ad533af6b32d0a26777b2e80a182c04a5ce3d4bf7741354"
   }
 ]

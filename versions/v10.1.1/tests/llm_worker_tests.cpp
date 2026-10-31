@@ -35,6 +35,7 @@ int main() {
     for(int i=0;i<2000 && !got;++i){got=worker.poll(&result);if(!got)std::this_thread::sleep_for(std::chrono::milliseconds(1));}
     check(got && result.session=="new" && result.sourceTick==0,"old in-flight result discarded");
     check(got && result.httpSuccess && result.valid,"new session response accepted");
+    check(got && result.httpStatus==200 && result.elapsedMs>=0,"HTTP result exposes status and timing without credentials");
     check(worker.successes()==1,"only new session increments counter");
     worker.reset_session("third");check(worker.successes()==0,"success count resets per match");
     worker.stop();

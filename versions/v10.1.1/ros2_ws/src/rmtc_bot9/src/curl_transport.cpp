@@ -22,6 +22,9 @@ bool http_post(const std::string& endpoint,const std::string& token,const std::s
     const std::string auth = "Authorization: Bearer " + token;
     headers = curl_slist_append(headers, auth.c_str());
     curl_easy_setopt(curl, CURLOPT_URL, endpoint.c_str());
+    // The organizer gateway is reached directly on the contest network.
+    // Desktop proxy environment must not redirect match tokens or loopback tests.
+    curl_easy_setopt(curl, CURLOPT_PROXY, "");
     curl_easy_setopt(curl, CURLOPT_POST, 1L);
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, body.c_str());
     curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE, static_cast<long>(body.size()));
